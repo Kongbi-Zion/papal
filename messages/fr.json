@@ -11,5 +11,56 @@
   },
   "common": {
     "logoAlt": "Logo du Pape Léon XIV"
+  },
+  "hero": {
+    "welcome": "Bienvenue au Pape Léon XIV au Cameroun",
+    "subtitle": "Une visite historique de foi, de paix et d'unité au cœur de l'Afrique.",
+    "countdown": {
+      "completed": "Le moment historique est arrivé!",
+      "eventLive": "L'Événement est en Direct!",
+      "days": "Jours",
+      "hours": "Heures",
+      "minutes": "Minutes", 
+      "seconds": "Secondes"
+    },
+    "cta": {
+      "primary": "Participer",
+      "secondary": "En Savoir Plus"
+    },
+    "events": {
+      "title": "Événements Clés",
+      "description": "Découvrez le calendrier des messes, cérémonies et apparitions publiques pendant la visite papale.",
+      "cta": "Voir le Calendrier"
+    },
+    "updates": {
+      "title": "Dernières Nouvelles",
+      "description": "Restez informé avec les dernières nouvelles, annonces et développements concernant la visite.",
+      "cta": "Lire les Nouvelles"
+    },
+    "messages": {
+      "title": "Messages du Pape",
+      "description": "Lisez les messages inspirants et adresses du Pape Léon XIV aux fidèles du Cameroun.",
+      "cta": "Voir les Messages"
+    },
+    "quickLinks": {
+      "title": "Informations Essentielles",
+      "learnMore": "En Savoir Plus"
+    },
+    "masses": {
+      "title": "Messes",
+      "description": "Calendrier et lieux"
+    },
+    "security": {
+      "title": "Directives de Sécurité",
+      "description": "Informations de sécurité"
+    },
+    "media": {
+      "title": "Ressources Médias",
+      "description": "Matériel de presse"
+    },
+    "faqs": {
+      "title": "FAQ",
+      "description": "Questions courantes"
+    }
   }
 }

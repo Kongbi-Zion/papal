@@ -2,19 +2,37 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
+import { Button } from '@/components/ui/button'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const locale = useLocale()
   const t = useTranslations('navigation')
   const tCommon = useTranslations('common')
 
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md">
+    <nav className={`
+      fixed top-0 left-0 right-0 z-50 transition-all duration-300
+      ${isScrolled 
+        ? 'bg-white/10 backdrop-blur-md shadow border-b border-gray-200/30' 
+        : 'bg-white'
+      }
+    `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -46,9 +64,10 @@ export default function Navbar() {
             <Link href={`/${locale}/contact`} className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               {t('contact')}
             </Link>
-            <button className="ml-4 px-6 py-2 bg-yellow-500 text-gray-900 font-semibold rounded-lg hover:bg-yellow-400 transition-colors">
+            <LanguageSwitcher />
+            <Button className="ml-4 bg-yellow-500 text-gray-900 hover:bg-yellow-400">
               {t('donate')}
-            </button>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -100,9 +119,12 @@ export default function Navbar() {
             <Link href={`/${locale}/contact`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
               {t('contact')}
             </Link>
-            <button className="w-full text-left px-3 py-2 text-base font-medium text-white bg-yellow-500 hover:bg-yellow-400 rounded-lg transition-colors">
+            <div className="px-3 py-2">
+              <LanguageSwitcher />
+            </div>
+            <Button className="w-full bg-yellow-500 text-gray-900 hover:bg-yellow-400">
               {t('donate')}
-            </button>
+            </Button>
           </div>
         </div>
       )}

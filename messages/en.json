@@ -11,5 +11,56 @@
   },
   "common": {
     "logoAlt": "Pope Leo XIV Logo"
+  },
+  "hero": {
+    "welcome": "Welcome Pope Leo XIV to Cameroon",
+    "subtitle": "A historic visit of faith, peace and unity to the heart of Africa.",
+    "countdown": {
+      "completed": "The historic moment has arrived!",
+      "eventLive": "The Event is Now Live!",
+      "days": "Days",
+      "hours": "Hours", 
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "cta": {
+      "primary": "Get Involved",
+      "secondary": "Learn More"
+    },
+    "events": {
+      "title": "Key Events",
+      "description": "Discover the schedule of masses, ceremonies, and public appearances during the papal visit.",
+      "cta": "View Schedule"
+    },
+    "updates": {
+      "title": "Latest Updates", 
+      "description": "Stay informed with the latest news, announcements, and developments regarding the visit.",
+      "cta": "Read Updates"
+    },
+    "messages": {
+      "title": "Messages from the Pope",
+      "description": "Read inspiring messages and addresses from Pope Leo XIV to the faithful in Cameroon.",
+      "cta": "View Messages"
+    },
+    "quickLinks": {
+      "title": "Essential Information",
+      "learnMore": "Learn More"
+    },
+    "masses": {
+      "title": "Masses",
+      "description": "Schedule and locations"
+    },
+    "security": {
+      "title": "Security Guidelines", 
+      "description": "Safety information"
+    },
+    "media": {
+      "title": "Media Resources",
+      "description": "Press materials"
+    },
+    "faqs": {
+      "title": "FAQs",
+      "description": "Common questions"
+    }
   }
 }
