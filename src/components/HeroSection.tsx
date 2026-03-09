@@ -89,12 +89,12 @@ export default function HeroSection() {
                   { value: countdown.seconds, label: t('countdown.seconds') }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 md:p-6 min-w-15 md:min-w-[100px]">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 md:p-6 min-w-15 md:min-w-25">
                       <div className="text-xl md:text-4xl font-bold text-yellow-600 font-sans">
                         {String(item.value).padStart(2, '0')}
                       </div>
                     </div>
-                    <div className="text-xs md:text-sm text-gray-200 mt-1 md:mt-2">{item.label}</div>
+                    <div className="text-xs md:text-sm text-yell-500 mt-1 md:mt-2">{item.label}</div>
                   </div>
                 ))}
               </div>
