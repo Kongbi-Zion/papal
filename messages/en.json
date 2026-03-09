@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "common": {
+    "logoAlt": "Pope Leo XIV Logo"
+  }
+}
