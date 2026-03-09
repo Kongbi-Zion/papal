@@ -41,7 +41,7 @@ export default async function LocaleLayout({children, params}: Props) {
   return (
     <html lang={locale}>
       <body
-        className={`${poppins.variable} antialiased pt-20`}
+        className={`${poppins.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <Navbar />

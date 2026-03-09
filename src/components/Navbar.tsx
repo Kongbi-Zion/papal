@@ -2,37 +2,21 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
   const locale = useLocale()
   const t = useTranslations('navigation')
   const tCommon = useTranslations('common')
 
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
-    <nav className={`
-      fixed top-0 left-0 right-0 z-50 transition-all duration-300
-      ${isScrolled 
-        ? 'bg-white/10 backdrop-blur-md shadow border-b border-gray-200/30' 
-        : 'bg-white'
-      }
-    `}>
+    <nav className="absolute top-4 left-0 right-0 z-50 transition-all duration-300 mx-4 max-w-[calc(100vw-2rem)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -52,16 +36,16 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href={`/${locale}`} className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}`} className="text-white hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               {t('home')}
             </Link>
-            <Link href={`/${locale}/about`} className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/about`} className="text-white hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               {t('about')}
             </Link>
-            <Link href={`/${locale}/services`} className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/services`} className="text-white hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               {t('services')}
             </Link>
-            <Link href={`/${locale}/contact`} className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/contact`} className="text-white hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               {t('contact')}
             </Link>
             <LanguageSwitcher />
@@ -74,7 +58,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-yellow-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-yellow-600 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
             >
               <svg
                 className="h-6 w-6"
