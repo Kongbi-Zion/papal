@@ -71,7 +71,7 @@ export default function HeroSection() {
       <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
         {/* Hero Banner */}
         <div className="text-left mb-16 max-w-4xl max-md:pl-2">
-          <h1 className="text-4xl md:text-7xl max-md:pt-24 font-normal text-white mb-6 font-sans drop-shadow-lg">
+          <h1 className="text-4xl md:text-7xl max-md:pt-16 font-normal text-white mb-6 font-sans drop-shadow-lg">
             {t('welcome')}
           </h1>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
@@ -89,7 +89,7 @@ export default function HeroSection() {
                   { value: countdown.seconds, label: t('countdown.seconds') }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 md:p-6 min-h-15 md:min-h-25 min-w-15 md:min-w-25">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 flex justify-center items-center md:p-6 min-h-15 md:min-h-25 min-w-15 md:min-w-25">
                       <div className="text-xl md:text-4xl font-bold text-yellow-600 font-sans">
                         {String(item.value).padStart(2, '0')}
                       </div>
