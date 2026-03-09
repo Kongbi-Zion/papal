@@ -2,6 +2,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import HeroSection from '@/components/HeroSection';
 import MessageOfHope from '@/components/MessageOfHope';
+import CatholicChurchCameroon from '@/components/CatholicChurchCameroon';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -21,6 +22,7 @@ export default async function Home({params}: Props) {
     <>
       <HeroSection />
       <MessageOfHope />
+      <CatholicChurchCameroon />
     </>
   );
 }

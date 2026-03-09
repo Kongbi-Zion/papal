@@ -1,9 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Heart, Users, Globe, Sparkles } from 'lucide-react'
 
 export default function MessageOfHope() {
+  const t = useTranslations('messageOfHope')
   const [activeCard, setActiveCard] = useState<number | null>(null)
 
   const messages = [
@@ -11,14 +13,14 @@ export default function MessageOfHope() {
       id: 1,
       icon: Globe,
       title: 'Historic Visit',
-      description: 'The historic visit of His Holiness Pope Leo XIV to Cameroon marks a pivotal moment for both the nation and the African continent. As a &quot;Message of Hope,&quot; this journey seeks to strengthen the bonds of faith and provide spiritual guidance in a rapidly changing world.',
+      description: 'The historic visit of His Holiness Pope Leo XIV to Cameroon marks a pivotal moment for both the nation and the African continent. As a "Message of Hope," this journey seeks to strengthen the bonds of faith and provide spiritual guidance in a rapidly changing world.',
       featured: true
     },
     {
       id: 2,
       icon: Heart,
       title: 'Unity & Harmony',
-      description: 'For Cameroonians, the presence of the Holy Father is a testament to the country&apos;s vibrant Catholic heritage and its role as a beacon of religious harmony. This visit transcends religious boundaries, offering a call for peace, reconciliation, and social justice across the region.',
+      description: 'For Cameroonians, the presence of the Holy Father is a testament to the country\'s vibrant Catholic heritage and its role as a beacon of religious harmony. This visit transcends religious boundaries, offering a call for peace, reconciliation, and social justice across the region.',
       featured: false
     },
     {
@@ -61,12 +63,12 @@ export default function MessageOfHope() {
               </svg>
             </div>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 font-sans">
+          <h2 className="text-3xl md:text-5xl font-medium text-gray-900 mb-6 font-sans">
             A Message of Hope
           </h2>
           <div className="w-32 h-1.5 bg-linear-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full"></div>
-          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-            Join us in witnessing this historic pilgrimage that brings faith, hope, and unity to Cameroon and the entire African continent
+          <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Join us in witnessing this historic pilgrimage bringing faith, hope, and unity to Cameroon
           </p>
         </div>
 
@@ -100,10 +102,10 @@ export default function MessageOfHope() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 font-sans">
+                  <h3 className="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-sans">
                     {message.title}
                   </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-base md:text-lg text-gray-700 leading-relaxed line-clamp-4 md:line-clamp-none">
                     {message.description}
                   </p>
 
@@ -125,8 +127,8 @@ export default function MessageOfHope() {
 
         {/* Bottom Call to Action */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-3 bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-            <span>Join us in this momentous occasion</span>
+          <div className="inline-flex items-center gap-2 md:gap-3 bg-yellow-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+            <span className="text-sm md:text-base">Join us in this momentous occasion</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

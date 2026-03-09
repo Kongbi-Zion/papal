@@ -61,6 +61,39 @@
     "faqs": {
       "title": "FAQ",
       "description": "Questions courantes"
+    },
+    "messageOfHope": {
+      "title": "Un Message d'Espoir",
+      "subtitle": "Rejoignez-nous pour être témoin de ce pèlerinage historique apportant la foi, l'espérance et l'unité au Cameroun",
+      "historicVisit": "Visite Historique",
+      "historicDescription": "La visite historique de Sa Sainteté le Pape Léon XIV au Cameroun marque un moment crucial pour la nation et le continent africain. En tant que \"Message d'Espoir\", ce voyage cherche à renforcer les liens de foi et à fournir un guide spirituel dans un monde en rapide évolution.",
+      "unity": "Unité & Harmonie",
+      "unityDescription": "Pour les Camerounais, la présence du Saint Père est un témoignage du riche patrimoine catholique du pays et de son rôle de phare d'harmonie religieuse. Cette visite transcende les frontières religieuses, offrant un appel à la paix, à la réconciliation et à la justice sociale dans toute la région.",
+      "community": "Engagement Communautaire",
+      "communityDescription": "Tout au long de son séjour, le Pape s'engagera avec des communautés diverses, soulignant l'importance de l'autonomisation des jeunes, de la gestion environnementale et de la préservation de la dignité culturelle.",
+      "legacy": "Héritage Durable",
+      "legacyDescription": "Ses paroles devraient résonner profondément dans les cœurs de millions, inspirant un engagement renouvelé pour le bien commun et l'élévation spirituelle de tous les Africains. Ce pèlerinage n'est pas seulement une visite, mais une rencontre spirituelle transformatrice qui nous unit dans une vision partagée de fraternité et de compassion.",
+      "cta": "Rejoignez-nous en cette occasion mémorable",
+      "tagline": "Ensemble dans la foi, unis dans l'espérance"
+    },
+    "catholicChurch": {
+      "title": "Découvrez l'Église Catholique au Cameroun",
+      "subtitle": "UN SIÈCLE DE FOI ET DE MISSION",
+      "description": "Découvrez la riche tapisserie de la tradition catholique tissée au cœur de la culture camerounaise, où la foi rencontre le patrimoine dans une célébration de la dévotion spirituelle et du service communautaire.",
+      "richHeritage": "Riche Patrimoine",
+      "richDescription": "Des premiers missionnaires aux paroisses locales vibrantes d'aujourd'hui, l'Église au Cameroun est devenue une pierre angulaire de l'identité nationale et de la vie spirituelle.",
+      "healing": "Mission de Guérison",
+      "healingDescription": "L'Église exploite des centaines d'écoles, d'hôpitaux et de cliniques, servant les populations les plus vulnérables avec compassion et dignité dans tout le pays.",
+      "cultural": "Unité Culturelle",
+      "culturalDescription": "Intégrant diverses traditions camerounaises avec les rites catholiques universels, l'Église se dresse comme un modèle d'harmonie culturelle et de réconciliation nationale.",
+      "stats": {
+        "years": "100+ Ans de Foi",
+        "parishes": "500+ Paroisses",
+        "faithful": "1M+ Fidèles",
+        "schools": "200+ Écoles & Hôpitaux"
+      },
+      "cta": "Explorez Notre Communauté de Foi",
+      "tagline": "Rejoignez-nous pour célébrer un siècle de croissance spirituelle et de service communautaire"
     }
   }
 }
