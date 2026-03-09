@@ -93,7 +93,7 @@ export default function HeroSection() {
                     <div key={index} className="text-center group">
                       <div className="relative">
                         <div className="absolute inset-0 bg-linear-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-8 min-h-16 md:min-h-28 min-w-20 md:min-w-28 flex justify-center items-center border border-yellow-200">
+                        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-8 min-h-15 max-md:min-w-15 md:min-h-28 min-w-20 md:min-w-28 flex justify-center items-center border border-yellow-200">
                           <div className="text-2xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-br from-yellow-600 to-yellow-800 font-sans">
                             {String(item.value).padStart(2, '0')}
                           </div>
