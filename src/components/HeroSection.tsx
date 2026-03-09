@@ -1,120 +1,50 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
-interface CountdownTime {
-  days: number
-  hours: number
-  minutes: number
-  seconds: number
-}
-
 export default function HeroSection() {
   const t = useTranslations('hero')
-  const [countdown, setCountdown] = useState<CountdownTime>({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  })
 
-  // Calculate next Friday at 12:00 PM (noon)
-  const getNextFridayNoon = () => {
-    const now = new Date()
-    const friday = 5 // Friday is day 5 (0 = Sunday, 1 = Monday, ...)
-    const daysUntilFriday = (friday - now.getDay() + 7) % 7 || 7 // If today is Friday, get next Friday
-    
-    const nextFriday = new Date(now)
-    nextFriday.setDate(now.getDate() + daysUntilFriday)
-    nextFriday.setHours(12, 0, 0, 0) // Set to 12:00 PM (noon)
-    nextFriday.setMilliseconds(0)
-    
-    return nextFriday.getTime()
-  }
-
-  const targetDate = getNextFridayNoon()
-  const [isCountdownActive, setIsCountdownActive] = useState(true)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = new Date().getTime()
-      const distance = targetDate - now
-
-      if (distance > 0) {
-        setCountdown({
-          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((distance % (1000 * 60)) / 1000)
-        })
-        setIsCountdownActive(true)
-      } else {
-        // Countdown finished - stop at zeros
-        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 })
-        setIsCountdownActive(false)
-        clearInterval(interval)
-      }
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [targetDate])
 
   return (
     <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1615732224643-b000ac40c8b6?q=80&w=2226&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat"></div>
-      
-      {/* Dark Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      {/* Gradient Overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-transparent to-gray-900/30"></div>
+      <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center bg-no-repeat"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Banner */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-sans drop-shadow-lg">
-            {t('welcome')}
+        <div className="text-left mb-16 max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-heading drop-shadow-lg">
+            Welcome Pope Leo XIV to Cameroon
           </h1>
-          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto drop-shadow-md">
-            {t('subtitle')}
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
+            A historic visit of faith, peace and unity to the heart of Africa.
           </p>
           
           {/* Countdown Timer */}
           <div className="mb-12">
-            {isCountdownActive ? (
-              <div className="flex justify-center gap-4 md:gap-8">
-                {[
-                  { value: countdown.days, label: t('countdown.days') },
-                  { value: countdown.hours, label: t('countdown.hours') },
-                  { value: countdown.minutes, label: t('countdown.minutes') },
-                  { value: countdown.seconds, label: t('countdown.seconds') }
-                ].map((item, index) => (
-                  <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
-                      <div className="text-3xl md:text-4xl font-bold text-yellow-600 font-sans">
-                        {String(item.value).padStart(2, '0')}
-                      </div>
+            <div className="flex gap-4 md:gap-8">
+              {[
+                { value: '04', label: 'Days' },
+                { value: '06', label: 'Hours' },
+                { value: '11', label: 'Minutes' },
+                { value: '20', label: 'Seconds' }
+              ].map((item, index) => (
+                <div key={index} className="text-center">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
+                    <div className="text-3xl md:text-4xl font-bold text-yellow-600 font-sans">
+                      {item.value}
                     </div>
-                    <div className="text-sm text-gray-200 mt-2">{item.label}</div>
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center">
-                <div className="bg-yellow-500 text-gray-900 rounded-lg shadow-lg p-6 md:p-8 max-w-md mx-auto">
-                  <div className="text-2xl md:text-3xl font-bold font-sans">
-                    {t('countdown.eventLive')}
-                  </div>
+                  <div className="text-sm text-gray-200 mt-2">{item.label}</div>
                 </div>
-              </div>
-            )}
+              ))}
+            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Button size="lg" className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 px-8 py-3">
               {t('cta.primary')}
               <ArrowRight className="ml-2 h-5 w-5" />
