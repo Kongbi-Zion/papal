@@ -81,7 +81,7 @@ export default function HeroSection() {
           {/* Countdown Timer */}
           <div className="mb-12">
             {isCountdownActive ? (
-              <div className="flex gap-4 md:gap-8">
+              <div className="flex gap-2 md:gap-8">
                 {[
                   { value: countdown.days, label: 'Days' },
                   { value: countdown.hours, label: 'Hours' },
@@ -89,12 +89,12 @@ export default function HeroSection() {
                   { value: countdown.seconds, label: 'Seconds' }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
-                      <div className="text-3xl md:text-4xl font-bold text-yellow-600 font-sans">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 md:p-6 min-w-15 md:min-w-[100px]">
+                      <div className="text-xl md:text-4xl font-bold text-yellow-600 font-sans">
                         {String(item.value).padStart(2, '0')}
                       </div>
                     </div>
-                    <div className="text-sm text-gray-200 mt-2">{item.label}</div>
+                    <div className="text-xs md:text-sm text-gray-200 mt-1 md:mt-2">{item.label}</div>
                   </div>
                 ))}
               </div>
