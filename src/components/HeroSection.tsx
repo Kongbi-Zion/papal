@@ -1,11 +1,66 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
+interface CountdownTime {
+  days: number
+  hours: number
+  minutes: number
+  seconds: number
+}
+
 export default function HeroSection() {
   const t = useTranslations('hero')
+  const [countdown, setCountdown] = useState<CountdownTime>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  })
+
+  // Calculate next Friday at 12:00 PM (noon)
+  const getNextFridayNoon = () => {
+    const now = new Date()
+    const friday = 5 // Friday is day 5 (0 = Sunday, 1 = Monday, ...)
+    const daysUntilFriday = (friday - now.getDay() + 7) % 7 || 7 // If today is Friday, get next Friday
+    
+    const nextFriday = new Date(now)
+    nextFriday.setDate(now.getDate() + daysUntilFriday)
+    nextFriday.setHours(12, 0, 0, 0) // Set to 12:00 PM (noon)
+    nextFriday.setMilliseconds(0)
+    
+    return nextFriday.getTime()
+  }
+
+  const targetDate = getNextFridayNoon()
+  const [isCountdownActive, setIsCountdownActive] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date().getTime()
+      const distance = targetDate - now
+
+      if (distance > 0) {
+        setCountdown({
+          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((distance % (1000 * 60)) / 1000)
+        })
+        setIsCountdownActive(true)
+      } else {
+        // Countdown finished - stop at zeros
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+        setIsCountdownActive(false)
+        clearInterval(interval)
+      }
+    }, 1000)
+
+    return () => clearInterval(interval)
+  }, [targetDate])
 
 
   return (
@@ -15,8 +70,8 @@ export default function HeroSection() {
       
       <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
         {/* Hero Banner */}
-        <div className="text-left mb-16 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-normal text-white mb-6 font-sans drop-shadow-lg">
+        <div className="text-left mb-16 max-w-4xl max-md:pl-4">
+          <h1 className="text-4xl md:text-7xl max-md:pt-5 font-normal text-white mb-6 font-sans drop-shadow-lg">
             Welcome Pope Leo XIV to Cameroon
           </h1>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
@@ -25,23 +80,33 @@ export default function HeroSection() {
           
           {/* Countdown Timer */}
           <div className="mb-12">
-            <div className="flex gap-4 md:gap-8">
-              {[
-                { value: '04', label: 'Days' },
-                { value: '06', label: 'Hours' },
-                { value: '11', label: 'Minutes' },
-                { value: '20', label: 'Seconds' }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
-                    <div className="text-3xl md:text-4xl font-bold text-yellow-600 font-sans">
-                      {item.value}
+            {isCountdownActive ? (
+              <div className="flex gap-4 md:gap-8">
+                {[
+                  { value: countdown.days, label: 'Days' },
+                  { value: countdown.hours, label: 'Hours' },
+                  { value: countdown.minutes, label: 'Minutes' },
+                  { value: countdown.seconds, label: 'Seconds' }
+                ].map((item, index) => (
+                  <div key={index} className="text-center">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
+                      <div className="text-3xl md:text-4xl font-bold text-yellow-600 font-sans">
+                        {String(item.value).padStart(2, '0')}
+                      </div>
                     </div>
+                    <div className="text-sm text-gray-200 mt-2">{item.label}</div>
                   </div>
-                  <div className="text-sm text-gray-200 mt-2">{item.label}</div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center">
+                <div className="bg-yellow-500 text-gray-900 rounded-lg shadow-lg p-6 md:p-8 max-w-md mx-auto">
+                  <div className="text-2xl md:text-3xl font-bold font-sans">
+                    {t('countdown.eventLive')}
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
