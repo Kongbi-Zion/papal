@@ -70,7 +70,7 @@ export default function HeroSection() {
       
       <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
         {/* Hero Banner */}
-        <div className="text-left mb-16 max-w-4xl max-md:pl-4">
+        <div className="text-left mb-16 max-w-4xl max-md:pl-2">
           <h1 className="text-4xl md:text-7xl max-md:pt-5 font-normal text-white mb-6 font-sans drop-shadow-lg">
             Welcome Pope Leo XIV to Cameroon
           </h1>
