@@ -1,6 +1,7 @@
 import {setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import HeroSection from '@/components/HeroSection';
+import MessageOfHope from '@/components/MessageOfHope';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -16,5 +17,10 @@ export default async function Home({params}: Props) {
   // Enable static rendering
   setRequestLocale(locale);
   
-  return <HeroSection />;
+  return (
+    <>
+      <HeroSection />
+      <MessageOfHope />
+    </>
+  );
 }

@@ -92,9 +92,9 @@ export default function HeroSection() {
                   ].map((item, index) => (
                     <div key={index} className="text-center group">
                       <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
-                        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-8 min-h-20 md:min-h-28 min-w-20 md:min-w-28 flex justify-center items-center border border-yellow-200">
-                          <div className="text-2xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-600 to-yellow-800 font-sans">
+                        <div className="absolute inset-0 bg-linear-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-8 min-h-16 md:min-h-28 min-w-20 md:min-w-28 flex justify-center items-center border border-yellow-200">
+                          <div className="text-2xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-br from-yellow-600 to-yellow-800 font-sans">
                             {String(item.value).padStart(2, '0')}
                           </div>
                         </div>
@@ -106,8 +106,8 @@ export default function HeroSection() {
               ) : (
                 <div className="text-center">
                   <div className="relative inline-block">
-                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1"></div>
-                    <div className="relative bg-gradient-to-br from-yellow-500 to-yellow-600 text-gray-900 rounded-lg shadow-xl p-8 md:p-12 max-w-md mx-auto border border-yellow-300">
+                    <div className="absolute inset-0 bg-linear-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1"></div>
+                    <div className="relative bg-linear-to-br from-yellow-500 to-yellow-600 text-gray-900 rounded-lg shadow-xl p-8 md:p-12 max-w-md mx-auto border border-yellow-300">
                       <div className="text-3xl md:text-4xl font-bold font-sans">
                         {t('countdown.eventLive')}
                       </div>
@@ -130,22 +130,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Message of Hope Section */}
-      <div className="relative bg-white py-16 px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center font-sans">
-            A Message of Hope
-          </h2>
-          <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed space-y-4">
-            <p>
-              The historic visit of His Holiness Pope Leo XIV to Cameroon marks a pivotal moment for both the nation and the African continent. As a "Message of Hope," this journey seeks to strengthen the bonds of faith and provide spiritual guidance in a rapidly changing world. For Cameroonians, the presence of the Holy Father is a testament to the country's vibrant Catholic heritage and its role as a beacon of religious harmony. This visit transcends religious boundaries, offering a call for peace, reconciliation, and social justice across the region.
-            </p>
-            <p>
-              Throughout his stay, the Pope will engage with diverse communities, emphasizing the importance of youth empowerment, environmental stewardship, and the preservation of cultural dignity. His words are expected to resonate deeply within the hearts of millions, inspiring a renewed commitment to the common good and the spiritual upliftment of all Africans. As the local Church prepares to welcome the Successor of Peter, the air is filled with anticipation and prayer, reflecting the profound impact this apostolic journey will have on the spiritual landscape of Cameroon and the entire continent of Africa for generations to come. This pilgrimage is not just a visit, but a transformative spiritual encounter that unites us in a shared vision of brotherhood and compassion.
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
+      </>
   )
 }
