@@ -64,62 +64,88 @@ export default function HeroSection() {
 
 
   return (
-    <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
-      
-      <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
-        {/* Hero Banner */}
-        <div className="text-left mb-16 max-w-4xl max-md:pl-2">
-          <h1 className="text-4xl md:text-7xl max-md:pt-16 font-normal text-white mb-6 font-sans drop-shadow-lg">
-            {t('welcome')}
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
-            {t('subtitle')}
-          </p>
-          
-          {/* Countdown Timer */}
-          <div className="mb-12">
-            {isCountdownActive ? (
-              <div className="flex gap-2 md:gap-8">
-                {[
-                  { value: countdown.days, label: t('countdown.days') },
-                  { value: countdown.hours, label: t('countdown.hours') },
-                  { value: countdown.minutes, label: t('countdown.minutes') },
-                  { value: countdown.seconds, label: t('countdown.seconds') }
-                ].map((item, index) => (
-                  <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 flex justify-center items-center md:p-6 min-h-15 md:min-h-25 min-w-15 md:min-w-25">
-                      <div className="text-xl md:text-4xl font-bold text-yellow-600 font-sans">
-                        {String(item.value).padStart(2, '0')}
+    <>
+      {/* Hero Section */}
+      <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
+        
+        <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
+          {/* Hero Banner */}
+          <div className="text-left mb-16 max-w-4xl max-md:pl-2">
+            <h1 className="text-4xl md:text-7xl max-md:pt-16 font-normal text-white mb-6 font-sans drop-shadow-lg">
+              {t('welcome')}
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
+              {t('subtitle')}
+            </p>
+            
+            {/* Countdown Timer */}
+            <div className="mb-12">
+              {isCountdownActive ? (
+                <div className="flex justify-start gap-4 md:gap-8">
+                  {[
+                    { value: countdown.days, label: t('countdown.days') },
+                    { value: countdown.hours, label: t('countdown.hours') },
+                    { value: countdown.minutes, label: t('countdown.minutes') },
+                    { value: countdown.seconds, label: t('countdown.seconds') }
+                  ].map((item, index) => (
+                    <div key={index} className="text-center group">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+                        <div className="relative bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-8 min-h-20 md:min-h-28 min-w-20 md:min-w-28 flex justify-center items-center border border-yellow-200">
+                          <div className="text-2xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-yellow-600 to-yellow-800 font-sans">
+                            {String(item.value).padStart(2, '0')}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-sm md:text-base font-medium text-white/90 mt-3 md:mt-4 uppercase tracking-wider drop-shadow">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center">
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg transform rotate-1"></div>
+                    <div className="relative bg-gradient-to-br from-yellow-500 to-yellow-600 text-gray-900 rounded-lg shadow-xl p-8 md:p-12 max-w-md mx-auto border border-yellow-300">
+                      <div className="text-3xl md:text-4xl font-bold font-sans">
+                        {t('countdown.eventLive')}
                       </div>
                     </div>
-                    <div className="text-xs md:text-sm text-yell-500 mt-1 md:mt-2">{item.label}</div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center">
-                <div className="bg-yellow-500 text-gray-900 rounded-lg shadow-lg p-6 md:p-8 max-w-md mx-auto">
-                  <div className="text-2xl md:text-3xl font-bold font-sans">
-                    {t('countdown.eventLive')}
                   </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <Button size="lg" className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 px-8 py-3">
-              {t('cta.primary')}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-gray-300 hover:border-yellow-500 px-8 py-3">
-              {t('cta.secondary')}
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+              <Button size="lg" className="bg-yellow-500 text-gray-900 hover:bg-yellow-400 px-8 py-3">
+                {t('cta.primary')}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-gray-300 hover:border-yellow-500 px-8 py-3">
+                {t('cta.secondary')}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Message of Hope Section */}
+      <div className="relative bg-white py-16 px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center font-sans">
+            A Message of Hope
+          </h2>
+          <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed space-y-4">
+            <p>
+              The historic visit of His Holiness Pope Leo XIV to Cameroon marks a pivotal moment for both the nation and the African continent. As a "Message of Hope," this journey seeks to strengthen the bonds of faith and provide spiritual guidance in a rapidly changing world. For Cameroonians, the presence of the Holy Father is a testament to the country's vibrant Catholic heritage and its role as a beacon of religious harmony. This visit transcends religious boundaries, offering a call for peace, reconciliation, and social justice across the region.
+            </p>
+            <p>
+              Throughout his stay, the Pope will engage with diverse communities, emphasizing the importance of youth empowerment, environmental stewardship, and the preservation of cultural dignity. His words are expected to resonate deeply within the hearts of millions, inspiring a renewed commitment to the common good and the spiritual upliftment of all Africans. As the local Church prepares to welcome the Successor of Peter, the air is filled with anticipation and prayer, reflecting the profound impact this apostolic journey will have on the spiritual landscape of Cameroon and the entire continent of Africa for generations to come. This pilgrimage is not just a visit, but a transformative spiritual encounter that unites us in a shared vision of brotherhood and compassion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
