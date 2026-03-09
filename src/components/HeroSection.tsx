@@ -72,10 +72,10 @@ export default function HeroSection() {
         {/* Hero Banner */}
         <div className="text-left mb-16 max-w-4xl max-md:pl-2">
           <h1 className="text-4xl md:text-7xl max-md:pt-5 font-normal text-white mb-6 font-sans drop-shadow-lg">
-            Welcome Pope Leo XIV to Cameroon
+            {t('welcome')}
           </h1>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
-            A historic visit of faith, peace and unity to the heart of Africa.
+            {t('subtitle')}
           </p>
           
           {/* Countdown Timer */}
@@ -83,10 +83,10 @@ export default function HeroSection() {
             {isCountdownActive ? (
               <div className="flex gap-2 md:gap-8">
                 {[
-                  { value: countdown.days, label: 'Days' },
-                  { value: countdown.hours, label: 'Hours' },
-                  { value: countdown.minutes, label: 'Minutes' },
-                  { value: countdown.seconds, label: 'Seconds' }
+                  { value: countdown.days, label: t('countdown.days') },
+                  { value: countdown.hours, label: t('countdown.hours') },
+                  { value: countdown.minutes, label: t('countdown.minutes') },
+                  { value: countdown.seconds, label: t('countdown.seconds') }
                 ].map((item, index) => (
                   <div key={index} className="text-center">
                     <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2 md:p-6 min-w-15 md:min-w-[100px]">
