@@ -11,12 +11,12 @@ export default function HeroSection() {
   return (
     <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center bg-no-repeat"></div>
+      <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
         {/* Hero Banner */}
         <div className="text-left mb-16 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-heading drop-shadow-lg">
+          <h1 className="text-5xl md:text-7xl font-normal text-white mb-6 font-sans drop-shadow-lg">
             Welcome Pope Leo XIV to Cameroon
           </h1>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl drop-shadow-md">
