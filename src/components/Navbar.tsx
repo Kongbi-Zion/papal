@@ -18,16 +18,16 @@ export default function Navbar() {
   return (
     <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 mx-4 max-w-[calc(100vw-2rem)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 bg-white/95 backdrop-blur-sm rounded-lg px-6">
+        <div className="flex justify-between h-auto bg-white/95 backdrop-blur-sm rounded-lg px-6 py-4">
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
               <div className="flex items-center space-x-3">
                 <Image 
                   src={logoSrc} 
                   alt={tCommon('logoAlt')} 
-                  width={60} 
-                  height={60}
-                  className="rounded-full object-cover"
+                  width={100} 
+                  height={100}
+                  className="rounded-full object-cover w-20 h-20 lg:w-32 lg:h-32"
                   priority
                 />
               </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden lg:flex items-center space-x-2">
             <Link href={`/${locale}`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               Home
             </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-yellow-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
@@ -95,8 +95,11 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        <div className="lg:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t transform transition-all duration-300 ease-in-out"
+               style={{
+                 transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'
+               }}>
             <Link href={`/${locale}`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
               Home
             </Link>

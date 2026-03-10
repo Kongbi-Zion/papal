@@ -3,7 +3,6 @@
 import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { Globe } from 'lucide-react'
 
 export default function LanguageSwitcher() {
   const locale = useLocale()
@@ -16,15 +15,24 @@ export default function LanguageSwitcher() {
     router.push(newPath)
   }
 
+  const getFlag = (locale: string) => {
+    switch(locale) {
+      case 'en':
+        return '🇺🇸'
+      case 'fr':
+        return '🇫🇷'
+      default:
+        return '🌐'
+    }
+  }
+
   return (
-    <Button
-      variant="outline"
-      size="sm"
+    <div 
       onClick={toggleLanguage}
-      className="flex items-center gap-2 border-gray-300 hover:border-yellow-500 hover:bg-yellow-50"
+      className="cursor-pointer text-4xl"
+      title={locale === 'en' ? 'Switch to French' : 'Switch to English'}
     >
-      <Globe className="h-4 w-4" />
-      {locale === 'en' ? 'FR' : 'EN'}
-    </Button>
+      {getFlag(locale)}
+    </div>
   )
 }
