@@ -115,30 +115,30 @@ export default function HeroSection() {
 
           {/* Hero Banner */}
           <div className="text-left mb-16 max-w-3xl">
-            <h1 className="text-4xl md:text-7xl max-md:pt-16 font-normal text-white mb-6 font-sans drop-shadow-lg">
-              Pope Leo XIV Visits Cameroon 
+            <h1 className="text-4xl md:text-7xl font-crimson-text max-md:pt-16 font-normal text-white mb-6 font-sans drop-shadow-lg">
+              {t('title')}
             </h1>
 
             <div className="text-xl md:text-2xl text-gray-100 mb-6 max-w-3xl drop-shadow-md italic">
-              &ldquo;May they all be One&rdquo;
+              &ldquo;{t('quote')}&rdquo;
             </div>
             
             <div className="text-lg md:text-xl text-gray-100 mb-4 max-w-3xl drop-shadow-md">
-              – John 17:21
+              – {t('reference')}
             </div>
 
             <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-4xl drop-shadow-md leading-relaxed">
-              Cameroon welcomes Pope Leo XIV on a historic Apostolic Visit from April 15–18, 2026. This momentous pilgrimage invites all Catholics across the country to come together in prayer, reflection, and celebration, as the Holy Father shares his message of peace, hope, and spiritual renewal.
+              {t('firstParagraph')}
             </p>
 
             <p className="text-xl md:text-2xl text-gray-100 mb-12 max-w-4xl drop-shadow-md leading-relaxed">
-              Experience the joy of faith as communities across Cameroon gather to celebrate their Catholic heritage, strengthen unity, and embrace the teachings of the universal Church. Join this extraordinary journey and be part of a historic encounter that will inspire generations.
+              {t('secondParagraph')}
             </p>
 
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
               <Button size="lg" className="text-white hover:opacity-90 px-10 py-7 font-serif font-bold text-lg" style={{backgroundColor: '#017a5e', fontFamily: 'Crimson Text, serif'}}>
-                Learn About the Journey
+                {t('ctaButton')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>

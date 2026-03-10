@@ -13,8 +13,12 @@
     "logoAlt": "Pope Leo XIV Logo"
   },
   "hero": {
-    "welcome": "Welcome Pope Leo XIV to Cameroon",
-    "subtitle": "A historic visit of faith, peace and unity to the heart of Africa.",
+    "title": "Pope Leo XIV Visits Cameroon",
+    "quote": "May they all be One",
+    "reference": "John 17:21",
+    "firstParagraph": "Cameroon welcomes Pope Leo XIV on a historic Apostolic Visit from April 15–18, 2026. This momentous pilgrimage invites all Catholics across the country to come together in prayer, reflection, and celebration, as the Holy Father shares his message of peace, hope, and spiritual renewal.",
+    "secondParagraph": "Experience the joy of faith as communities across Cameroon gather to celebrate their Catholic heritage, strengthen unity, and embrace the teachings of the universal Church. Join this extraordinary journey and be part of a historic encounter that will inspire generations.",
+    "ctaButton": "Learn About the Journey",
     "countdown": {
       "completed": "The historic moment has arrived!",
       "eventLive": "The Event is Now Live!",

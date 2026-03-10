@@ -13,8 +13,12 @@
     "logoAlt": "Logo du Pape Léon XIV"
   },
   "hero": {
-    "welcome": "Bienvenue au Pape Léon XIV au Cameroun",
-    "subtitle": "Une visite historique de foi, de paix et d'unité au cœur de l'Afrique.",
+    "title": "La Visite du Pape Léon XIV au Cameroun",
+    "quote": "Que tous soient un",
+    "reference": "Jean 17:21",
+    "firstParagraph": "Le Cameroun accueille le Pape Léon XIV pour une visite apostolique historique du 15 au 18 avril 2026. Ce pèlerinage exceptionnel invite tous les catholiques du pays à se rassembler dans la prière, la réflexion et la célébration, alors que le Saint Père partage son message de paix, d'espérance et de renouveau spirituel.",
+    "secondParagraph": "Expérimentez la joie de la foi alors que les communautés du Cameroun se rassemblent pour célébrer leur héritage catholique, renforcer l'unité et embrasser les enseignements de l'Église universelle. Rejoignez ce voyage extraordinaire et soyez partie d'une rencontre historique qui inspirera les générations.",
+    "ctaButton": "Découvrir le Voyage",
     "countdown": {
       "completed": "Le moment historique est arrivé!",
       "eventLive": "L'Événement est en Direct!",
