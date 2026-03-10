@@ -45,9 +45,7 @@ export default function Navbar() {
             <Link href={`/${locale}/services`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               Apostolic Journey
             </Link>
-            <Link href={`/${locale}/contact`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Contact
-            </Link>
+          
             <Link href={`/${locale}/news`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               News & Updates
             </Link>
@@ -56,6 +54,9 @@ export default function Navbar() {
             </Link>
             <Link href={`/${locale}/pilgrim`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
               Pilgrim Info
+            </Link>
+              <Link href={`/${locale}/contact`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+              Contact
             </Link>
             <LanguageSwitcher />
           </div>
