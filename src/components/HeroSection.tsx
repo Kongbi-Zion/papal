@@ -68,7 +68,7 @@ export default function HeroSection() {
       {/* Hero Section */}
       <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[url('https://www.papalvisit.ca/wp-content/uploads/2022/05/PopeExtendedBIG-lightermobile.jpg')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
+        <div className="absolute inset-0 bg-[url('https://237papaleoxiv.com/wp-content/uploads/2026/03/Home-hero.webp')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
         
         <div className="relative z-10 w-full max-w-7xl px-6 lg:px-8 py-20">
           {/* Hero Banner */}
