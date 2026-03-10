@@ -1,6 +1,7 @@
-import { Geist } from "next/font/google";
+import { Crimson_Text, Open_Sans } from "next/font/google";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const crimsonText = Crimson_Text({subsets:['latin'],variable:'--font-crimson-text',weight:['400','600','700']});
+const openSans = Open_Sans({subsets:['latin'],variable:'--font-open-sans',weight:['300','400','500','600','700']});
 
 
 export default function RootLayout({
