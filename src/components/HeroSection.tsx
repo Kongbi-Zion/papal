@@ -65,7 +65,7 @@ export default function HeroSection() {
   return (
     <>
       {/* Floating Timer Section */}
-      <div className="fixed bottom-4 right-4 z-50 bg-[linear-gradient(91deg,rgba(250,204,21,0.8)_38%,rgba(245,158,11,0.8)_89%)] backdrop-blur-xl text-gray-900 rounded-lg shadow-2xl p-6 max-w-sm border border-white/20">
+      <div className="fixed bottom-4 hidden right-4 z-50 bg-[linear-gradient(91deg,rgba(250,204,21,0.8)_38%,rgba(245,158,11,0.8)_89%)] backdrop-blur-xl text-gray-900 rounded-lg shadow-2xl p-6 max-w-sm border border-white/20">
         <div className="text-center">
           <div className="text-lg font-bold mb-3 font-sans text-white">
             Pope Leo XIV&apos;s Arrival
