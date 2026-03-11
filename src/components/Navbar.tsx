@@ -79,6 +79,9 @@ export default function Navbar() {
             <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`)}>
               {t('pilgrim')}
             </Link>
+            <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`)}>
+              {t('accreditations')}
+            </Link>
               <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`)}>
               {t('contact')}
             </Link>
@@ -145,6 +148,9 @@ export default function Navbar() {
             </Link>
             <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`, true)}>
               {t('pilgrim')}
+            </Link>
+            <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`, true)}>
+              {t('accreditations')}
             </Link>
             <div className="px-3 py-2">
               <LanguageSwitcher />

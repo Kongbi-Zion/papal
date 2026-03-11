@@ -10,6 +10,7 @@
     "news": "News & Updates",
     "resources": "Spiritual Resources",
     "pilgrim": "Pilgrim Info",
+    "accreditations": "Accreditations",
     "contact": "Contact",
     "donate": "Donate"
   },
@@ -118,14 +119,23 @@
     },
     "viewAllNews": "View All News"
   },
+  "accreditations": {
+    "title": "Accreditations",
+    "intro1": "Journalists, media professionals, and communication teams wishing to cover the visit of Pope Leo XIV to Cameroon are required to obtain official accreditation.",
+    "intro2": "All applicants are kindly requested to complete the accreditation form and submit the required documents within the indicated timeframe. This process ensures proper coordination, security arrangements, and access to designated media areas during the papal events.",
+    "downloadTitle": "📄 Download the Accreditation Form:",
+    "downloadText": "Download the Accreditation Form",
+    "instructions": "Applicants should carefully read the instructions on the form and provide all required supporting documents before submission.",
+    "downloadButton": "Download Form"
+  },
   "photoGallery": {
-    "title": "Photo Gallery",
-    "subtitle": "Images from recent papal activities and preparations",
+    "title": "Photo and Video Gallery",
     "videoTitle": "Papal Visit Preparations",
     "videoDescription": "Behind the scenes of the upcoming historic journey",
     "imageTitle": "Recent Activities",
     "imageDescription": "Moments from the papal ministry",
-    "viewGalleries": "View Galleries"
+    "viewVideos": "Video Gallery",
+    "viewImages": "Image Gallery"
   },
   "holyFather": {
     "biographyTitle": "Biography Pope Leo XIV",
@@ -153,7 +163,7 @@
   },
   "stayConnected": {
     "title": "Stay Connected",
-    "subtitle": "Follow us on social media for updates, news, and spiritual reflections on Pope Leo XIV’s Apostolic Journey to Africa.",
+    "subtitle": "Follow us on social media for updates, news, and spiritual reflections on Pope Leo XIV's Apostolic Journey to Africa.",
     "facebook": {
       "title": "Facebook",
       "description": "Latest news and updates",
@@ -168,6 +178,11 @@
       "title": "Instagram",
       "description": "Visual stories and daily inspiration",
       "follow": "Follow on Instagram"
+    },
+    "tiktok": {
+      "title": "TikTok",
+      "description": "Short videos and viral moments",
+      "follow": "Follow on TikTok"
     },
     "newsletter": {
       "title": "Newsletter",

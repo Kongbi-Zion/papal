@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations, useLocale } from 'next-intl'
-import { Facebook, Twitter, Instagram } from 'lucide-react'
+import { Facebook, Twitter, Instagram, Music } from 'lucide-react'
 import Link from 'next/link'
 
 export default function StayConnected() {
@@ -12,17 +12,22 @@ export default function StayConnected() {
     {
       key: 'facebook',
       icon: Facebook,
-      url: 'https://facebook.com/vatican',
+      url: 'https://facebook.com/237papaleoxiv',
     },
     {
       key: 'twitter',
       icon: Twitter,
-      url: 'https://twitter.com/pontifex',
+      url: 'https://twitter.com/237papaleoxiv',
     },
     {
       key: 'instagram',
       icon: Instagram,
-      url: 'https://instagram.com/vatican',
+      url: 'https://instagram.com/237papaleoxiv',
+    },
+    {
+      key: 'tiktok',
+      icon: Music,
+      url: 'https://tiktok.com/@237papaleoxiv',
     },
   ]
 
@@ -42,7 +47,7 @@ export default function StayConnected() {
         </div>
 
         {/* Social Media Links */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center max-w-6xl mx-auto">
           {socials.map((social) => {
             const Icon = social.icon
 

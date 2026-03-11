@@ -5,11 +5,12 @@
   "navigation": {
     "home": "Accueil",
     "about": "À propos",
-    "holyFather": "Le Saint Père",
+    "holyFather": "Le Saint-Père",
     "popeSchedule": "Programme du Pape",
-    "news": "Nouvelles & Mises à Jour",
+    "news": "Actualités",
     "resources": "Ressources Spirituelles",
-    "pilgrim": "Info Pèlerin",
+    "pilgrim": "Info Pèlerins",
+    "accreditations": "Accréditations",
     "contact": "Contact",
     "donate": "Faire un don"
   },
@@ -119,13 +120,13 @@
     "viewAllNews": "Voir Toutes les Nouvelles"
   },
   "photoGallery": {
-    "title": "Galerie Photo",
-    "subtitle": "Images des activités papales récentes et des préparatifs",
+    "title": "Galerie Photo et Vidéo",
     "videoTitle": "Préparatifs de la Visite Papale",
     "videoDescription": "Coulisses du prochain voyage historique",
     "imageTitle": "Activités Récentes",
     "imageDescription": "Moments du ministère papal",
-    "viewGalleries": "Voir les Galeries"
+    "viewVideos": "Galerie Vidéo",
+    "viewImages": "Galerie d'Images"
   },
   "holyFather": {
     "biographyTitle": "Biographie Pape Léon XIV",
@@ -150,31 +151,7 @@
       "title": "Signification Historique",
       "content": "(Abrégé de la Biographie www.vaticannews.va)"
     },
-    "stayConnected": {
-      "title": "Restez Connecté",
-      "subtitle": "Suivez-nous sur les réseaux sociaux pour les dernières mises à jour, actualités et réflexions spirituelles sur le Voyage Apostolique du Pape Léon XIV en Afrique.",
-      "facebook": {
-        "title": "Facebook",
-        "description": "Dernières nouvelles et mises à jour",
-        "follow": "Suivre sur Facebook"
-      },
-      "twitter": {
-        "title": "Twitter",
-        "description": "Mises à jour en temps réel et annonces",
-        "follow": "Suivre sur Twitter"
-      },
-      "instagram": {
-        "title": "Instagram",
-        "description": "Histoires visuelles et inspiration quotidienne",
-        "follow": "Suivre sur Instagram"
-      },
-      "newsletter": {
-        "title": "Newsletter",
-        "description": "Mises à jour hebdomadaires et contenu exclusif",
-        "subscribe": "S'abonner à la Newsletter"
-      },
-      "contactInfo": "Pour plus d'informations, visitez notre page de contact ou envoyez-nous un email à info@papalvisit.org"
-    },
+ 
     "newsUpdates": {
       "title": "Actualités et Mises à Jour",
       "subtitle": "Restez informé avec les dernières nouvelles, annonces et réflexions spirituelles du voyage apostolique du Pape Léon XIV",
@@ -288,5 +265,44 @@
       "reference": "Éphésiens 4:3–6",
       "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
     }
-  }
+  },
+   "accreditations": {
+    "title": "Accréditations",
+    "intro1": "Les journalistes, professionnels des médias et équipes de communication souhaitant couvrir la visite du Pape Léon XIV au Cameroun sont tenus d'obtenir une accréditation officielle.",
+    "intro2": "Tous les demandeurs sont priés de remplir le formulaire d'accréditation et de soumettre les documents requis dans les délais indiqués. Ce processus assure une coordination adéquate, des arrangements de sécurité et l'accès aux zones médias désignées lors des événements papaux.",
+    "downloadTitle": "📄 Télécharger le Formulaire d'Accréditation:",
+    "downloadText": "Télécharger le Formulaire d'Accréditation",
+    "instructions": "Les demandeurs devraient lire attentivement les instructions sur le formulaire et fournir tous les documents de soutien requis avant soumission.",
+    "downloadButton": "Télécharger le Formulaire"
+  },
+  "stayConnected": {
+      "title": "Restez Connectés",
+      "subtitle": "Suivez-nous sur les réseaux sociaux pour les mises à jour, les nouvelles et les réflexions spirituelles sur le Voyage Apostolique du Pape Léon XIV en Afrique.",
+      "facebook": {
+        "title": "Facebook",
+        "description": "Dernières nouvelles et mises à jour",
+        "follow": "Suivre sur Facebook"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "Mises à jour en temps réel et annonces",
+        "follow": "Suivre sur Twitter"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Histoires visuelles et inspiration quotidienne",
+        "follow": "Suivre sur Instagram"
+      },
+      "tiktok": {
+        "title": "TikTok",
+        "description": "Vidéos courtes et moments viraux",
+        "follow": "Suivre sur TikTok"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Mises à jour hebdomadaires et contenu exclusif",
+        "subscribe": "S'abonner à la Newsletter"
+      },
+      "contactInfo": "Pour plus d'informations, visitez notre page de contact ou envoyez-nous un email à info@papalvisit.org"
+    }
 }

@@ -1,8 +1,9 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { ArrowRight } from 'lucide-react'
+import { Play, Image } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function PhotoGallery() {
   const t = useTranslations('photoGallery')
@@ -16,9 +17,6 @@ export default function PhotoGallery() {
             {t('title')}
           </h2>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
-          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-            {t('subtitle')}
-          </p>
         </div>
 
         {/* Gallery Content */}
@@ -36,6 +34,16 @@ export default function PhotoGallery() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
+                
+                {/* Overlay Button */}
+                <div className="absolute bottom-4 right-4 flex items-center justify-center">
+                  <Link href="/videos">
+                    <Button size="lg" className="text-white hover:opacity-90 hover:cursor-pointer px-6 py-6 font-open-sans font-bold bg-secondary/90 backdrop-blur-sm shadow-lg">
+                      <Play className="mr-2 h-5 w-5" />
+                      {t('viewVideos')}
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -50,17 +58,19 @@ export default function PhotoGallery() {
                   alt={t('imageTitle')}
                   className="w-full h-full object-cover"
                 />
+                
+                {/* Overlay Button */}
+                <div className="absolute bottom-4 right-4 flex items-center justify-center">
+                  <Link href="/gallery">
+                    <Button size="lg" className="text-white hover:opacity-90 hover:cursor-pointer  px-6 py-6 font-open-sans font-bold bg-secondary/90 backdrop-blur-sm shadow-lg">
+                      <Image className="mr-2 h-5 w-5" />
+                      {t('viewImages')}
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* View Galleries Button */}
-        <div className="text-center mt-12">
-          <Button size="lg" className="text-white hover:opacity-90 px-10 py-7 font-open-sans font-bold text-lg bg-primary">
-            {t('viewGalleries')}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>
