@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 mx-4 max-w-[calc(100vw-2rem)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
         <div className="flex justify-between h-auto bg-white/95 backdrop-blur-sm rounded-lg px-6 py-4">
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
@@ -27,7 +27,7 @@ export default function Navbar() {
                   alt={tCommon('logoAlt')} 
                   width={100} 
                   height={100}
-                  className="rounded-full object-cover w-20 h-20 lg:w-32 lg:h-32"
+                  className="rounded-full object-cover w-30 h-30 lg:w-40 lg:h-40 xl:w-48 xl:h-48"
                   priority
                 />
               </div>

@@ -18,9 +18,9 @@ export default function LanguageSwitcher() {
   const getFlag = (locale: string) => {
     switch(locale) {
       case 'en':
-        return '🇺🇸'
+         return '🇫🇷'
       case 'fr':
-        return '🇫🇷'
+         return '🇺🇸'
       default:
         return '🌐'
     }
