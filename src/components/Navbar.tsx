@@ -137,6 +137,9 @@ export default function Navbar() {
             <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
               {t('presidentSpeech')}
             </Link>
+            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
+              {t('presidentSpeech')}
+            </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)}>
               {t('holyFather')}
             </Link>

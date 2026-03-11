@@ -14,7 +14,7 @@ export default function GalleryPage() {
   // Array of gallery images from public/image_gallery folder with categories
   const galleryImages = [
     { src: '/image_gallery/img1.jpeg', alt: 'Papal visit preparation', category: 'ceremony' },
-    { src: '/image_gallery/img2.jpeg', alt: 'Pope Leo XIV with faithful', category: 'papal' },
+    { src: '/image_gallery/img2.jpeg', alt: 'Pope Leo XIV with faithful', category: 'Pontifical moments' },
       { src: '/image_gallery/img5.jpeg', alt: 'Papal audience', category: 'papal' },
     { src: '/image_gallery/img6.jpeg', alt: 'Religious celebration', category: 'ceremony' },
     { src: '/image_gallery/img7.jpeg', alt: 'Cameroonian welcome', category: 'welcome' },

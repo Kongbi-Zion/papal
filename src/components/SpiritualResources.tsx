@@ -61,7 +61,16 @@ export default function SpiritualResources() {
       description: t('church.description'),
       icon: Home,
       color: 'bg-indigo-100 text-indigo-600'
-    }
+    },
+    // {
+    //   id: 7,
+    //   title: 'MAIN THEME ',
+    //   verse: t('church.verse'),
+    //   reference: '(John 17:21)',
+    //   description: t('church.description'),
+    //   icon: Home,
+    //   color: 'bg-indigo-100 text-indigo-600'
+    // }
   ]
 
   return (
@@ -76,12 +85,16 @@ export default function SpiritualResources() {
         </div>
 
         {/* Prayer for Apostolic Journey */}
-        <div className="bg-white rounded-2xl shadow-lg md:py-16 p-8 mb-16">
-          <div className="max-w-4xl mx-auto">
+
+        <div className='flex justify-center items-center'>
              <div className="md:w-20 md:h-20 h-16 w-16 rounded-full flex bg-green-100 text-green-600 items-center justify-center mx-auto mb-6">
             
             <svg xmlns="http://www.w3.org/2000/svg" className='w-8 md:w-10' viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="m17 9l-4.25 4.5h-.25l-1.5-6h-.5a3 3 0 0 0-3 3V17c5.5 0 9 2.5 9 3.5H7m6-10.882L15 7.5m-15 16h24m-12.445-18s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.145 1.25c-.325 1.219.961 2.61.961 2.61z"/></svg>
              </div>
+        </div>
+        <div className="bg-white hover:bg-blue-200 rounded-2xl shadow-lg md:py-16 p-8 mb-16">
+          <div className="max-w-4xl mx-auto">
+          
 
 
             {/* Logo and Title */}
@@ -146,7 +159,7 @@ export default function SpiritualResources() {
             return (
               <div
                 key={reference.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:bg-amber-400 hover:scale-105 hover:shadow-2xl hover:shadow-primary/25 transition-all duration-300"
               >
                 <div className="p-8">
                   {/* Icon */}
@@ -178,6 +191,10 @@ export default function SpiritualResources() {
             )
           })}
         </div>
+<div>
+  
+</div>
+
       </div>
     </div>
   )
