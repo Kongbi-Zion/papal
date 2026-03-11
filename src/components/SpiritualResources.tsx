@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Heart, Users, Globe, Shield, Home } from 'lucide-react'
+import Image from 'next/image'
 
 export default function SpiritualResources() {
   const t = useTranslations('spiritualResources')
@@ -74,8 +75,72 @@ export default function SpiritualResources() {
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full"></div>
         </div>
 
-        {/* Spiritual References Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Prayer for Apostolic Journey */}
+        <div className="bg-white rounded-2xl shadow-lg md:py-16 p-8 mb-16">
+          <div className="max-w-4xl mx-auto">
+             <div className="md:w-20 md:h-20 h-16 w-16 rounded-full flex bg-green-100 text-green-600 items-center justify-center mx-auto mb-6">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" className='w-8 md:w-10' viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="m17 9l-4.25 4.5h-.25l-1.5-6h-.5a3 3 0 0 0-3 3V17c5.5 0 9 2.5 9 3.5H7m6-10.882L15 7.5m-15 16h24m-12.445-18s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.145 1.25c-.325 1.219.961 2.61.961 2.61z"/></svg>
+             </div>
+
+
+            {/* Logo and Title */}
+            <div className="text-center mb-8">
+              <Image 
+                src="/spiritual_reference_logo2.png" 
+                alt="National Episcopal Conference of Cameroon Logo"
+                width={700}
+                height={700}
+                className="mx-auto mb-8"
+              />
+              <h2 className="text-3xl font-bold font-crimson-text mb-4 text-black underline">
+                PRAYER FOR THE APOSTOLIC JOURNEY OF POPE LEO XIV
+              </h2>
+            </div>
+
+            {/* Prayer Content */}
+            <div className="text-start space-y-4 mb-8">
+              <p className="text-lg leading-relaxed text-gray-800">
+                Lord our God, Father of all goodness, You who sent your Son Jesus Christ into the world to save us,
+              </p>
+              <p className="text-lg leading-relaxed text-gray-800">
+                We give you thanks for the Apostolic Journey of Pope Leo XIV to our land Cameroon.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-800">
+                Grant your servant strength and wisdom. 
+              </p>
+
+              <p className="text-lg leading-relaxed text-gray-800">
+               May his words, carried by the power of the Holy Spirit, flood our hearts and bring us the graces of reconciliation, justice, peace, and healing. Through our Lord Jesus Christ, may his Apostolic Journey:
+              </p>
+              
+              {/* Prayer Points */}
+              <div className="max-w-2xl mx-auto text-left">
+                <ul className="space-y-3">
+                  <li className="text-gray-700">• <span className="font-bold">Strengthen</span> the bonds of brotherhood between our cultures;</li>
+                  <li className="text-gray-700">• <span className="font-bold">Comfort</span> the afflicted and give hope to our youth;</li>
+                  <li className="text-gray-700">• <span className="font-bold">Strengthen</span> our faith, hope, and charity;</li>
+                  <li className="text-gray-700">• <span className="font-bold">Bear</span> fruits of conversion and national harmony.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Closing Prayer */}
+            <div className="text-start space-y-4">
+              <p className="text-lg leading-relaxed text-gray-800">
+                Holy Mary, Queen of the Apostles and Patroness of Cameroon, intercede for us.
+              </p>
+              <p className="text-lg text-gray-800">
+                Blessed is he who comes in the Name of the Lord!
+              </p>
+              <p className="text-lg text-gray-800">
+                Amen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {spiritualReferences.map((reference) => {
             const Icon = reference.icon
             return (
@@ -97,7 +162,7 @@ export default function SpiritualResources() {
                   {/* Verse */}
                   <div className="bg-gray-50 rounded-lg p-4 mb-4 text-center">
                     <p className="text-lg font-medium text-gray-900 italic">
-                      "{reference.verse}"
+                      &quot;{reference.verse}&quot;
                     </p>
                     <p className="text-sm text-gray-600 mt-2">
                       {reference.reference}

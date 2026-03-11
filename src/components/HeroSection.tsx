@@ -138,7 +138,8 @@ export default function HeroSection() {
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
               <Button size="lg" className="text-white hover:opacity-90 px-10 py-7 font-open-sans font-bold text-lg bg-primary">
-                {t('ctaButton')}
+                {/* {t('ctaButton')} */}
+                Jurney to Africa with the Successor of Peter
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>

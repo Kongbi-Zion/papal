@@ -45,11 +45,9 @@ export default function AlternateHero() {
 
                     <div className="relative mb-12 w-fit ">
                         <h1 className="text-5xl md:text-7xl max-md:pt-10 font-bold text-gray-600 mb-6 font-sans">
-                            &ldquo;{t('quote')}&rdquo;
+                            &ldquo;{t('quote')}&rdquo; <span className='text-[30px]'> ({t('reference')})</span>
                         </h1>
-                        <div className="text-2xl font-bold text-gray-600">
-                            ({t('reference')})
-                        </div>
+                     
                     </div>
 
                     <p className="text-lg  text-gray-600 mb-8 max-w-4xl leading-relaxed">
@@ -63,7 +61,8 @@ export default function AlternateHero() {
                     {/* CTA Button */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-start">
                         <Button size="lg" className="text-white hover:opacity-90 px-10 py-7 font-open-sans font-bold text-lg bg-primary">
-                            {t('ctaButton')}
+                            {/* {t('ctaButton')} */}
+                              Journey to Africa with the Successor of Peter
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </Button>
                     </div>

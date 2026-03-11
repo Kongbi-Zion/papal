@@ -4,6 +4,7 @@
   },
   "navigation": {
     "home": "Home",
+    "presidentSpeech": "Speech from President",
     "about": "About",
     "holyFather": "The Holy Father",
     "popeSchedule": "Pope's Schedule",
@@ -267,7 +268,7 @@
     }
   },
     "spiritualResources": {
-    "title": "Spiritual References",
+    "title": "Spiritual Resources",
     "subtitle": "Biblical foundations and spiritual reflections for Pope Leo XIV's Apostolic Journey to Cameroon",
     "unity": {
       "title": "Unity in Christ",
@@ -305,5 +306,28 @@
       "reference": "Ephesians 4:3–6",
       "description": "Inspired by the vision of the Church as the Family of God in Africa, this message calls Cameroonians to live fraternity, solidarity, and mutual respect."
     }
+  },
+  "floatingTimer": {
+    "title": "Pope Leo XIV's Arrival",
+    "eventStarted": "Event Started!",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Mins",
+    "seconds": "Secs"
+  },
+  "presidentSpeech": {
+    "title": "Speech from President",
+    "subtitle": "A message of welcome and unity for Pope Leo XIV's historic visit to Cameroon",
+    "backToHome": "Back to Home",
+    "deliveredBy": "Delivered by",
+    "presidentName": "His Excellency Paul Biya",
+    "presidentTitle": "President of the Republic of Cameroon",
+    "date": "April 14, 2026",
+    "speechParagraph1": "Dear compatriots, distinguished guests, people of Cameroon, it is with immense joy and profound honor that I welcome His Holiness Pope Leo XIV to our beloved nation. This historic visit represents a moment of grace for Cameroon and strengthens the bonds of friendship between the Holy See and our country.",
+    "speechParagraph2": "The arrival of the Successor of Saint Peter on Cameroonian soil is a testament to the vibrant faith of our people and the importance of our nation in the African continent. Pope Leo XIV comes as a pilgrim of peace, bringing a message of hope, reconciliation, and unity that resonates deeply with our national aspirations.",
+    "speechParagraph3": " Cameroon, often called 'Africa in miniature,' stands as a beacon of religious tolerance and peaceful coexistence. The Catholic Church has played a vital role in our nation's development, contributing to education, healthcare, and the moral fabric of our society. We are grateful for this partnership and look forward to continued collaboration.",
+    "speechParagraph4": "During this apostolic journey, I call upon all Cameroonians, regardless of religious affiliation, to welcome the Holy Father with open hearts and minds. May his visit inspire us to redouble our efforts toward national unity, social justice, and sustainable development for all our citizens.",
+    "speechParagraph5": "As we prepare to receive Pope Leo XIV, let us renew our commitment to the values that unite us: peace, solidarity, and mutual respect. Together, we can build a stronger, more prosperous Cameroon that honors our diversity while celebrating our common humanity.",
+    "closing": "Long live Cameroon! Long live the Holy Father! Long live the friendship between Cameroon and the Holy See!"
   }
 }

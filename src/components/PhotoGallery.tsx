@@ -54,7 +54,7 @@ export default function PhotoGallery() {
               <div className="relative aspect-[4/3]">
                 {/* Vatican/Pope Image */}
                 <img 
-                  src="/hero.webp"
+                  src="/image_gallery/img3.jpeg"
                   alt={t('imageTitle')}
                   className="w-full h-full object-cover"
                 />

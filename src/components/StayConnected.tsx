@@ -73,7 +73,7 @@ export default function StayConnected() {
                 </p>
 
                 {/* Handle for all platforms */}
-                <div className="font-mono text-xs bg-gray-100 px-2 py-1 rounded cursor-pointer hover:bg-gray-200 transition-colors mb-4" onClick={() => navigator.clipboard.writeText(social.url)}>
+                <div className="font-mono text-xs bg-secondary/20 px-2 py-1 rounded cursor-pointer hover:bg-secondary/30 transition-colors mb-4" onClick={() => navigator.clipboard.writeText(social.url)}>
                   {social.handle}
                 </div>
 
@@ -89,13 +89,6 @@ export default function StayConnected() {
               </div>
             )
           })}
-        </div>
-
-        {/* Contact Info */}
-        <div className="mt-16 text-center">
-          <p className="text-white/80">
-            {t('contactInfo')}
-          </p>
         </div>
 
       </div>

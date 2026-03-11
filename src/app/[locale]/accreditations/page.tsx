@@ -1,11 +1,47 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Download } from 'lucide-react'
+import { Download, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useState } from 'react'
+import { useLocale } from 'next-intl'
 
 export default function AccreditationsPage() {
   const t = useTranslations('accreditations')
+  const locale = useLocale()
+  const [isDownloading, setIsDownloading] = useState(false)
+
+  const handleDownload = async () => {
+    setIsDownloading(true)
+    
+    try {
+      // Select the appropriate file based on locale
+      const fileName = locale === 'fr' 
+        ? 'accreditation_fr-actualisé-1.pdf'
+        : 'accreditation_en-actualisé.pdf'
+      
+      const response = await fetch(`/downloads/${fileName}`)
+      
+      if (!response.ok) {
+        throw new Error('Download failed')
+      }
+      
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = fileName
+      document.body.appendChild(a)
+      a.click()
+      window.URL.revokeObjectURL(url)
+      document.body.removeChild(a)
+    } catch (error) {
+      console.error('Download error:', error)
+      // You could show a toast notification here
+    } finally {
+      setIsDownloading(false)
+    }
+  }
 
   return (
     <section className="relative bg-[#eff2f8] py-24 px-6 lg:px-8 overflow-hidden">
@@ -41,9 +77,18 @@ export default function AccreditationsPage() {
                   {t('instructions')}
                 </p>
               </div>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 font-open-sans font-bold">
-                <Download className="mr-2 h-5 w-5" />
-                {t('downloadButton')}
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 font-open-sans font-bold"
+                onClick={handleDownload}
+                disabled={isDownloading}
+              >
+                {isDownloading ? (
+                  <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                ) : (
+                  <Download className="mr-2 h-5 w-5" />
+                )}
+                {isDownloading ? 'Downloading...' : t('downloadButton')}
               </Button>
             </div>
           </div>

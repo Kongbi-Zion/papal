@@ -4,6 +4,7 @@
   },
   "navigation": {
     "home": "Accueil",
+    "presidentSpeech": "Discours du Président",
     "about": "À propos",
     "holyFather": "Le Saint-Père",
     "popeSchedule": "Programme du Pape",
@@ -268,7 +269,30 @@
       "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
     }
   },
-   "accreditations": {
+  "floatingTimer": {
+    "title": "Arrivée du Pape Léon XIV",
+    "eventStarted": "Événement Commencé!",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Mins",
+    "seconds": "Secs"
+  },
+  "presidentSpeech": {
+    "title": "Discours du Président",
+    "subtitle": "Un message d'accueil et d'unité pour la visite historique du Pape Léon XIV au Cameroun",
+    "backToHome": "Retour à l'Accueil",
+    "deliveredBy": "Prononcé par",
+    "presidentName": "Son Excellence Paul Biya",
+    "presidentTitle": "Président de la République du Cameroun",
+    "date": "14 avril 2026",
+    "speechParagraph1": "Chers compatriotes, distingués invités, peuple du Cameroun, c'est avec une immense joie et un profond honneur que j'accueille Sa Sainteté le Pape Léon XIV dans notre chère nation. Cette visite historique représente un moment de grâce pour le Cameroun et renforce les liens d'amitié entre le Saint-Siège et notre pays.",
+    "speechParagraph2": "L'arrivée du Successeur de Saint Pierre sur le sol camerounais est un témoignage de la foi vibrante de notre peuple et de l'importance de notre nation sur le continent africain. Le Pape Léon XIV vient en pèlerin de paix, apportant un message d'espérance, de réconciliation et d'unité qui résonne profondément avec nos aspirations nationales.",
+    "speechParagraph3": "Le Cameroun, souvent appelé 'l'Afrique en miniature', se dresse comme un phare de tolérance religieuse et de coexistence pacifique. L'Église Catholique a joué un rôle vital dans le développement de notre nation, contribuant à l'éducation, aux soins de santé et au tissu moral de notre société. Nous sommes reconnaissants pour ce partenariat et nous attendons avec impatience une collaboration continue.",
+    "speechParagraph4": "Pendant ce voyage apostolique, j'appelle tous les Camerounais, quelle que soit leur affiliation religieuse, à accueillir le Saint-Père avec des cœurs et des esprits ouverts. Que sa visite nous inspire à redoubler d'efforts vers l'unité nationale, la justice sociale et le développement durable pour tous nos citoyens.",
+    "speechParagraph5": "Alors que nous nous préparons à recevoir le Pape Léon XIV, renouvelons notre engagement envers les valeurs qui nous unissent : la paix, la solidarité et le respect mutuel. Ensemble, nous pouvons construire un Cameroun plus fort et plus prospère qui honore notre diversité tout en célébrant notre humanité commune.",
+    "closing": "Vive le Cameroun ! Vive le Saint-Père ! Vive l'amitié entre le Cameroun et le Saint-Siège !"
+  },
+  "accreditations": {
     "title": "Accréditations",
     "intro1": "Les journalistes, professionnels des médias et équipes de communication souhaitant couvrir la visite du Pape Léon XIV au Cameroun sont tenus d'obtenir une accréditation officielle.",
     "intro2": "Tous les demandeurs sont priés de remplir le formulaire d'accréditation et de soumettre les documents requis dans les délais indiqués. Ce processus assure une coordination adéquate, des arrangements de sécurité et l'accès aux zones médias désignées lors des événements papaux.",

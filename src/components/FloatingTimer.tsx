@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 interface CountdownTime {
   days: number
@@ -30,6 +31,7 @@ const VaticanFlag = () => (
 )
 
 export default function FloatingTimer() {
+  const t = useTranslations('floatingTimer')
   const [countdown, setCountdown] = useState<CountdownTime>({
     days: 0,
     hours: 0,
@@ -37,13 +39,13 @@ export default function FloatingTimer() {
     seconds: 0
   })
 
-  // Set target date for Pope Leo VI arrival - March 15th at 12:00 PM
+  // Set target date for Pope Leo VI arrival - April 15th at 2:30 PM
   const getTargetDate = () => {
     const targetDate = new Date()
-    targetDate.setMonth(2, 15) // March is month 2 (0-indexed)
-    targetDate.setHours(12, 0, 0, 0)
+    targetDate.setMonth(3, 15) // April is month 3 (0-indexed)
+    targetDate.setHours(14, 30, 0, 0) // 2:30 PM is 14:30 in 24-hour format
     
-    // If March 15th has already passed this year, set it for next year
+    // If April 15th has already passed this year, set it for next year
     const now = new Date()
     if (targetDate < now) {
       targetDate.setFullYear(targetDate.getFullYear() + 1)
@@ -81,7 +83,7 @@ export default function FloatingTimer() {
     <div className="fixed bottom-4 right-4 z-50 bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8 border border-gray-200 max-w-xs sm:max-w-sm md:max-w-lg">
       <div className="flex items-center justify-between mb-2 sm:mb-3 md:mb-4">
         <CameroonFlag />
-        <span className="text-sm sm:text-base md:text-lg font-semibold text-gray-800 px-2 sm:px-3 md:px-4">Pope Leo XIV&apos;s Arrival</span>
+        <span className="text-sm sm:text-base md:text-lg font-semibold text-gray-800 px-2 sm:px-3 md:px-4">{t('title')}</span>
         <VaticanFlag />
       </div>
       
@@ -102,15 +104,15 @@ export default function FloatingTimer() {
             </div>
           </div>
         ) : (
-          <div className="text-green-600 font-semibold text-sm">Event Started!</div>
+          <div className="text-green-600 font-semibold text-sm">{t('eventStarted')}</div>
         )}
         
         {isCountdownActive && (
           <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-4 text-center mt-2">
-            <div className="text-xs sm:text-sm md:text-base text-gray-600">Days</div>
-            <div className="text-xs sm:text-sm md:text-base text-gray-600">Hours</div>
-            <div className="text-xs sm:text-sm md:text-base text-gray-600">Mins</div>
-            <div className="text-xs sm:text-sm md:text-base text-gray-600">Secs</div>
+            <div className="text-xs sm:text-sm md:text-base text-gray-600">{t('days')}</div>
+            <div className="text-xs sm:text-sm md:text-base text-gray-600">{t('hours')}</div>
+            <div className="text-xs sm:text-sm md:text-base text-gray-600">{t('minutes')}</div>
+            <div className="text-xs sm:text-sm md:text-base text-gray-600">{t('seconds')}</div>
           </div>
         )}
       </div>

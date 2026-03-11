@@ -28,7 +28,7 @@ export default function Navbar() {
   const getActiveClasses = (path: string, isMobile = false) => {
     const baseClasses = isMobile 
       ? "block px-3 py-2 text-base font-medium transition-colors"
-      : "px-3 py-2 text-sm font-medium transition-colors"
+      : "px-3 py-2 text-xs font-medium transition-colors"
     
     const activeClasses = "text-secondary bg-secondary/10 rounded-lg"
     const inactiveClasses = isMobile 
@@ -61,6 +61,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center space-x-2">
             <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`)}>
               {t('home')}
+            </Link>
+            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`)}>
+              A Word from the President of NECC
+              {/* {t('presidentSpeech')} */}
             </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`)}>
               {t('holyFather')}
@@ -129,6 +133,9 @@ export default function Navbar() {
                }}>
             <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`, true)}>
               {t('home')}
+            </Link>
+            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
+              {t('presidentSpeech')}
             </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)}>
               {t('holyFather')}
