@@ -95,21 +95,24 @@
     "subtitle": "Restez informé sur les préparatifs et développements du Voyage Apostolique 2026",
     "newsItems": {
       "official": {
-        "date": "Janvier 2026",
-        "title": "Annonce Officielle",
-        "description": "Accueillant les invitations des Chefs d'État et Autorités Ecclésiastiques respectifs, Sa Sainteté le Pape Léon XIV effectuera un Voyage Apostolique en Algérie, Cameroun, Angola et Guinée Équatoriale du 13 au 23 avril. Sa Sainteté visitera Alger et Annaba du 13 au 15 avril; Yaoundé, Bamenda et Douala du 15 au 18 avril; Luanda, Muxima et Saurimo du 18 au 21 avril; et Malabo, Mongomo et Bata du 21 au 23 avril.",
+        "date": "10 mars 2024",
+        "title": "Annonce Officielle de la Visite Papale",
+        "description": "Le Vatican confirme officiellement la visite historique du Pape Léon XIV au Cameroun, prévue pour cet été. La visite inclura des rencontres avec des responsables gouvernementaux et des leaders religieux.",
+        "fullContent": "Le Vatican confirme officiellement la visite historique du Pape Léon XIV au Cameroun, prévue pour cet été. La visite inclura des rencontres avec des responsables gouvernementaux et des leaders religieux. Cela marque la première visite papale au Cameroun depuis plus de trois décennies et devrait renforcer les liens diplomatiques et religieux entre le Saint-Siège et la nation d'Afrique centrale. L'itinéraire du Pape inclura des rencontres avec le Président Paul Biya, des visites d'institutions catholiques majeures et des célébrations avec les fidèles. La visite se concentrera sur les thèmes de la paix, de la gestion environnementale et de l'engagement des jeunes, reflétant la vision du Pape Léon XIV pour l'Église en Afrique.",
         "readMore": "Lire Plus"
       },
       "themes": {
-        "date": "Janvier 2026",
-        "title": "Thèmes Pastoraux pour le Cameroun",
-        "description": "Pendant sa visite, le Pape Léon XIV se concentrera sur les thèmes spirituels clés pour la nation: paix, réconciliation et évangélisation. Dans un pays qui s'efforce vers l'unité amid les défis, le message du Saint Père appelle tous les Camerounais à guérir les divisions, renforcer la foi et vivre l'Évangile à travers l'amour, le dialogue et l'espérance.",
+        "date": "8 mars 2024",
+        "title": "Thèmes Clés du Voyage Apostolique",
+        "description": "La visite papale se concentrera sur la paix, la gestion environnementale et l'engagement des jeunes. Ces thèmes reflètent la vision du Pape Léon XIV pour l'Église en Afrique.",
+        "fullContent": "La visite papale se concentrera sur la paix, la gestion environnementale et l'engagement des jeunes. Ces thèmes reflètent la vision du Pape Léon XIV pour l'Église en Afrique. Le thème de la paix abordera les conflits régionaux et promouvra la réconciliation entre différentes communautés. La gestion environnementale mettra en évidence l'importance de protéger les ressources naturelles de l'Afrique et de s'attaquer au changement climatique. L'engagement des jeunes se concentrera sur l'autonomisation des jeunes pour prendre des rôles actifs dans leurs communautés et l'Église. Ces thèmes reflètent la vision du Pape Léon XIV pour une Église qui est 'pauvre et pour les pauvres', servant d'hôpital de campagne pour les âmes blessées et de phare d'espoir dans le monde.",
         "readMore": "Lire Plus"
       },
       "preparations": {
-        "date": "Janvier 2026",
-        "title": "Préparatifs en Cours",
-        "description": "Les communautés à travers le Cameroun se rassemblent dans la joie et l'anticipation pour accueillir le Pape Léon XIV du 15 au 18 avril 2026. Les églises, écoles, Gouvernement et organisations locales préparent des célébrations, prières et événements pour assurer que cette visite historique devienne un moment de foi, d'espérance et d'unité pour la nation.",
+        "date": "6 mars 2024",
+        "title": "Préparations en Cours à l'Échelle Nationale",
+        "description": "Les autorités camerounaises et les leaders de l'Église travaillent ensemble pour assurer un accueil chaleureux. Les dispositions de sécurité et les lieux des événements sont finalisés.",
+        "fullContent": "Les autorités camerounaises et les leaders de l'Église travaillent ensemble pour assurer un accueil chaleureux. Les dispositions de sécurité et les lieux des événements sont finalisés. Le gouvernement a établi un comité spécial pour coordonner tous les aspects de la visite, y compris la sécurité, la logistique et le protocole. Les responsables ecclésiastiques organisent des événements spirituels et des rassemblements pour les fidèles. Les dispositions de sécurité incluent le déploiement de forces policières supplémentaires, l'établissement de périmètres sécurisés pour les lieux des événements et la coordination avec les équipes de sécurité du Vatican. Les lieux des événements sont préparés pour accueillir de grandes foules, avec une attention particulière à l'accessibilité pour les personnes âgées et handicapées. Les préparations démontrent l'engagement du Cameroun à assurer une visite sûre et mémorable pour le Pape Léon XIV.",
         "readMore": "Lire Plus"
       }
     },
@@ -146,6 +149,81 @@
     "vision": {
       "title": "Signification Historique",
       "content": "(Abrégé de la Biographie www.vaticannews.va)"
+    },
+    "stayConnected": {
+      "title": "Restez Connecté",
+      "subtitle": "Suivez-nous sur les réseaux sociaux pour les dernières mises à jour, actualités et réflexions spirituelles sur le Voyage Apostolique du Pape Léon XIV en Afrique.",
+      "facebook": {
+        "title": "Facebook",
+        "description": "Dernières nouvelles et mises à jour",
+        "follow": "Suivre sur Facebook"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "Mises à jour en temps réel et annonces",
+        "follow": "Suivre sur Twitter"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "description": "Histoires visuelles et inspiration quotidienne",
+        "follow": "Suivre sur Instagram"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Mises à jour hebdomadaires et contenu exclusif",
+        "subscribe": "S'abonner à la Newsletter"
+      },
+      "contactInfo": "Pour plus d'informations, visitez notre page de contact ou envoyez-nous un email à info@papalvisit.org"
+    },
+    "newsUpdates": {
+      "title": "Actualités et Mises à Jour",
+      "subtitle": "Restez informé avec les dernières nouvelles, annonces et réflexions spirituelles du voyage apostolique du Pape Léon XIV",
+      "featured": "En vedette",
+      "featuredDate": "10 mars 2024",
+      "featuredTitle": "Le Pape Léon XIV Annonce une Visite Historique au Cameroun",
+      "featuredExcerpt": "Dans une annonce mémorable, le Pape Léon XIV a révélé ses projets de visiter le Cameroun, marquant la première visite papale dans la nation depuis plus de trois décennies. Le voyage se concentrera sur les thèmes de la paix, de l'unité et de la gestion environnementale.",
+      "featuredAuthor": "Service d'Actualités du Vatican",
+      "latestNews": "Dernières Nouvelles",
+      "category": "Actualités",
+      "date": "9 mars 2024",
+      "author": "Nouvelles du Vatican",
+      "readMore": "Lire Plus",
+      "news1": {
+        "title": "Préparations en Cours pour la Visite Papale",
+        "excerpt": "Les autorités camerounaises et les responsables ecclésiastiques travaillent ensemble pour assurer un accueil chaleureux pour la visite historique du Pape Léon XIV.",
+        "fullContent": "Les autorités camerounaises et les responsables ecclésiastiques travaillent ensemble pour assurer un accueil chaleureux pour la visite historique du Pape Léon XIV. Le comité de coordination se réunit régulièrement pour finaliser les dispositions de sécurité, les préparations des lieux et le soutien logistique. Le Ministère de l'Administration Territoriale a été chargé de coordonner avec divers départements gouvernementaux pour assurer une mise en œuvre sans faille du calendrier de la visite. Les responsables ecclésiastiques organisent des événements spirituels, incluant des messes et des services de prière, pour accueillir les grandes foules attendues. Les communautés locales sont encouragées à participer aux activités d'accueil, avec des programmes spéciaux développés pour l'engagement des jeunes et les démonstrations culturelles."
+      },
+      "news2": {
+        "title": "Programmes d'Engagement des Jeunes Annoncés",
+        "excerpt": "Des programmes spéciaux sont organisés pour engager les jeunes Camerounais dans les activités de la visite papale et les événements spirituels.",
+        "fullContent": "Des programmes spéciaux sont organisés pour engager les jeunes Camerounais dans les activités de la visite papale et les événements spirituels. Le Ministère de la Jeunesse Catholique a lancé une initiative complète appelée 'Jeunes pour le Pape Léon XIV' qui inclut la formation des leaders, la formation spirituelle et les projets de service communautaire. Les établissements éducatifs intègrent la visite papale dans leurs programmes, avec des leçons spéciales sur la papauté et l'histoire de l'Église. Les chœurs de jeunes préparent des performances musicales spéciales pour l'arrivée du Pape. Des plateformes numériques sont développées pour connecter les jeunes à travers le pays avec les activités de la visite et offrir des opportunités de participation virtuelle. Ces programmes visent à inspirer la prochaine génération de leaders catholiques et à favoriser une connexion plus profonde entre les jeunes et l'Église universelle."
+      },
+      "news3": {
+        "title": "Dispositions de Sécurité Finalisées",
+        "excerpt": "Des mesures de sécurité complètes ont été mises en place pour assurer la sécurité et le succès de la visite papale.",
+        "fullContent": "Des mesures de sécurité complètes ont été mises en place pour assurer la sécurité et le succès de la visite papale. Le Conseil de Sécurité Nationale a approuvé un plan de sécurité détaillé qui inclut le déploiement de plus de 10 000 agents de sécurité, l'établissement de zones sécurisées autour des lieux des événements, et la coordination avec les équipes de sécurité internationales. Des systèmes de surveillance avancés, incluant des caméras CCTV et une surveillance par drone, seront installés dans tous les lieux clés. Des plans de gestion de la circulation ont été développés pour gérer l'augmentation attendue des visiteurs et prévenir la congestion. Les équipes d'intervention d'urgence ont été formées spécifiquement pour les scénarios de visite papale, avec des installations médicales en attente dans tous les événements majeurs. Les dispositions de sécurité démontrent l'engagement du Cameroun à fournir un environnement sûr pour le Pape et le public."
+      },
+      "news4": {
+        "title": "Événements Culturels Prévus",
+        "excerpt": "De riches performances culturelles et événements mettront en valeur le patrimoine camerounais lors des célébrations de la visite papale.",
+        "fullContent": "De riches performances culturelles et événements mettront en valeur le patrimoine camerounais lors des célébrations de la visite papale. Le Ministère des Arts et de la Culture a organisé une série d'événements culturels qui mettent en évidence les diverses traditions du pays. Des troupes de danse traditionnelles de diverses régions se produiront dans différents lieux, mettant en vedette le paysage culturel vibrant du Cameroun. Des concerts de musique mettant en vedette des artistes camerounais traditionnels et contemporains ont été programmés. Des expositions d'art présenteront des œuvres d'artistes locaux inspirées par la foi et la spiritualité. Les festivals culturels incluront des foires alimentaires, des marchés d'artisanat et des sessions de narration qui partagent les traditions orales du Cameroun. Ces événements offriront des opportunités d'échange culturel et démontrer le riche patrimoine du Cameroun aux visiteurs internationaux et aux médias."
+      },
+      "news5": {
+        "title": "Initiative de Dialogue Interreligieux",
+        "excerpt": "La visite inclura des réunions interreligieuses importantes pour promouvoir la paix et la compréhension entre différentes communautés religieuses.",
+        "fullContent": "La visite inclura des réunions interreligieuses importantes pour promouvoir la paix et la compréhension entre différentes communautés religieuses. Le Pape Léon XIV a demandé des rencontres avec des leaders de diverses traditions religieuses, y compris musulmane, protestante et religieuses traditionnelles. Ces dialogues interreligieux se concentreront sur les valeurs partagées de paix, de justice et de gestion environnementale. Le Conseil des Leaders Religieux du Cameroun a organisé des réunions préparatoires pour assurer des discussions significatives. Les sujets incluent la liberté religieuse, l'harmonie sociale et les efforts de développement communautaire. L'initiative interreligieuse vise à renforcer la réputation du Cameroun comme modèle de tolérance et de coopération religieuse dans la région."
+      },
+      "news6": {
+        "title": "Focus Environnemental de la Visite",
+        "excerpt": "Le Pape Léon XIV mettra en évidence les efforts de conservation environnementale pendant son temps au Cameroun.",
+        "fullContent": "Le Pape Léon XIV mettra en évidence les efforts de conservation environnementale pendant son temps au Cameroun. S'appuyant sur son encyclique 'Laudato Si,' le Pape visitera des projets environnementaux et des zones de conservation pendant son séjour. Il est programmé pour rencontrer des activistes environnementaux et des scientifiques travaillant sur l'atténuation du changement climatique au Cameroun. La visite inclura une cérémonie spéciale pour bénir l'engagement du Cameroun à protéger ses ressources naturelles. Les établissements éducatifs lanceront des campagnes de sensibilisation environnementale inspirées par les enseignements du Pape. Le focus environnemental de la visite s'aligne sur le rôle du Cameroun comme leader dans les efforts de conservation en Afrique centrale et démontre l'engagement croissant de l'Église envers la responsabilité écologique."
+      },
+      "newsletter": {
+        "title": "Restez Informé",
+        "description": "Abonnez-vous à notre newsletter pour les dernières mises à jour sur le voyage apostolique du Pape Léon XIV",
+        "placeholder": "Entrez votre email",
+        "subscribe": "S'abonner"
+      }
     },
     "quickFacts": {
       "title": "Informations Rapides",

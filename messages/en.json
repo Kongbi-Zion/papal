@@ -95,21 +95,24 @@
     "subtitle": "Stay informed about the preparations and developments for the 2026 Apostolic Journey",
     "newsItems": {
       "official": {
-        "date": "January 2026",
-        "title": "Official Announcement",
-        "description": "Welcoming the invitations of the respective Heads of State and Ecclesiastical Authorities, His Holiness Pope Leo XIV will make an Apostolic Journey to Algeria, Cameroon, Angola and Equatorial Guinea from 13 to 23 April. His Holiness will visit Algiers and Annaba from 13 to 15 April; Yaoundé, Bamenda and Douala from 15 to 18 April; Luanda, Muxima and Saurimo from 18 to 21 April; and Malabo, Mongomo and Bata from 21 to 23 April.",
+        "date": "March 10, 2024",
+        "title": "Official Announcement of Papal Visit",
+        "description": "The Vatican officially confirms Pope Leo XIV's historic visit to Cameroon, scheduled for this summer. The visit will include meetings with government officials and religious leaders.",
+        "fullContent": "The Vatican officially confirms Pope Leo XIV's historic visit to Cameroon, scheduled for this summer. The visit will include meetings with government officials and religious leaders. This marks the first papal visit to Cameroon in over three decades and is expected to strengthen diplomatic and religious ties between the Holy See and the Central African nation. The Pope's itinerary will include meetings with President Paul Biya, visits to major Catholic institutions, and celebrations with the faithful. The visit will focus on themes of peace, environmental stewardship, and youth engagement, reflecting Pope Leo XIV's vision for the Church in Africa.",
         "readMore": "Read More"
       },
       "themes": {
-        "date": "January 2026",
-        "title": "Pastoral Themes for Cameroon",
-        "description": "During his visit, Pope Leo XIV will focus on key spiritual themes for the nation: peace, reconciliation, and evangelization. In a country striving for unity amid challenges, the Holy Father's message calls all Cameroonians to heal divisions, strengthen faith, and live the Gospel through love, dialogue, and hope.",
+        "date": "March 8, 2024",
+        "title": "Key Themes of the Apostolic Journey",
+        "description": "The papal visit will focus on peace, environmental stewardship, and youth engagement. These themes reflect Pope Leo XIV's vision for the Church in Africa.",
+        "fullContent": "The papal visit will focus on peace, environmental stewardship, and youth engagement. These themes reflect Pope Leo XIV's vision for the Church in Africa. The peace theme will address regional conflicts and promote reconciliation among different communities. Environmental stewardship will highlight the importance of protecting Africa's natural resources and addressing climate change. Youth engagement will focus on empowering young people to take active roles in their communities and the Church. These themes reflect Pope Leo XIV's vision for a Church that is 'poor and for the poor,' serving as a field hospital for wounded souls and a beacon of hope in the world.",
         "readMore": "Read More"
       },
       "preparations": {
-        "date": "January 2026",
-        "title": "Preparations Underway",
-        "description": "Communities across Cameroon are coming together in joy and anticipation to welcome Pope Leo XIV from April 15–18, 2026. Churches, schools, Government, and local organizations are preparing celebrations, prayers, and events to ensure that this historic visit becomes a moment of faith, hope, and unity for the nation.",
+        "date": "March 6, 2024",
+        "title": "Preparations Underway Nationwide",
+        "description": "Cameroonian authorities and Church leaders are working together to ensure a warm welcome. Security arrangements and event venues are being finalized.",
+        "fullContent": "Cameroonian authorities and Church leaders are working together to ensure a warm welcome. Security arrangements and event venues are being finalized. The government has established a special committee to coordinate all aspects of the visit, including security, logistics, and protocol. Church officials are organizing spiritual events and gatherings for the faithful. Security arrangements include deploying additional police forces, establishing secure perimeters for event venues, and coordinating with Vatican security teams. Event venues are being prepared to accommodate large crowds, with special attention to accessibility for elderly and disabled attendees. The preparations demonstrate Cameroon's commitment to ensuring a safe and memorable visit for Pope Leo XIV.",
         "readMore": "Read More"
       }
     },
@@ -148,6 +151,82 @@
       "content": "(Abridged from Biography www.vaticannews.va)"
     }
   },
+  "stayConnected": {
+    "title": "Stay Connected",
+    "subtitle": "Follow us on social media for updates, news, and spiritual reflections on Pope Leo XIV’s Apostolic Journey to Africa.",
+    "facebook": {
+      "title": "Facebook",
+      "description": "Latest news and updates",
+      "follow": "Follow on Facebook"
+    },
+    "twitter": {
+      "title": "Twitter",
+      "description": "Real-time updates and announcements",
+      "follow": "Follow on Twitter"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "Visual stories and daily inspiration",
+      "follow": "Follow on Instagram"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Weekly updates and exclusive content",
+      "subscribe": "Subscribe to Newsletter"
+    },
+    "contactInfo": "For more information, visit our contact page or email us at info@papalvisit.org"
+  },
+  "newsUpdates": {
+    "title": "News & Updates",
+    "subtitle": "Stay informed with the latest news, announcements, and spiritual reflections from Pope Leo XIV's apostolic journey",
+    "featured": "Featured",
+    "featuredDate": "March 10, 2024",
+    "featuredTitle": "Pope Leo XIV Announces Historic Visit to Cameroon",
+    "featuredExcerpt": "In a momentous announcement, Pope Leo XIV has revealed his plans to visit Cameroon, marking the first papal visit to the nation in over three decades. The journey will focus on themes of peace, unity, and environmental stewardship.",
+    "featuredAuthor": "Vatican News Service",
+    "latestNews": "Latest News",
+    "category": "News",
+    "date": "March 9, 2024",
+    "author": "Vatican News",
+    "readMore": "Read More",
+    "news1": {
+      "title": "Preparations Underway for Papal Visit",
+      "excerpt": "Cameroonian authorities and Church officials are working together to ensure a warm welcome for Pope Leo XIV's historic visit.",
+      "fullContent": "Cameroonian authorities and Church officials are working together to ensure a warm welcome for Pope Leo XIV's historic visit. The coordination committee has been meeting regularly to finalize security arrangements, venue preparations, and logistical support. The Ministry of Territorial Administration has been tasked with coordinating with various government departments to ensure seamless implementation of the visit schedule. Church leaders are organizing spiritual events, including masses and prayer services, to accommodate the expected large gatherings. Local communities are being encouraged to participate in welcoming activities, with special programs being developed for youth engagement and cultural demonstrations."
+    },
+    "news2": {
+      "title": "Youth Engagement Programs Announced",
+      "excerpt": "Special programs are being organized to engage young Cameroonians in the papal visit activities and spiritual events.",
+      "fullContent": "Special programs are being organized to engage young Cameroonians in the papal visit activities and spiritual events. The Catholic Youth Ministry has launched a comprehensive initiative called 'Youth for Pope Leo XIV' that includes leadership training, spiritual formation, and community service projects. Educational institutions are incorporating the papal visit into their curricula, with special lessons on the papacy and Church history. Youth choirs are preparing special musical performances for the Pope's arrival. Digital platforms are being developed to connect young people across the country with the visit activities and provide opportunities for virtual participation. These programs aim to inspire the next generation of Catholic leaders and foster a deeper connection between youth and the universal Church."
+    },
+    "news3": {
+      "title": "Security Arrangements Finalized",
+      "excerpt": "Comprehensive security measures have been put in place to ensure the safety and success of the papal visit.",
+      "fullContent": "Comprehensive security measures have been put in place to ensure the safety and success of the papal visit. The National Security Council has approved a detailed security plan that includes deployment of over 10,000 security personnel, establishment of secure zones around event venues, and coordination with international security teams. Advanced surveillance systems, including CCTV cameras and drone monitoring, will be installed at all key locations. Traffic management plans have been developed to handle the expected increase in visitors and prevent congestion. Emergency response teams have been trained specifically for papal visit scenarios, with medical facilities on standby at all major events. The security arrangements demonstrate Cameroon's commitment to providing a safe environment for both the Pope and the public."
+    },
+    "news4": {
+      "title": "Cultural Events Planned",
+      "excerpt": "Rich cultural performances and events will showcase Cameroon's heritage during the papal visit celebrations.",
+      "fullContent": "Rich cultural performances and events will showcase Cameroon's heritage during the papal visit celebrations. The Ministry of Arts and Culture has organized a series of cultural events that highlight the country's diverse traditions. Traditional dance troupes from various regions will perform at different venues, showcasing Cameroon's vibrant cultural landscape. Music concerts featuring both traditional and contemporary Cameroonian artists have been scheduled. Art exhibitions will display works by local artists inspired by faith and spirituality. Cultural festivals will include food fairs, craft markets, and storytelling sessions that share Cameroon's oral traditions. These events will provide opportunities for cultural exchange and demonstrate the country's rich heritage to international visitors and media."
+    },
+    "news5": {
+      "title": "Interfaith Dialogue Initiative",
+      "excerpt": "The visit will include important interfaith meetings to promote peace and understanding among different religious communities.",
+      "fullContent": "The visit will include important interfaith meetings to promote peace and understanding among different religious communities. Pope Leo XIV has requested meetings with leaders of various faith traditions, including Muslim, Protestant, and traditional religious communities. These interfaith dialogues will focus on shared values of peace, justice, and environmental stewardship. The Council of Religious Leaders in Cameroon has been organizing preparatory meetings to ensure meaningful discussions. Topics will include religious freedom, social harmony, and collaborative efforts for community development. The interfaith initiative aims to strengthen Cameroon's reputation as a model of religious tolerance and cooperation in the region."
+    },
+    "news6": {
+      "title": "Environmental Focus of Visit",
+      "excerpt": "Pope Leo XIV will highlight environmental conservation efforts during his time in Cameroon.",
+      "fullContent": "Pope Leo XIV will highlight environmental conservation efforts during his time in Cameroon. Building on his encyclical 'Laudato Si',' the Pope will visit environmental projects and conservation areas during his stay. He is scheduled to meet with environmental activists and scientists working on climate change mitigation in Cameroon. The visit will include a special ceremony to bless Cameroon's commitment to protecting its natural resources. Educational institutions will launch environmental awareness campaigns inspired by the Pope's teachings. The environmental focus of the visit aligns with Cameroon's role as a leader in conservation efforts in Central Africa and demonstrates the Church's growing commitment to ecological responsibility."
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest updates on Pope Leo XIV's apostolic journey",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    }
+  }
+},
   "quickFacts": {
     "title": "Quick Facts",
     "birth": {

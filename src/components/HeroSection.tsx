@@ -105,7 +105,7 @@ export default function HeroSection() {
           {/* Background Image */}
         <div className="absolute inset-0">
           {/* Image */}
-          <div className="absolute inset-0 bg-[url('/hero.webp')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
+          <div className="absolute inset-0 bg-[url('/hero2.jpeg')] bg-cover bg-center max-md:bg-right bg-no-repeat"></div>
 
           {/* WordPress Gradient Overlay */}
           <div className="absolute inset-0 bg-[linear-gradient(91deg,rgba(0,55,127,0.68)_38%,rgba(242,41,91,0)_89%)]"></div>

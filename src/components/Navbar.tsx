@@ -4,16 +4,40 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const locale = useLocale()
+  const pathname = usePathname()
   const t = useTranslations('navigation')
   const tCommon = useTranslations('common')
 
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
+
+  // Function to check if a link is active
+  const isActive = (path: string) => {
+    if (path === `/${locale}`) {
+      return pathname === `/${locale}` || pathname === `/${locale}/`
+    }
+    return pathname.startsWith(path)
+  }
+
+  // Get active link classes
+  const getActiveClasses = (path: string, isMobile = false) => {
+    const baseClasses = isMobile 
+      ? "block px-3 py-2 text-base font-medium transition-colors"
+      : "px-3 py-2 text-sm font-medium transition-colors"
+    
+    const activeClasses = "text-secondary bg-secondary/10 rounded-lg"
+    const inactiveClasses = isMobile 
+      ? "text-gray-700 hover:text-yellow-600 hover:bg-gray-50"
+      : "text-gray-900 hover:text-yellow-600"
+    
+    return `${baseClasses} ${isActive(path) ? activeClasses : inactiveClasses}`
+  }
 
   return (
     <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 max-w-[calc(100vw-2rem)]">
@@ -36,26 +60,26 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-2">
-            <Link href={`/${locale}`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`)}>
               {t('home')}
             </Link>
-            <Link href={`/${locale}/about`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`)}>
               {t('holyFather')}
             </Link>
-            <Link href={`/${locale}/services`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/services`} className={getActiveClasses(`/${locale}/services`)}>
               {t('popeSchedule')}
             </Link>
           
-            <Link href={`/${locale}/news`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/news`} className={getActiveClasses(`/${locale}/news`)}>
               {t('news')}
             </Link>
-            <Link href={`/${locale}/resources`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`)}>
               {t('resources')}
             </Link>
-            <Link href={`/${locale}/pilgrim`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`)}>
               {t('pilgrim')}
             </Link>
-              <Link href={`/${locale}/contact`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
+              <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`)}>
               {t('contact')}
             </Link>
             <LanguageSwitcher />
@@ -101,25 +125,25 @@ export default function Navbar() {
                style={{
                  transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'
                }}>
-            <Link href={`/${locale}`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`, true)}>
               {t('home')}
             </Link>
-            <Link href={`/${locale}/about`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)}>
               {t('holyFather')}
             </Link>
-            <Link href={`/${locale}/services`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/services`} className={getActiveClasses(`/${locale}/services`, true)}>
               {t('popeSchedule')}
             </Link>
-            <Link href={`/${locale}/contact`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`, true)}>
               {t('contact')}
             </Link>
-            <Link href={`/${locale}/news`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/news`} className={getActiveClasses(`/${locale}/news`, true)}>
               {t('news')}
             </Link>
-            <Link href={`/${locale}/resources`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`, true)}>
               {t('resources')}
             </Link>
-            <Link href={`/${locale}/pilgrim`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
+            <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`, true)}>
               {t('pilgrim')}
             </Link>
             <div className="px-3 py-2">

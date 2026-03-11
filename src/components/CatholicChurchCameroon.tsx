@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 export default function CatholicChurchCameroon() {
   const t = useTranslations('catholicChurch')
   const [activeCard, setActiveCard] = useState<number | null>(null)
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set())
 
   const newsItems = [
     {
@@ -15,6 +16,7 @@ export default function CatholicChurchCameroon() {
       date: t('newsItems.official.date'),
       title: t('newsItems.official.title'),
       description: t('newsItems.official.description'),
+      fullContent: t('newsItems.official.fullContent'),
       linkText: t('newsItems.official.readMore')
     },
     {
@@ -22,6 +24,7 @@ export default function CatholicChurchCameroon() {
       date: t('newsItems.themes.date'),
       title: t('newsItems.themes.title'),
       description: t('newsItems.themes.description'),
+      fullContent: t('newsItems.themes.fullContent'),
       linkText: t('newsItems.themes.readMore')
     },
     {
@@ -29,9 +32,22 @@ export default function CatholicChurchCameroon() {
       date: t('newsItems.preparations.date'),
       title: t('newsItems.preparations.title'),
       description: t('newsItems.preparations.description'),
+      fullContent: t('newsItems.preparations.fullContent'),
       linkText: t('newsItems.preparations.readMore')
     }
   ]
+
+  const toggleExpanded = (id: number) => {
+    setExpandedCards(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(id)) {
+        newSet.delete(id)
+      } else {
+        newSet.add(id)
+      }
+      return newSet
+    })
+  }
 
   return (
     <section className="relative bg-white py-24 px-6 lg:px-8 overflow-hidden">
@@ -82,11 +98,13 @@ export default function CatholicChurchCameroon() {
                     {item.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    {item.description}
+                    {expandedCards.has(item.id) ? item.fullContent : item.description}
                   </p>
-                  <button className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all duration-300">
-                    {item.linkText}
-                    <ArrowRight className="w-4 h-4" />
+                  <button 
+                    onClick={() => toggleExpanded(item.id)}
+                    className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all duration-300"
+                  >
+                    {expandedCards.has(item.id) ? 'Show Less' : item.linkText}
                   </button>
                 </div>
               </div>

@@ -14,22 +14,23 @@ export default function HolyFatherBiography() {
           {/* Image - Floated Left */}
           <div className="float-left mr-8 mb-4 lg:mb-0">
             <div className="relative w-64 lg:w-80">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-secondary/20">
+              <div className="rounded-2xl overflow-hidden shadow border-4 border-secondary/20">
                 <Image
                   src="/profile.jpeg"
                   alt={t('imageAlt')}
-                  fill
-                  className="object-cover"
+                  width={320}
+                  height={400}
+                  className="object-contain"
                   priority
                 />
               </div>
               
-              {/* Image Caption */}
+              {/* Image Caption
               <div className="mt-4 text-center">
                 <p className="text-sm text-gray-600 italic">
                   {t('imageCaption')}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
