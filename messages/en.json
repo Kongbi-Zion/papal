@@ -135,7 +135,9 @@
     "imageTitle": "Recent Activities",
     "imageDescription": "Moments from the papal ministry",
     "viewVideos": "Video Gallery",
-    "viewImages": "Image Gallery"
+    "viewImages": "Image Gallery",
+    "subtitle": "Explore moments from the historic papal visit to Cameroon",
+    "backToHome": "Back to Home"
   },
   "holyFather": {
     "biographyTitle": "Biography Pope Leo XIV",

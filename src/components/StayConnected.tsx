@@ -13,21 +13,25 @@ export default function StayConnected() {
       key: 'facebook',
       icon: Facebook,
       url: 'https://facebook.com/237papaleoxiv',
+      handle: 'facebook.com/237papaleoxiv',
     },
     {
       key: 'twitter',
       icon: Twitter,
       url: 'https://twitter.com/237papaleoxiv',
+      handle: '@PopeLeoXIV',
     },
     {
       key: 'instagram',
       icon: Instagram,
       url: 'https://instagram.com/237papaleoxiv',
+      handle: '@237papaleoxiv',
     },
     {
       key: 'tiktok',
       icon: Music,
       url: 'https://tiktok.com/@237papaleoxiv',
+      handle: '@237papaleoxiv',
     },
   ]
 
@@ -67,6 +71,11 @@ export default function StayConnected() {
                 <p className="text-gray-600 text-sm mb-4">
                   {t(`${social.key}.description`)}
                 </p>
+
+                {/* Handle for all platforms */}
+                <div className="font-mono text-xs bg-gray-100 px-2 py-1 rounded cursor-pointer hover:bg-gray-200 transition-colors mb-4" onClick={() => navigator.clipboard.writeText(social.url)}>
+                  {social.handle}
+                </div>
 
                 <Link
                   href={social.url}
