@@ -1,60 +1,63 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { Heart, Users, Globe, Shield, Home } from 'lucide-react'
 
 export default function SpiritualResources() {
+  const t = useTranslations('spiritualResources')
+
   const spiritualReferences = [
     {
       id: 1,
-      title: "Unity in Christ",
-      verse: "That they may all be one, as you, Father, are in me and I in you.",
-      reference: "John 17:21",
-      description: "This verse, chosen as the motto of the visit, calls the Church and the nation of Cameroon to deepen unity—across cultures, languages, and communities—through faith in Christ.",
+      title: t('unity.title'),
+      verse: t('unity.verse'),
+      reference: t('unity.reference'),
+      description: t('unity.description'),
       icon: Users,
       color: 'bg-blue-100 text-blue-600'
     },
     {
       id: 2,
-      title: "Hope for a Nation Seeking Peace",
-      verse: "May the God of hope fill you with all joy and peace in believing.",
-      reference: "Romans 15:13",
-      description: "In a time when parts of Cameroonian society face tensions and uncertainty, the Pope's visit is a call to renew hope rooted in faith and trust in God's promise of peace.",
+      title: t('hope.title'),
+      verse: t('hope.verse'),
+      reference: t('hope.reference'),
+      description: t('hope.description'),
       icon: Heart,
       color: 'bg-green-100 text-green-600'
     },
     {
       id: 3,
-      title: "Reconciliation and Healing",
-      verse: "God… has given us the ministry of reconciliation.",
-      reference: "2 Corinthians 5:18–19",
-      description: "The visit encourages all people—Christians and people of goodwill—to become agents of reconciliation and healing in their communities.",
+      title: t('reconciliation.title'),
+      verse: t('reconciliation.verse'),
+      reference: t('reconciliation.reference'),
+      description: t('reconciliation.description'),
       icon: Shield,
       color: 'bg-purple-100 text-purple-600'
     },
     {
       id: 4,
-      title: "Missionary Witness",
-      verse: "Go therefore and make disciples of all nations.",
-      reference: "Matthew 28:19–20",
-      description: "Cameroon, often described as 'Africa in miniature,' reflects the richness of cultures and traditions. The Church is called to bear witness to the Gospel in every corner of society.",
+      title: t('missionary.title'),
+      verse: t('missionary.verse'),
+      reference: t('missionary.reference'),
+      description: t('missionary.description'),
       icon: Globe,
       color: 'bg-orange-100 text-orange-600'
     },
     {
       id: 5,
-      title: "Solidarity with the Poor and Vulnerable",
-      verse: "Whatever you did for one of the least of these brothers and sisters of mine, you did for me.",
-      reference: "Matthew 25:40",
-      description: "The Pope's visit highlights the Church's mission of compassion, justice, and service, especially toward the poor, displaced persons, and those affected by conflict.",
+      title: t('solidarity.title'),
+      verse: t('solidarity.verse'),
+      reference: t('solidarity.reference'),
+      description: t('solidarity.description'),
       icon: Users,
       color: 'bg-red-100 text-red-600'
     },
     {
       id: 6,
-      title: "The Church as a Family",
-      verse: "Make every effort to keep the unity of the Spirit through the bond of peace.",
-      reference: "Ephesians 4:3–6",
-      description: "Inspired by the vision of the Church as the Family of God in Africa, this message calls Cameroonians to live fraternity, solidarity, and mutual respect.",
+      title: t('church.title'),
+      verse: t('church.verse'),
+      reference: t('church.reference'),
+      description: t('church.description'),
       icon: Home,
       color: 'bg-indigo-100 text-indigo-600'
     }
@@ -66,7 +69,7 @@ export default function SpiritualResources() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
-            Spiritual References
+            {t('title')}
           </h1>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full"></div>
         </div>
