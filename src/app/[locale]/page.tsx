@@ -5,6 +5,7 @@ import MessageOfHope from '@/components/MessageOfHope';
 import CatholicChurchCameroon from '@/components/CatholicChurchCameroon';
 import PhotoGallery from '@/components/PhotoGallery';
 import StayConnected from '@/components/StayConnected';
+import AlternateHero from '@/components/AlternateHero';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -22,7 +23,8 @@ export default async function Home({params}: Props) {
   
   return (
     <>
-      <HeroSection />
+    <AlternateHero/>
+      {/* <HeroSection /> */}
       <MessageOfHope />
       <CatholicChurchCameroon />
       <PhotoGallery />
