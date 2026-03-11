@@ -16,7 +16,7 @@ export default function HolyFatherBiography() {
             <div className="relative w-64 lg:w-80">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-secondary/20">
                 <Image
-                  src="/pop_leo.jpeg"
+                  src="/profile.jpeg"
                   alt={t('imageAlt')}
                   fill
                   className="object-cover"
