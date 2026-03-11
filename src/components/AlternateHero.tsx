@@ -9,9 +9,34 @@ export default function AlternateHero() {
   const t = useTranslations('hero')
   return (
        <div className="rounded-2xl bg-indigo-50 md:py-10 overflow-hidden m-0 2xl:py-16 xl:py-8">
+            {/* Full-width image for mobile */}
+            <div className="lg:hidden w-full h-screen">
+                <Image 
+                    src="/hero2.jpeg" 
+                    alt="Dashboard image" 
+                    className="w-full h-full object-cover"
+                    width={800}
+                    height={600}
+                    priority
+                />
+            </div>
+            
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-12 md:gap-0 items-center lg:grid-cols-12">
-                    <div className="w-full xl:col-span-5 lg:col-span-8 2xl:-mx-5 xl:mx-0">
+                    {/* Desktop image - hidden on mobile */}
+                    <div className="hidden lg:block lg:col-span-7 lg:order-last">
+                        <div className="lg:w-243.25 xl:ml-16">
+                        <Image 
+                            src="/hero2.jpeg" 
+                            alt="Desktop Dashboard image" 
+                            className="rounded-l-3xl w-full lg:h-auto object-cover"
+                            width={800}
+                            height={600}
+                            priority
+                        />
+                        </div>
+                    </div>
+                    <div className="w-full xl:col-span-5 lg:col-span-8 2xl:-mx-5 xl:mx-0 lg:order-first">
                     
                     <div className="text-left mb-16 max-w-3xl">
                     <h1 className="text-3xl text-secondary max-md:pt-16 font-bold  md:mb-6 font-sans">
@@ -44,19 +69,7 @@ export default function AlternateHero() {
                     </div>
 
                     </div>
-                    
-                    </div>
-                    <div className="w-full xl:col-span-7  lg:col-span-4 block">
-                        <div className="w-full  sm:w-auto lg:w-243.25 xl:ml-16">
-                        <Image 
-                            src="/hero2.jpeg" 
-                            alt="Dashboard image" 
-                            className="rounded-l-3xl w-full lg:h-auto object-cover"
-                            width={800}
-                            height={600}
-                            priority
-                        />
-                        </div>
+
                     </div>
                 </div>
             </div>

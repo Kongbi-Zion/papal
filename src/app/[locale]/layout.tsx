@@ -7,6 +7,7 @@ import {setRequestLocale} from 'next-intl/server';
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingTimer from "@/components/FloatingTimer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default async function LocaleLayout({children, params}: Props) {
           <Navbar />
           {children}
           <Footer />
+          <FloatingTimer />
         </NextIntlClientProvider>
       </body>
     </html>
