@@ -5,7 +5,11 @@
   "navigation": {
     "home": "Accueil",
     "about": "À propos",
-    "services": "Services",
+    "holyFather": "Le Saint Père",
+    "popeSchedule": "Programme du Pape",
+    "news": "Nouvelles & Mises à Jour",
+    "resources": "Ressources Spirituelles",
+    "pilgrim": "Info Pèlerin",
     "contact": "Contact",
     "donate": "Faire un don"
   },
@@ -65,6 +69,106 @@
     "faqs": {
       "title": "FAQ",
       "description": "Questions courantes"
+    }
+  },
+  "messageOfHope": {
+    "title": "Un Message de Paix",
+    "quote": "Mes chers frères et sœurs du Cameroun, c'est avec une grande joie que j'attends avec impatience de visiter votre cher pays du 15 au 18 avril 2026. Je viens à vous en pèlerin d'espérance, pour partager la paix du Christ, pour marcher avec vous dans la foi, et pour être inspiré par le vibrant témoignage de l'Église camerounaise.",
+    "quoteAuthor": "Sa Sainteté le Pape Léon XIV",
+    "cards": {
+      "pilgrimage": {
+        "title": "Un Pèlerinage d'Espérance",
+        "description": "Le Pape Léon XIV vient au Cameroun comme un pèlerin d'espérance, apportant la paix du Christ à chaque communauté et inspirant l'unité, la foi et le renouveau à travers la nation. À une époque où le Cameroun fait face à des défis de conflit, de division et d'incertitude, le Pape Léon XIV arrive comme un pèlerin d'espérance, apportant la paix du Christ à chaque communauté.\n\nAccueillons le Pape Léon XIV avec des cœurs ouverts et joignons-nous à lui dans un engagement partagé pour la foi, l'espérance et la paix pour tout le Cameroun."
+      },
+      "globalCommunion": {
+        "title": "Communion Mondiale",
+        "description": "Renforcer l'Église universelle à travers la présence pastorale et l'unité spirituelle."
+      },
+      "pastoralEncounter": {
+        "title": "Rencontre Pastorale",
+        "description": "Rencontrer les catholiques camerounais et les chrétiens d'autres dénominations pour écouter, prier et renforcer la foi."
+      }
+    }
+  },
+  "catholicChurch": {
+    "title": "Dernières Nouvelles & Mises à Jour",
+    "subtitle": "Restez informé sur les préparatifs et développements du Voyage Apostolique 2026",
+    "newsItems": {
+      "official": {
+        "date": "Janvier 2026",
+        "title": "Annonce Officielle",
+        "description": "Accueillant les invitations des Chefs d'État et Autorités Ecclésiastiques respectifs, Sa Sainteté le Pape Léon XIV effectuera un Voyage Apostolique en Algérie, Cameroun, Angola et Guinée Équatoriale du 13 au 23 avril. Sa Sainteté visitera Alger et Annaba du 13 au 15 avril; Yaoundé, Bamenda et Douala du 15 au 18 avril; Luanda, Muxima et Saurimo du 18 au 21 avril; et Malabo, Mongomo et Bata du 21 au 23 avril.",
+        "readMore": "Lire Plus"
+      },
+      "themes": {
+        "date": "Janvier 2026",
+        "title": "Thèmes Pastoraux pour le Cameroun",
+        "description": "Pendant sa visite, le Pape Léon XIV se concentrera sur les thèmes spirituels clés pour la nation: paix, réconciliation et évangélisation. Dans un pays qui s'efforce vers l'unité amid les défis, le message du Saint Père appelle tous les Camerounais à guérir les divisions, renforcer la foi et vivre l'Évangile à travers l'amour, le dialogue et l'espérance.",
+        "readMore": "Lire Plus"
+      },
+      "preparations": {
+        "date": "Janvier 2026",
+        "title": "Préparatifs en Cours",
+        "description": "Les communautés à travers le Cameroun se rassemblent dans la joie et l'anticipation pour accueillir le Pape Léon XIV du 15 au 18 avril 2026. Les églises, écoles, Gouvernement et organisations locales préparent des célébrations, prières et événements pour assurer que cette visite historique devienne un moment de foi, d'espérance et d'unité pour la nation.",
+        "readMore": "Lire Plus"
+      }
+    },
+    "viewAllNews": "Voir Toutes les Nouvelles"
+  },
+  "photoGallery": {
+    "title": "Galerie Photo",
+    "subtitle": "Images des activités papales récentes et des préparatifs",
+    "videoTitle": "Préparatifs de la Visite Papale",
+    "videoDescription": "Coulisses du prochain voyage historique",
+    "imageTitle": "Activités Récentes",
+    "imageDescription": "Moments du ministère papal",
+    "viewGalleries": "Voir les Galeries"
+  },
+  "holyFather": {
+    "biographyTitle": "Biographie Pape Léon XIV",
+    "title": "Sa Sainteté le Pape Léon XIV",
+    "subtitle": "Serviteur des Serviteurs de Dieu, Berger de l'Église Universelle",
+    "imageAlt": "Portrait Officiel du Pape Léon XIV",
+    "imageCaption": "Sa Sainteté le Pape Léon XIV",
+    "introduction": "Le Pape Léon XIV (Robert Francis Prevost) est né le 14 septembre 1955 à Chicago, USA, de parents d'ascendance française, italienne et espagnole. Après avoir étudié les mathématiques et la philosophie à l'Université Villanova, il a entré dans l'Ordre de Saint Augustin en 1977 et a ensuite étudié la théologie à Chicago et le droit canonique à Rome, où il a été ordonné prêtre en 1982.",
+    "earlyLife": {
+      "title": "Travail Missionnaire et Pastoral",
+      "content": "Il a passé de nombreuses années dans le travail missionnaire et pastoral au Pérou, servant dans la formation des séminaristes, l'enseignement et le ministère paroissial à Trujillo, particulièrement parmi les communautés plus pauvres. En 1999, il est devenu Prieur Provincial des Augustins à Chicago et a ensuite servi comme Prieur Général de l'ordre augustinien mondial pour deux mandats."
+    },
+    "priestlyMinistry": {
+      "title": "Leadership Épiscopal",
+      "content": "En 2014, il a été nommé Administrateur Apostolique et plus tard Évêque de Chiclayo au Pérou, où il a également occupé des rôles de leadership au sein de la Conférence Épiscopale Péruvienne. En 2023, il a été appelé à Rome comme Préfet du Dicastère pour les Évêques et Président de la Commission Pontificale pour l'Amérique Latine, et a été créé Cardinal la même année."
+    },
+    "papacy": {
+      "title": "Papauté",
+      "content": "Suite au décès du Pape François, le Cardinal Prevost a été élu Pape lors d'un conclave du Collège des Cardinaux et a choisi le nom de Pape Léon XIV. En tant que 267ème Successeur de Saint Pierre, il est devenu le premier Pape Augustin et le deuxième Pape des Amériques, apportant son expérience missionnaire, pastorale et de l'Église mondiale à son nouveau ministère de direction de l'Église Catholique."
+    },
+    "vision": {
+      "title": "Signification Historique",
+      "content": "(Abrégé de la Biographie www.vaticannews.va)"
+    },
+    "quickFacts": {
+      "title": "Informations Rapides",
+      "birth": {
+        "title": "Naissance",
+        "content": "14 septembre 1955"
+      },
+      "ordination": {
+        "title": "Ordination Sacerdotale",
+        "content": "29 juin 1975"
+      },
+      "episcopal": {
+        "title": "Ordination Épiscopale",
+        "content": "8 décembre 1995"
+      },
+      "papal": {
+        "title": "Élection Papale",
+        "content": "15 octobre 2020"
+      },
+      "motto": {
+        "title": "Devise Papale",
+        "content": "Misericordia et Veritas"
+      }
     }
   }
 }

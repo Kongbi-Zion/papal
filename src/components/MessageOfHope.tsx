@@ -1,29 +1,31 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Globe, Users, Heart } from 'lucide-react'
 
 export default function MessageOfHope() {
+  const t = useTranslations('messageOfHope')
   const [activeCard, setActiveCard] = useState<number | null>(null)
 
   const cards = [
     {
       id: 1,
       icon: Heart,
-      title: 'A Pilgrimage of Hope',
-      description: 'Pope Leo XIV comes to Cameroon as a pilgrim of hope, bringing the peace of Christ to every community and inspiring unity, faith, and renewal across the nation. In a time when Cameroon faces challenges of conflict, division, and uncertainty, Pope Leo XIV arrives as a pilgrim of hope, bringing the peace of Christ to every community.\n\nLet us welcome Pope Leo XIV with open hearts and join him in a shared commitment to faith, hope, and peace for all of Cameroon.'
+      title: t('cards.pilgrimage.title'),
+      description: t('cards.pilgrimage.description')
     },
     {
       id: 2,
       icon: Globe,
-      title: 'Global Communion',
-      description: 'Strengthening the universal Church through pastoral presence and spiritual unity.'
+      title: t('cards.globalCommunion.title'),
+      description: t('cards.globalCommunion.description')
     },
     {
       id: 3,
       icon: Users,
-      title: 'Pastoral Encounter',
-      description: 'Meeting with Cameroonian Catholics and Christians of other denominations to listen, pray, and strengthen the faith.'
+      title: t('cards.pastoralEncounter.title'),
+      description: t('cards.pastoralEncounter.description')
     }
   ]
 
@@ -35,7 +37,7 @@ export default function MessageOfHope() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
-            A Message of Peace
+            {t('title')}
           </h2>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
         </div>
@@ -45,11 +47,11 @@ export default function MessageOfHope() {
         <div className="max-w-4xl mx-auto mb-20">
           <div className="bg-white p-8 shadow border-l-4 border-secondary">
             <blockquote className="text-xl text-gray-700 italic leading-relaxed">
-              &ldquo;My dear brothers and sisters in Cameroon, it is with great joy that I look forward to visiting your beloved country from April 15 to 18, 2026. I come to you as a pilgrim of hope, to share the peace of Christ, to walk with you in faith, and to be inspired by the vibrant witness of the Cameroonian Church.&rdquo;
+              &ldquo;{t('quote')}&rdquo;
             </blockquote>
 
             <p className="mt-6 text-gray-500 text-center font-medium">
-              — His Holiness Pope Leo XIV
+              — {t('quoteAuthor')}
             </p>
           </div>
         </div>

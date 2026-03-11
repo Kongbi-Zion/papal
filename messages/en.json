@@ -5,7 +5,11 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
+    "holyFather": "The Holy Father",
+    "popeSchedule": "Pope's Schedule",
+    "news": "News & Updates",
+    "resources": "Spiritual Resources",
+    "pilgrim": "Pilgrim Info",
     "contact": "Contact",
     "donate": "Donate"
   },
@@ -65,6 +69,106 @@
     "faqs": {
       "title": "FAQs",
       "description": "Common questions"
+    }
+  },
+  "messageOfHope": {
+    "title": "A Message of Peace",
+    "quote": "My dear brothers and sisters in Cameroon, it is with great joy that I look forward to visiting your beloved country from April 15 to 18, 2026. I come to you as a pilgrim of hope, to share the peace of Christ, to walk with you in faith, and to be inspired by the vibrant witness of the Cameroonian Church.",
+    "quoteAuthor": "His Holiness Pope Leo XIV",
+    "cards": {
+      "pilgrimage": {
+        "title": "A Pilgrimage of Hope",
+        "description": "Pope Leo XIV comes to Cameroon as a pilgrim of hope, bringing the peace of Christ to every community and inspiring unity, faith, and renewal across the nation. In a time when Cameroon faces challenges of conflict, division, and uncertainty, Pope Leo XIV arrives as a pilgrim of hope, bringing the peace of Christ to every community.\n\nLet us welcome Pope Leo XIV with open hearts and join him in a shared commitment to faith, hope, and peace for all of Cameroon."
+      },
+      "globalCommunion": {
+        "title": "Global Communion",
+        "description": "Strengthening the universal Church through pastoral presence and spiritual unity."
+      },
+      "pastoralEncounter": {
+        "title": "Pastoral Encounter",
+        "description": "Meeting with Cameroonian Catholics and Christians of other denominations to listen, pray, and strengthen the faith."
+      }
+    }
+  },
+  "catholicChurch": {
+    "title": "Latest News & Updates",
+    "subtitle": "Stay informed about the preparations and developments for the 2026 Apostolic Journey",
+    "newsItems": {
+      "official": {
+        "date": "January 2026",
+        "title": "Official Announcement",
+        "description": "Welcoming the invitations of the respective Heads of State and Ecclesiastical Authorities, His Holiness Pope Leo XIV will make an Apostolic Journey to Algeria, Cameroon, Angola and Equatorial Guinea from 13 to 23 April. His Holiness will visit Algiers and Annaba from 13 to 15 April; Yaoundé, Bamenda and Douala from 15 to 18 April; Luanda, Muxima and Saurimo from 18 to 21 April; and Malabo, Mongomo and Bata from 21 to 23 April.",
+        "readMore": "Read More"
+      },
+      "themes": {
+        "date": "January 2026",
+        "title": "Pastoral Themes for Cameroon",
+        "description": "During his visit, Pope Leo XIV will focus on key spiritual themes for the nation: peace, reconciliation, and evangelization. In a country striving for unity amid challenges, the Holy Father's message calls all Cameroonians to heal divisions, strengthen faith, and live the Gospel through love, dialogue, and hope.",
+        "readMore": "Read More"
+      },
+      "preparations": {
+        "date": "January 2026",
+        "title": "Preparations Underway",
+        "description": "Communities across Cameroon are coming together in joy and anticipation to welcome Pope Leo XIV from April 15–18, 2026. Churches, schools, Government, and local organizations are preparing celebrations, prayers, and events to ensure that this historic visit becomes a moment of faith, hope, and unity for the nation.",
+        "readMore": "Read More"
+      }
+    },
+    "viewAllNews": "View All News"
+  },
+  "photoGallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Images from recent papal activities and preparations",
+    "videoTitle": "Papal Visit Preparations",
+    "videoDescription": "Behind the scenes of the upcoming historic journey",
+    "imageTitle": "Recent Activities",
+    "imageDescription": "Moments from the papal ministry",
+    "viewGalleries": "View Galleries"
+  },
+  "holyFather": {
+    "biographyTitle": "Biography Pope Leo XIV",
+    "title": "His Holiness Pope Leo XIV",
+    "subtitle": "Servant of the Servants of God, Shepherd of the Universal Church",
+    "imageAlt": "Pope Leo XIV Official Portrait",
+    "imageCaption": "His Holiness Pope Leo XIV",
+    "introduction": "Pope Leo XIV (Robert Francis Prevost) was born on 14 September 1955 in Chicago, USA, to parents of French, Italian, and Spanish heritage. After studying Mathematics and Philosophy at Villanova University, he entered the Order of Saint Augustine in 1977 and later studied Theology in Chicago and Canon Law in Rome, where he was ordained a priest in 1982.",
+    "earlyLife": {
+      "title": "Missionary and Pastoral Work",
+      "content": "He spent many years in missionary and pastoral work in Peru, serving in seminary formation, teaching, and parish ministry in Trujillo, particularly among poorer communities. In 1999, he became Provincial Prior of the Augustinians in Chicago and later served as Prior General of the worldwide Augustinian Order for two terms."
+    },
+    "priestlyMinistry": {
+      "title": "Episcopal Leadership",
+      "content": "In 2014, he was appointed Apostolic Administrator and later Bishop of Chiclayo in Peru, where he also held leadership roles within the Peruvian Episcopal Conference. In 2023, he was called to Rome as Prefect of the Dicastery for Bishops and President of the Pontifical Commission for Latin America, and was created Cardinal the same year."
+    },
+    "papacy": {
+      "title": "Papacy",
+      "content": "Following the death of Pope Francis, Cardinal Prevost was elected Pope during a conclave of the College of Cardinals and chose the name Pope Leo XIV. As the 267th Successor of Saint Peter, he became the first Augustinian Pope and the second Pope from the Americas, bringing his missionary, pastoral, and global Church experience to his new ministry of leading the Catholic Church."
+    },
+    "vision": {
+      "title": "Historic Significance",
+      "content": "(Abridged from Biography www.vaticannews.va)"
+    }
+  },
+  "quickFacts": {
+    "title": "Quick Facts",
+    "birth": {
+      "title": "Birth",
+      "content": "March 15, 1950"
+    },
+    "ordination": {
+      "title": "Priestly Ordination",
+      "content": "June 29, 1975"
+    },
+    "episcopal": {
+      "title": "Episcopal Ordination",
+      "content": "December 8, 1995"
+    },
+    "papal": {
+      "title": "Papal Election",
+      "content": "October 15, 2020"
+    },
+    "motto": {
+      "title": "Papal Motto",
+      "content": "Misericordia et Veritas"
     }
   }
 }

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Calendar, ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function CatholicChurchCameroon() {
   const t = useTranslations('catholicChurch')
@@ -11,24 +12,24 @@ export default function CatholicChurchCameroon() {
   const newsItems = [
     {
       id: 1,
-      date: 'January 2026',
-      title: 'Official Announcement',
-      description: 'Welcoming the invitations of the respective Heads of State and Ecclesiastical Authorities, His Holiness Pope Leo XIV will make an Apostolic Journey to Algeria, Cameroon, Angola and Equatorial Guinea from 13 to 23 April. His Holiness will visit Algiers and Annaba from 13 to 15 April; Yaoundé, Bamenda and Douala from 15 to 18 April; Luanda, Muxima and Saurimo from 18 to 21 April; and Malabo, Mongomo and Bata from 21 to 23 April.',
-      linkText: 'Read More'
+      date: t('newsItems.official.date'),
+      title: t('newsItems.official.title'),
+      description: t('newsItems.official.description'),
+      linkText: t('newsItems.official.readMore')
     },
     {
       id: 2,
-      date: 'January 2026',
-      title: 'Pastoral Themes for Cameroon',
-      description: 'During his visit, Pope Leo XIV will focus on key spiritual themes for the nation: peace, reconciliation, and evangelization. In a country striving for unity amid challenges, the Holy Father\'s message calls all Cameroonians to heal divisions, strengthen faith, and live the Gospel through love, dialogue, and hope.',
-      linkText: 'Read More'
+      date: t('newsItems.themes.date'),
+      title: t('newsItems.themes.title'),
+      description: t('newsItems.themes.description'),
+      linkText: t('newsItems.themes.readMore')
     },
     {
       id: 3,
-      date: 'January 2026',
-      title: 'Preparations Underway',
-      description: 'Communities across Cameroon are coming together in joy and anticipation to welcome Pope Leo XIV from April 15–18, 2026. Churches, schools, Government, and local organizations are preparing celebrations, prayers, and events to ensure that this historic visit becomes a moment of faith, hope, and unity for the nation.',
-      linkText: 'Read More'
+      date: t('newsItems.preparations.date'),
+      title: t('newsItems.preparations.title'),
+      description: t('newsItems.preparations.description'),
+      linkText: t('newsItems.preparations.readMore')
     }
   ]
 
@@ -48,11 +49,11 @@ export default function CatholicChurchCameroon() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
-            Latest News & Updates
+            {t('title')}
           </h2>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-            Stay informed about the preparations and developments for the 2026 Apostolic Journey
+            {t('subtitle')}
           </p>
         </div>
 
@@ -95,10 +96,10 @@ export default function CatholicChurchCameroon() {
 
         {/* View All News Button */}
         <div className="text-center">
-          <button className="inline-flex items-center gap-2 md:gap-3 bg-primary text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-            <span className="text-sm md:text-base">View All News</span>
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          <Button size="lg" className="text-white hover:opacity-90 px-10 py-7 font-open-sans font-bold text-lg bg-primary">
+            {t('viewAllNews')}
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>

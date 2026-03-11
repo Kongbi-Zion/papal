@@ -16,7 +16,7 @@ export default function Navbar() {
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
 
   return (
-    <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 mx-4 max-w-[calc(100vw-2rem)]">
+    <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 max-w-[calc(100vw-2rem)]">
       <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
         <div className="flex justify-between h-auto bg-white/95 backdrop-blur-sm rounded-lg px-6 py-4">
           <div className="flex items-center">
@@ -37,26 +37,26 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-2">
             <Link href={`/${locale}`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Home
+              {t('home')}
             </Link>
             <Link href={`/${locale}/about`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              The Holy Father
+              {t('holyFather')}
             </Link>
             <Link href={`/${locale}/services`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Apostolic Journey
+              {t('popeSchedule')}
             </Link>
           
             <Link href={`/${locale}/news`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              News & Updates
+              {t('news')}
             </Link>
             <Link href={`/${locale}/resources`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Spiritual Resources
+              {t('resources')}
             </Link>
             <Link href={`/${locale}/pilgrim`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Pilgrim Info
+              {t('pilgrim')}
             </Link>
               <Link href={`/${locale}/contact`} className="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors">
-              Contact
+              {t('contact')}
             </Link>
             <LanguageSwitcher />
           </div>
@@ -102,25 +102,25 @@ export default function Navbar() {
                  transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'
                }}>
             <Link href={`/${locale}`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              Home
+              {t('home')}
             </Link>
             <Link href={`/${locale}/about`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              The Holy Father
+              {t('holyFather')}
             </Link>
             <Link href={`/${locale}/services`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              Apostolic Journey
+              {t('popeSchedule')}
             </Link>
             <Link href={`/${locale}/contact`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              Contact
+              {t('contact')}
             </Link>
             <Link href={`/${locale}/news`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              News & Updates
+              {t('news')}
             </Link>
             <Link href={`/${locale}/resources`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              Spiritual Resources
+              {t('resources')}
             </Link>
             <Link href={`/${locale}/pilgrim`} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50">
-              Pilgrim Info
+              {t('pilgrim')}
             </Link>
             <div className="px-3 py-2">
               <LanguageSwitcher />
