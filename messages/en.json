@@ -225,8 +225,7 @@
       "placeholder": "Enter your email",
       "subscribe": "Subscribe"
     }
-  }
-},
+  },
   "quickFacts": {
     "title": "Quick Facts",
     "birth": {
@@ -248,6 +247,46 @@
     "motto": {
       "title": "Papal Motto",
       "content": "Misericordia et Veritas"
+    }
+  },
+    "spiritualResources": {
+    "title": "Spiritual References",
+    "subtitle": "Biblical foundations and spiritual reflections for Pope Leo XIV's Apostolic Journey to Cameroon",
+    "unity": {
+      "title": "Unity in Christ",
+      "verse": "That they may all be one, as you, Father, are in me and I in you.",
+      "reference": "John 17:21",
+      "description": "This verse, chosen as the motto of the visit, calls the Church and the nation of Cameroon to deepen unity—across cultures, languages, and communities—through faith in Christ."
+    },
+    "hope": {
+      "title": "Hope for a Nation Seeking Peace",
+      "verse": "May the God of hope fill you with all joy and peace in believing.",
+      "reference": "Romans 15:13",
+      "description": "In a time when parts of Cameroonian society face tensions and uncertainty, the Pope's visit is a call to renew hope rooted in faith and trust in God's promise of peace."
+    },
+    "reconciliation": {
+      "title": "Reconciliation and Healing",
+      "verse": "God… has given us the ministry of reconciliation.",
+      "reference": "2 Corinthians 5:18–19",
+      "description": "The visit encourages all people—Christians and people of goodwill—to become agents of reconciliation and healing in their communities."
+    },
+    "missionary": {
+      "title": "Missionary Witness",
+      "verse": "Go therefore and make disciples of all nations.",
+      "reference": "Matthew 28:19–20",
+      "description": "Cameroon, often described as 'Africa in miniature,' reflects the richness of cultures and traditions. The Church is called to bear witness to the Gospel in every corner of society."
+    },
+    "solidarity": {
+      "title": "Solidarity with the Poor and Vulnerable",
+      "verse": "Whatever you did for one of the least of these brothers and sisters of mine, you did for me.",
+      "reference": "Matthew 25:40",
+      "description": "The Pope's visit highlights the Church's mission of compassion, justice, and service, especially toward the poor, displaced persons, and those affected by conflict."
+    },
+    "church": {
+      "title": "The Church as a Family",
+      "verse": "Make every effort to keep the unity of the Spirit through the bond of peace.",
+      "reference": "Ephesians 4:3–6",
+      "description": "Inspired by the vision of the Church as the Family of God in Africa, this message calls Cameroonians to live fraternity, solidarity, and mutual respect."
     }
   }
 }

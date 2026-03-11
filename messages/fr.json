@@ -249,44 +249,44 @@
       }
     }
   },
-    "spiritualResources": {
-      "title": "Références Spirituelles",
-      "subtitle": "Fondements bibliques et réflexions spirituelles pour le Voyage Apostolique du Pape Léon XIV au Cameroun",
-      "unity": {
-        "title": "Unité dans le Christ",
-        "verse": "Qu'ils soient tous un, comme toi, Père, tu es en moi et moi en toi.",
-        "reference": "Jean 17:21",
-        "description": "Ce verset, choisi comme devise de la visite, appelle l'Église et la nation camerounaise à approfondir l'unité—à travers les cultures, les langues et les communautés—par la foi dans le Christ."
-      },
-      "hope": {
-        "title": "Espoir pour une Nation en Quête de Paix",
-        "verse": "Que le Dieu d'espérance vous remplisse de toute joie et de paix dans la foi.",
-        "reference": "Romains 15:13",
-        "description": "À une époque où des parties de la société camerounaise font face à des tensions et à l'incertitude, la visite du Pape est un appel à renouveler l'espérance enracinée dans la foi et la confiance dans la promesse de paix de Dieu."
-      },
-      "reconciliation": {
-        "title": "Réconciliation et Guérison",
-        "verse": "Dieu… nous a donné le ministère de la réconciliation.",
-        "reference": "2 Corinthiens 5:18–19",
-        "description": "La visite encourage toutes les personnes—chrétiens et personnes de bonne volonté—à devenir des agents de réconciliation et de guérison dans leurs communautés."
-      },
-      "missionary": {
-        "title": "Témoignage Missionnaire",
-        "verse": "Allez donc et faites des disciples de toutes les nations.",
-        "reference": "Matthieu 28:19–20",
-        "description": "Le Cameroun, souvent décrit comme 'l'Afrique en miniature', reflète la richesse des cultures et des traditions. L'Église est appelée à témoigner de l'Évangile dans chaque coin de la société."
-      },
-      "solidarity": {
-        "title": "Solidarité avec les Pauvres et Vulnérables",
-        "verse": "Tout ce que vous avez fait pour l'un de ces plus petits frères et sœurs, c'est à moi que vous l'avez fait.",
-        "reference": "Matthieu 25:40",
-        "description": "La visite du Pape met en évidence la mission de compassion, de justice et de service de l'Église, en particulier envers les pauvres, les personnes déplacées et celles affectées par les conflits."
-      },
-      "church": {
-        "title": "L'Église comme Famille",
-        "verse": "Faites tout effort pour garder l'unité de l'Esprit par le lien de la paix.",
-        "reference": "Éphésiens 4:3–6",
-        "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
-      }
+  "spiritualResources": {
+    "title": "Références Spirituelles",
+    "subtitle": "Fondements bibliques et réflexions spirituelles pour le Voyage Apostolique du Pape Léon XIV au Cameroun",
+    "unity": {
+      "title": "Unité dans le Christ",
+      "verse": "Qu'ils soient tous un, comme toi, Père, tu es en moi et moi en toi.",
+      "reference": "Jean 17:21",
+      "description": "Ce verset, choisi comme devise de la visite, appelle l'Église et la nation camerounaise à approfondir l'unité—à travers les cultures, les langues et les communautés—par la foi dans le Christ."
+    },
+    "hope": {
+      "title": "Espoir pour une Nation en Quête de Paix",
+      "verse": "Que le Dieu d'espérance vous remplisse de toute joie et de paix dans la foi.",
+      "reference": "Romains 15:13",
+      "description": "À une époque où des parties de la société camerounaise font face à des tensions et à l'incertitude, la visite du Pape est un appel à renouveler l'espérance enracinée dans la foi et la confiance dans la promesse de paix de Dieu."
+    },
+    "reconciliation": {
+      "title": "Réconciliation et Guérison",
+      "verse": "Dieu… nous a donné le ministère de la réconciliation.",
+      "reference": "2 Corinthiens 5:18–19",
+      "description": "La visite encourage toutes les personnes—chrétiens et personnes de bonne volonté—à devenir des agents de réconciliation et de guérison dans leurs communautés."
+    },
+    "missionary": {
+      "title": "Témoignage Missionnaire",
+      "verse": "Allez donc et faites des disciples de toutes les nations.",
+      "reference": "Matthieu 28:19–20",
+      "description": "Le Cameroun, souvent décrit comme 'l'Afrique en miniature', reflète la richesse des cultures et des traditions. L'Église est appelée à témoigner de l'Évangile dans chaque coin de la société."
+    },
+    "solidarity": {
+      "title": "Solidarité avec les Pauvres et Vulnérables",
+      "verse": "Tout ce que vous avez fait pour l'un de ces plus petits frères et sœurs, c'est à moi que vous l'avez fait.",
+      "reference": "Matthieu 25:40",
+      "description": "La visite du Pape met en évidence la mission de compassion, de justice et de service de l'Église, en particulier envers les pauvres, les personnes déplacées et celles affectées par les conflits."
+    },
+    "church": {
+      "title": "L'Église comme Famille",
+      "verse": "Faites tout effort pour garder l'unité de l'Esprit par le lien de la paix.",
+      "reference": "Éphésiens 4:3–6",
+      "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
     }
+  }
 }
