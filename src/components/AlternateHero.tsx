@@ -47,7 +47,6 @@ export default function AlternateHero() {
                         <h1 className="text-5xl md:text-7xl max-md:pt-10 font-bold text-gray-600 mb-6 font-sans">
                             &ldquo;{t('quote')}&rdquo; <span className='text-[30px]'> ({t('reference')})</span>
                         </h1>
-                     
                     </div>
 
                     <p className="text-lg  text-gray-600 mb-8 max-w-4xl leading-relaxed">

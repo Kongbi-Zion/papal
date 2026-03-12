@@ -28,7 +28,7 @@ export default function Navbar() {
   const getActiveClasses = (path: string, isMobile = false) => {
     const baseClasses = isMobile 
       ? "block px-3 py-2 text-base font-medium transition-colors"
-      : "px-3 py-2 text-xs font-medium transition-colors"
+      : "px-3 py-2 text-sm font-medium transition-colors"
     
     const activeClasses = "text-secondary bg-secondary/10 rounded-lg"
     const inactiveClasses = isMobile 
@@ -78,9 +78,6 @@ export default function Navbar() {
             </Link>
             <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`)}>
               {t('resources')}
-            </Link>
-            <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`)}>
-              {t('pilgrim')}
             </Link>
             <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`)}>
               {t('accreditations')}
@@ -137,9 +134,6 @@ export default function Navbar() {
             <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
               {t('presidentSpeech')}
             </Link>
-            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
-              {t('presidentSpeech')}
-            </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)}>
               {t('holyFather')}
             </Link>
@@ -154,9 +148,6 @@ export default function Navbar() {
             </Link>
             <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`, true)}>
               {t('resources')}
-            </Link>
-            <Link href={`/${locale}/pilgrim`} className={getActiveClasses(`/${locale}/pilgrim`, true)}>
-              {t('pilgrim')}
             </Link>
             <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`, true)}>
               {t('accreditations')}

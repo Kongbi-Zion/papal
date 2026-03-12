@@ -86,7 +86,10 @@ export default function GalleryPage() {
         {/* Modern Gallery Grid */}
         <div className="columns-1 md:columns-2 lg:columns-4 gap-6 space-y-6">
           {filteredImages.map((image, index) => (
-            <div key={index} className="break-inside-avoid group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+
+            <div key={index}> 
+
+            <div  className="break-inside-avoid group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <Image 
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" 
                 src={image.src} 
@@ -95,12 +98,22 @@ export default function GalleryPage() {
                 height={300}
                 loading="lazy"
               />
+
+             
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white text-sm font-medium">{image.alt}</p>
+                
                 </div>
               </div>
             </div>
+
+             <div className="p-2">
+                <p className="text-black text-[10px] mt-1 opacity-75">Credit: Vatican Media</p>
+              </div>
+        
+            </div>
+
           ))}
         </div>
       </div>

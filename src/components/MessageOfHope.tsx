@@ -3,10 +3,18 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Globe, Users, Heart } from 'lucide-react'
+import { useParams } from 'next/navigation'
 
 export default function MessageOfHope() {
   const t = useTranslations('messageOfHope')
+  const params = useParams()
+  const locale = params.locale as string
   const [activeCard, setActiveCard] = useState<number | null>(null)
+  
+  // Select video based on language
+  const videoPath = locale === 'fr' 
+    ? '/message/message_fr.mp4'
+    : '/message/message_en.mp4'
 
   const cards = [
     {
@@ -36,23 +44,30 @@ export default function MessageOfHope() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
-            {t('title')}
+          <div className='flex justify-center'>
+            <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text max-w-3xl mb-6">
+            {/* {t('title')} */}
+            <p className='text-center'>Pope Leo XIV Greets the People of Cameroon Ahead of His Visit</p>
           </h2>
+          </div>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
         </div>
 
 
-        {/* Quote */}
+        {/* Video Message */}
         <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-white p-8 shadow border-l-4 border-secondary">
-            <blockquote className="text-xl text-gray-700 italic leading-relaxed">
-              &ldquo;{t('quote')}&rdquo;
-            </blockquote>
-
-            <p className="mt-6 text-gray-500 text-center font-medium">
-              — {t('quoteAuthor')}
-            </p>
+          <div className="bg-white p-4 rounded-2xl shadow ">
+            <div className="aspect-video">
+              <video
+                src={videoPath}
+                poster="/profile.jpeg"
+                controls
+                className="w-full h-full rounded-lg"
+                title={locale === 'fr' ? 'Message du Pape' : "Pope's Message"}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
 
