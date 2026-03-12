@@ -25,15 +25,16 @@ export default function PhotoGallery() {
           <div className="flex-1 w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-full">
               <div className="relative aspect-[4/3]">
-                {/* YouTube Video */}
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/03pYP2Nmreo"
+                {/* Local Video */}
+                <video
+                  className="w-full h-full object-cover"
+                  src="/video_gallery/vid1.mp4"
                   title={t('videoTitle')}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                  controls
+                  // poster="/profile.jpeg"
+                >
+                  Your browser does not support the video tag.
+                </video>
                 
                 {/* Overlay Button */}
                 <div className="absolute bottom-4 right-4 flex items-center justify-center">
