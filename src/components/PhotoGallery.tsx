@@ -24,17 +24,15 @@ export default function PhotoGallery() {
           {/* Video Section - Left */}
           <div className="flex-1 w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-full">
-              <div className="relative aspect-[4/3]">
-                {/* Local Video */}
-                <video
-                  className="w-full h-full object-cover"
-                  src="/video_gallery/vid1.mp4"
+              <div className="relative aspect-4/3">
+                {/* YouTube Video */}
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/Loqi2xzbsdw"
                   title={t('videoTitle')}
-                  controls
-                  // poster="/profile.jpeg"
-                >
-                  Your browser does not support the video tag.
-                </video>
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
                 
                 {/* Overlay Button */}
                 <div className="absolute bottom-4 right-4 flex items-center justify-center">
@@ -52,7 +50,7 @@ export default function PhotoGallery() {
           {/* Image Section - Right */}
           <div className="flex-1 w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-full">
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-4/3">
                 {/* Vatican/Pope Image */}
                 <img 
                   src="/image_gallery/img3.jpeg"

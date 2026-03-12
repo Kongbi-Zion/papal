@@ -8,33 +8,13 @@ import Link from 'next/link'
 const videos = [
   {
     id: 1,
-    title: 'Papal Visit Preparations',
-    youtubeId: '03pYP2Nmreo',
+    title: 'EWTN Interviews Bettencourt',
+    videoPath: '/video_gallery/vid1.mp4',
   },
   {
     id: 2,
     title: "Pope Leo XIV's Message",
-    youtubeId: '03pYP2Nmreo',
-  },
-  {
-    id: 3,
-    title: 'Historic Arrival',
-    youtubeId: '03pYP2Nmreo',
-  },
-  {
-    id: 4,
-    title: 'Mass Celebration',
-    youtubeId: '03pYP2Nmreo',
-  },
-  {
-    id: 5,
-    title: 'Blessing Ceremony',
-    youtubeId: '03pYP2Nmreo',
-  },
-  {
-    id: 6,
-    title: 'Community Gathering',
-    youtubeId: '03pYP2Nmreo',
+    youtubeId: 'VDTri1riPrA?si=OSGzIsBPMu1xfZv7',
   },
 ]
 
@@ -71,28 +51,40 @@ export default function VideosPage() {
         </div>
 
         {/* Video Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {videos.map((video) => (
             <div
               key={video.id}
-              className="rounded-2xl overflow-hidden shadow-lg bg-white transition-transform duration-300 hover:-translate-y-1"
+              className="transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                  title={video.title}
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              <div className="aspect-video rounded overflow-hidden">
+                {video.videoPath ? (
+                  <video
+                    className="w-full h-full object-cover rounded-xl"
+                    src={video.videoPath}
+                    title={video.title}
+                    controls
+             
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <iframe
+                    className="w-full h-full rounded-xl"
+                    src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
               </div>
 
-              <div className="p-6">
+              {/* <div className="p-6">
                 <h3 className="text-xl font-bold text-primary font-crimson-text">
                   {video.title}
                 </h3>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -8,6 +8,7 @@ import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingTimer from "@/components/FloatingTimer";
+import LiveStreamModal from "@/components/LiveStreamModal";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -49,6 +50,9 @@ export default async function LocaleLayout({children, params}: Props) {
           {children}
           <Footer />
           <FloatingTimer />
+          <div className="fixed bottom-4 right-4 z-40">
+            <LiveStreamModal />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
