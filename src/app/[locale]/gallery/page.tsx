@@ -15,17 +15,19 @@ export default function GalleryPage() {
   const galleryImages = [
     { src: '/image_gallery/img1.jpeg', alt: 'Papal visit preparation', category: 'ceremony' },
     { src: '/image_gallery/img2.jpeg', alt: 'Pope Leo XIV with faithful', category: 'Pontifical moments' },
-      { src: '/image_gallery/img5.jpeg', alt: 'Papal audience', category: 'papal' },
+    { src: '/image_gallery/img5.jpeg', alt: 'Papal audience', category: 'papal' },
     { src: '/image_gallery/img6.jpeg', alt: 'Religious celebration', category: 'ceremony' },
     { src: '/image_gallery/img7.jpeg', alt: 'Cameroonian welcome', category: 'welcome' },
     { src: '/image_gallery/img8.jpeg', alt: 'Traditional ceremony', category: 'culture' },
     { src: '/image_gallery/img3.jpeg', alt: 'Church ceremony', category: 'ceremony' },
     { src: '/image_gallery/img4.jpeg', alt: 'Vatican proceedings', category: 'vatican' },
-  
     { src: '/image_gallery/img9.jpeg', alt: 'Papal blessing ceremony', category: 'blessing' },
     { src: '/image_gallery/img10.jpeg', alt: 'Historic procession', category: 'procession' },
     { src: '/image_gallery/img11.jpeg', alt: 'Faithful gathering', category: 'gathering' },
     { src: '/image_gallery/img12.jpeg', alt: 'Sacred celebration', category: 'celebration' },
+    { src: '/image_gallery/img13.jpeg', alt: 'Papal address to crowd', category: 'address' },
+    { src: '/image_gallery/img14.jpeg', alt: 'Traditional Cameroonian ceremony', category: 'culture' },
+    { src: '/image_gallery/img15.jpeg', alt: 'Papal benediction', category: 'blessing' },
   ]
 
   // Get unique categories
