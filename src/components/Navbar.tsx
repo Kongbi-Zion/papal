@@ -30,7 +30,7 @@ export default function Navbar() {
   const getActiveClasses = (path: string, isMobile = false) => {
     const baseClasses = isMobile 
       ? "block px-3 py-2 text-base font-medium transition-colors"
-      : "px-3 py-2 text-sm font-medium transition-colors"
+      : "px-3 py-2 text-[12px] font-medium transition-colors"
     
     const activeClasses = "text-secondary bg-secondary/10 rounded-lg"
     const inactiveClasses = isMobile 

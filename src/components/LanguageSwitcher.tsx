@@ -2,37 +2,40 @@
 
 import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 
 export default function LanguageSwitcher() {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
 
+  const newLocale = locale === 'en' ? 'fr' : 'en'
+
   const toggleLanguage = () => {
-    const newLocale = locale === 'en' ? 'fr' : 'en'
     const newPath = pathname.replace(`/${locale}`, `/${newLocale}`)
     router.push(newPath)
   }
 
-  const getFlag = (locale: string) => {
-    switch(locale) {
-      case 'en':
-         return '🇫🇷'
-      case 'fr':
-         return '🇺🇸'
-      default:
-        return '🌐'
-    }
-  }
+  const flag = locale === 'en' ? '🇫🇷' : '🇬🇧'
+  const label = locale === 'en' ? 'FR' : 'ENG'
 
   return (
-    <div 
+    <button
       onClick={toggleLanguage}
-      className="cursor-pointer text-4xl"
+      className="
+        flex items-center gap-2
+        px-3 py-2
+        rounded-lg
+        text-sm font-medium
+        text-gray-800
+        hover:bg-gray-100
+        transition-colors
+        hover:cursor-pointer
+      "
       title={locale === 'en' ? 'Switch to French' : 'Switch to English'}
+      aria-label="Switch language"
     >
-      {getFlag(locale)}
-    </div>
+      <span className="text-lg">{flag}</span>
+      <span>{label}</span>
+    </button>
   )
 }
