@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import { Button } from '@/components/ui/button'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { usePathname } from 'next/navigation'
+import { useLiveStream } from '@/contexts/LiveStreamContext'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,6 +14,7 @@ export default function Navbar() {
   const pathname = usePathname()
   const t = useTranslations('navigation')
   const tCommon = useTranslations('common')
+  const { openLiveStream } = useLiveStream()
 
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
 
@@ -39,9 +40,13 @@ export default function Navbar() {
     return `${baseClasses} ${isActive(path) ? activeClasses : inactiveClasses}`
   }
 
+  function handleMobileLinkClick() {
+    openLiveStream()
+  }
+
   return (
-    <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300 max-w-[calc(100vw-2rem)]">
-      <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
+    <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div className="lg:max-w-[1550] mx-auto  sm:px-6 lg:px-8">
         <div className="flex justify-between h-auto bg-white/95 backdrop-blur-sm rounded-lg px-6 py-4">
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
@@ -51,7 +56,7 @@ export default function Navbar() {
                   alt={tCommon('logoAlt')} 
                   width={100} 
                   height={100}
-                  className="rounded-full object-cover w-30 h-30 lg:w-40 lg:h-40 xl:w-48 xl:h-48"
+                  className="rounded-full object-cover min-w-30 min-h-30 w-30 h-30 lg:min-w-48 lg:min-h-48 lg:w-40 lg:h-40 xl:w-48 xl:h-48 xl:min-w-48 xl:min-h-48"
                   priority
                 />
               </div>
@@ -59,9 +64,9 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center">
             <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`)}>
-              {t('home')}
+              {t('home')} 
             </Link>
             <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`)}>
               A Word from the President of NECC
@@ -86,11 +91,14 @@ export default function Navbar() {
               <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`)}>
               {t('contact')}
             </Link>
-            <LanguageSwitcher />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+         <div className='flex items-center gap-2'>
+          <button onClick={handleMobileLinkClick} className="bg-red-600 hover:bg-red-700 hover:cursor-pointer text-white px-2 lg:px-4 py-3 rounded-lg font-semibold text-sm transition-colors duration-300 flex items-center space-x-2">
+            <div className=" w-2 h-2  bg-white rounded-full animate-pulse"></div>
+            <span>Watch Live</span>
+          </button>
+           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-yellow-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500"
@@ -119,6 +127,12 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
+
+          <div className="ml-2 hidden lg:block">
+            <LanguageSwitcher />
+          </div>
+
+         </div>
         </div>
       </div>
 

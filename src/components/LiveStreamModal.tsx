@@ -1,79 +1,75 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { X } from 'lucide-react'
+import { useLiveStream } from "@/contexts/LiveStreamContext";
 
-interface LiveStreamModalProps {
-  isMobile?: boolean
-}
+export default function LiveStreamModal() {
+  const { isOpen, closeLiveStream } = useLiveStream();
 
-export default function LiveStreamModal({ isMobile = false }: LiveStreamModalProps) {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const openModal = () => setIsOpen(true)
-  const closeModal = () => setIsOpen(false)
-
-  const buttonClass = isMobile 
-    ? "bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors duration-300 flex items-center space-x-2 w-full"
-    : "bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-colors duration-300 flex items-center space-x-2"
+  if (!isOpen) return null;
 
   return (
-    <>
-      {/* Modal Trigger Button */}
-      <button 
-        onClick={openModal}
-        className={buttonClass}
-      >
-        <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-        <span>Watch Live</span>
-      </button>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      
+      {/* Background */}
+      <div className="absolute inset-0 bg-black/5 backdrop-blur-md"></div>
 
       {/* Modal */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto">
-          {/* Background overlay - prevents closing */}
-          <div className="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+      <div className="relative w-full max-w-6xl rounded-3xl overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-white">
+
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-red-600 to-red-700">
           
-          {/* Modal container */}
-          <div className="flex min-h-full items-center justify-center p-4">
-            <div className="relative bg-white rounded-lg shadow-xl max-w-4xl w-full">
-              {/* Modal header */}
-              <div className="flex items-center justify-between p-4 border-b">
-                <h2 className="text-xl font-bold text-gray-900">Live Stream</h2>
-                <button
-                  onClick={closeModal}
-                  className="text-gray-400 hover:text-gray-600 transition-colors p-1"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-              </div>
-              
-              {/* Modal body - Video Player */}
-              <div className="p-4">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <video
-                    className="absolute top-0 left-0 w-full h-full"
-                    controls
-                    autoPlay
-                    muted
-                    playsInline
-                  >
-                    <source src="https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8" type="application/x-mpegURL" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-              
-              {/* Modal footer */}
-              <div className="p-4 border-t bg-gray-50 rounded-b-lg">
-                <p className="text-sm text-gray-600 text-center">
-                  Live stream is currently active. Close this window to stop watching.
-                </p>
-              </div>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+              </span>
+              <span className="text-white font-semibold tracking-wide">
+                LIVE
+              </span>
             </div>
+
+            <h2 className="text-white text-lg font-semibold">
+              Papal Visit Africa – Live Broadcast
+            </h2>
           </div>
         </div>
-      )}
-    </>
-  )
+
+        {/* Video */}
+        <div className="bg-black">
+          <div className="relative w-full pb-[56.25%]">
+            <video
+              className="absolute inset-0 w-full h-full"
+              controls
+              autoPlay
+              playsInline
+            >
+              <source
+                src="https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8"
+                type="application/x-mpegURL"
+              />
+            </video>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="flex items-center justify-between px-6 py-4 bg-gray-50 border-t">
+          
+          <div className="flex items-center gap-3 text-sm text-gray-700">
+            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+            Live coverage of the Papal Visit
+          </div>
+
+          <button
+            onClick={closeLiveStream}
+            className="px-4 py-2 text-sm hover:cursor-pointer font-medium rounded-lg bg-gray-900 text-white hover:bg-black transition"
+          >
+            Close
+          </button>
+
+        </div>
+      </div>
+    </div>
+  );
 }
