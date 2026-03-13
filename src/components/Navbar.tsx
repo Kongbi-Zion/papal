@@ -69,7 +69,7 @@ export default function Navbar() {
               {t('home')} 
             </Link>
             <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`)}>
-              A Word from the President of NECC
+              A Word from the President of the NECC
               {/* {t('presidentSpeech')} */}
             </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`)}>
