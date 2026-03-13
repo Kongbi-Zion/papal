@@ -276,6 +276,33 @@
       "latin": "« Ut omnes unum sint »"
     },
     "subThemes": {
+      "title": "SOUS-THÈMES / SUB-THEMES",
+      "description": "Thèmes pastoraux de chaque Province ecclésiastique :",
+      "bamenda": {
+        "title": "BAMENDA",
+        "verse": "\"My peace I leave you, my peace I give you\" (John 14:27)"
+      },
+      "douala": {
+        "title": "DOUALA",
+        "verse": "« Donnez-leur vous-mêmes à manger » (Luc 9, 13)"
+      },
+      "garoua": {
+        "title": "GAROUA",
+        "verse": "« Qui est mon prochain ? » (Luc 10, 29)"
+      },
+      "yaounde": {
+        "title": "YAOUNDÉ - BERTOUA",
+        "verse": "Justice et paix s'embrassent lorsqu'amour et vérité se rencontrent (cf. Psaume 84, 11)"
+      }
+    },
+    "mainTheme": {
+      "title": "THÈME GÉNÉRAL",
+      "description": "Le thème général proposé est tiré de l'Évangile selon Saint Jean :",
+      "verse": "« Que tous soient un » (Jean 17, 21)",
+      "english": "« Que tous soient un »",
+      "latin": "« Ut omnes unum sint »"
+    },
+    "subThemes": {
       "title": "SOUS-THÈMES",
       "description": "Thèmes pastoraux de chaque Province ecclésiastique :",
       "bamenda": {
