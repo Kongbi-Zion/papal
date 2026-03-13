@@ -267,6 +267,33 @@
       "verse": "Faites tout effort pour garder l'unité de l'Esprit par le lien de la paix.",
       "reference": "Éphésiens 4:3–6",
       "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
+    },
+    "mainTheme": {
+      "title": "THÈME GÉNÉRAL",
+      "description": "Le thème général proposé est tiré de l'Évangile selon Saint Jean :",
+      "verse": "« Que tous soient un » (Jean 17, 21)",
+      "english": "« Que tous soient un »",
+      "latin": "« Ut omnes unum sint »"
+    },
+    "subThemes": {
+      "title": "SOUS-THÈMES",
+      "description": "Thèmes pastoraux de chaque Province ecclésiastique :",
+      "bamenda": {
+        "title": "BAMENDA",
+        "verse": "« Ma paix je vous laisse, ma paix je vous donne » (Jean 14:27)"
+      },
+      "douala": {
+        "title": "DOUALA",
+        "verse": "« Donnez-leur vous-mêmes à manger » (Luc 9:13)"
+      },
+      "garoua": {
+        "title": "GAROUA",
+        "verse": "« Qui est mon prochain ? » (Luc 10:29)"
+      },
+      "yaounde": {
+        "title": "YAOUNDÉ - BERTOUA",
+        "verse": "Justice et paix s'embrassent lorsqu'amour et vérité se rencontrent (cf. Psaume 84:11)"
+      }
     }
   },
   "floatingTimer": {

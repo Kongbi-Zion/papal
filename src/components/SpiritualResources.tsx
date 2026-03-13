@@ -147,54 +147,54 @@ export default function SpiritualResources() {
         {/* Main Theme and Sub-Themes */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
           <h2 className="text-2xl font-bold text-primary mb-6 font-crimson-text">
-            THÈME GÉNÉRAL / MAIN THEME
+            {t('mainTheme.title')}
           </h2>
           <div className="bg-gradient-to-r from-red-50 to-yellow-50 rounded-xl p-6 mb-8">
             <p className="text-lg font-medium text-gray-800 mb-3">
-              Le thème général proposé est tiré de l'Évangile selon Saint Jean :
+              {t('mainTheme.description')}
             </p>
             <blockquote className="text-xl font-bold text-red-600 italic mb-3">
-              « Que tous soient un » (Jean 17, 21)
+              {t('mainTheme.verse')}
             </blockquote>
             <div className="space-y-2 text-gray-700">
-              <p className="font-medium">"May they all be one"</p>
-              <p className="font-medium">"Ut omnes unum sint"</p>
+              <p className="font-medium">{t('mainTheme.english')}</p>
+              <p className="font-medium">{t('mainTheme.latin')}</p>
             </div>
           </div>
 
           <h3 className="text-xl font-bold text-primary mb-4 font-crimson-text">
-            SOUS-THÈMES / SUB-THEMES
+            {t('subThemes.title')}
           </h3>
           <p className="text-gray-600 mb-6">
-            Thèmes pastoraux de chaque Province ecclésiastique / Pastoral themes of each Ecclesiastical Province:
+            {t('subThemes.description')}
           </p>
           
           <div className="grid md:grid-cols-2 gap-4">
             <div className="border-l-4 border-red-500 pl-4 py-3 bg-red-50 rounded-r-lg">
-              <h4 className="font-bold text-red-700 mb-1">BAMENDA</h4>
+              <h4 className="font-bold text-red-700 mb-1">{t('subThemes.bamenda.title')}</h4>
               <p className="text-gray-700 italic">
-                "My peace I leave you, my peace I give you" (John 14:27)
+                {t('subThemes.bamenda.verse')}
               </p>
             </div>
             
             <div className="border-l-4 border-blue-500 pl-4 py-3 bg-blue-50 rounded-r-lg">
-              <h4 className="font-bold text-blue-700 mb-1">DOUALA</h4>
+              <h4 className="font-bold text-blue-700 mb-1">{t('subThemes.douala.title')}</h4>
               <p className="text-gray-700 italic">
-                « Donnez-leur vous-mêmes à manger » (Luc 9, 13)
+                {t('subThemes.douala.verse')}
               </p>
             </div>
             
             <div className="border-l-4 border-green-500 pl-4 py-3 bg-green-50 rounded-r-lg">
-              <h4 className="font-bold text-green-700 mb-1">GAROUA</h4>
+              <h4 className="font-bold text-green-700 mb-1">{t('subThemes.garoua.title')}</h4>
               <p className="text-gray-700 italic">
-                « Qui est mon prochain ? » (Luc 10, 29)
+                {t('subThemes.garoua.verse')}
               </p>
             </div>
             
             <div className="border-l-4 border-yellow-500 pl-4 py-3 bg-yellow-50 rounded-r-lg">
-              <h4 className="font-bold text-yellow-700 mb-1">YAOUNDÉ - BERTOUA</h4>
+              <h4 className="font-bold text-yellow-700 mb-1">{t('subThemes.yaounde.title')}</h4>
               <p className="text-gray-700 italic">
-                Justice et paix s'embrassent lorsqu'amour et vérité se rencontrent (cf. Psaume 84, 11)
+                {t('subThemes.yaounde.verse')}
               </p>
             </div>
           </div>

@@ -305,6 +305,33 @@
       "verse": "Make every effort to keep the unity of the Spirit through the bond of peace.",
       "reference": "Ephesians 4:3–6",
       "description": "Inspired by the vision of the Church as the Family of God in Africa, this message calls Cameroonians to live fraternity, solidarity, and mutual respect."
+    },
+    "mainTheme": {
+      "title": "MAIN THEME",
+      "description": "The general theme is taken from the Gospel according to Saint John:",
+      "verse": "\"May they all be one\" (John 17:21)",
+      "english": "\"May they all be one\"",
+      "latin": "\"Ut omnes unum sint\""
+    },
+    "subThemes": {
+      "title": "SUB-THEMES",
+      "description": "Pastoral themes of each Ecclesiastical Province:",
+      "bamenda": {
+        "title": "BAMENDA",
+        "verse": "\"My peace I leave you, my peace I give you\" (John 14:27)"
+      },
+      "douala": {
+        "title": "DOUALA",
+        "verse": "\"Give them something to eat yourselves\" (Luke 9:13)"
+      },
+      "garoua": {
+        "title": "GAROUA",
+        "verse": "\"Who is my neighbor?\" (Luke 10:29)"
+      },
+      "yaounde": {
+        "title": "YAOUNDÉ - BERTOUA",
+        "verse": "Justice and peace shall kiss, when love and truth meet (cf. Psalm 84:11)"
+      }
     }
   },
   "floatingTimer": {
