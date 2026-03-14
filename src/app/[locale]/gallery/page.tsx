@@ -20,7 +20,7 @@ export default function GalleryPage() {
       images: [
         { src: '/image_gallery/cameroon/PH_059.jpeg', alt: 'Church celebration', copyright: '© SOPECAM'},
         { src: '/image_gallery/cameroon/img1.jpeg', alt: 'Papal visit preparation', copyright: '© Vatican Media' },
-        { src: '/image_gallery/cameroon/img12.jpeg', alt: 'Sacred celebration', copyright: '© Vatican Media' },
+        // { src: '/image_gallery/cameroon/img12.jpeg', alt: 'Sacred celebration', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img15.jpeg', alt: 'Papal benediction', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img2.jpeg', alt: 'Pope with faithful', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img3.jpeg', alt: 'Church ceremony', copyright: '© Vatican Media' },
