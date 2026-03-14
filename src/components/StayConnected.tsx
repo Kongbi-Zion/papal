@@ -46,7 +46,7 @@ export default function StayConnected() {
           </h2>
 
           <p className="text-lg max-w-3xl mx-auto">
-            {t('subtitle')}
+            Follow us on social media for updates, news, and spiritual reflections on Pope Leo XIV&apos;s Apostolic Journey to Cameroon.
           </p>
         </div>
 

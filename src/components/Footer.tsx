@@ -142,7 +142,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="flex justify-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Papal Visit to Cameroon. All rights reserved.
+              © {currentYear} National Episcopal Conference of Cameroon. All rights reserved.
             </p>
           </div>
         </div>

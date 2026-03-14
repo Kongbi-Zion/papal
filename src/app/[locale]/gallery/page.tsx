@@ -11,32 +11,97 @@ export default function GalleryPage() {
   const t = useTranslations('photoGallery')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
 
-  // Array of gallery images from public/image_gallery folder with categories
-  const galleryImages = [
-    { src: '/image_gallery/img1.jpeg', alt: 'Papal visit preparation', category: 'ceremony' },
-    { src: '/image_gallery/img2.jpeg', alt: 'Pope Leo XIV with faithful', category: 'Pontifical moments' },
-    { src: '/image_gallery/img5.jpeg', alt: 'Papal audience', category: 'papal' },
-    { src: '/image_gallery/img6.jpeg', alt: 'Religious celebration', category: 'ceremony' },
-    { src: '/image_gallery/img7.jpeg', alt: 'Cameroonian welcome', category: 'welcome' },
-    { src: '/image_gallery/img8.jpeg', alt: 'Traditional ceremony', category: 'culture' },
-    { src: '/image_gallery/img3.jpeg', alt: 'Church ceremony', category: 'ceremony' },
-    { src: '/image_gallery/img4.jpeg', alt: 'Vatican proceedings', category: 'vatican' },
-    { src: '/image_gallery/img9.jpeg', alt: 'Papal blessing ceremony', category: 'blessing' },
-    { src: '/image_gallery/img10.jpeg', alt: 'Historic procession', category: 'procession' },
-    { src: '/image_gallery/img11.jpeg', alt: 'Faithful gathering', category: 'gathering' },
-    { src: '/image_gallery/img12.jpeg', alt: 'Sacred celebration', category: 'celebration' },
-    { src: '/image_gallery/img13.jpeg', alt: 'Papal address to crowd', category: 'address' },
-    { src: '/image_gallery/img14.jpeg', alt: 'Traditional Cameroonian ceremony', category: 'culture' },
-    { src: '/image_gallery/img15.jpeg', alt: 'Papal benediction', category: 'blessing' },
+  // Array of gallery categories with their images
+  const galleryCategories = [
+    {
+      id: 'cameroon',
+      name: 'Cameroon and the Vatican ',
+      copyright: '© Vatican Media',
+      images: [
+        { src: '/image_gallery/cameroon/PH_059.jpeg', alt: 'Church celebration', copyright: '© SOPECAM'},
+        { src: '/image_gallery/cameroon/img1.jpeg', alt: 'Papal visit preparation', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img12.jpeg', alt: 'Sacred celebration', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img15.jpeg', alt: 'Papal benediction', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img2.jpeg', alt: 'Pope with faithful', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img3.jpeg', alt: 'Church ceremony', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img6.jpeg', alt: 'Religious celebration', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/img8.jpeg', alt: 'Traditional ceremony', copyright: '© Vatican Media' },
+        { src: '/image_gallery/cameroon/le_couple_Présidentiel_avec_le_pape.jpeg', alt: 'Presidential couple with Pope', copyright: '© SOPECAM' },
+        // { src: '/image_gallery/jp2/Photo_165.jpeg', alt: 'Church gathering' },
+      ]
+    },
+    {
+      id: 'pontifical',
+      name: 'Pontifical Moments ',
+      copyright: '© Vatican Media',
+      images: [
+        // { src: '/image_gallery/pontifical/img11.jpeg', alt: 'Faithful gathering' },     
+        // { src: '/image_gallery/pontifical/img14.jpeg', alt: 'Traditional Cameroonian ceremony' },
+        { src: '/image_gallery/pontifical/img4.jpeg', alt: 'Vatican proceedings', copyright: '© Vatican Media' },
+        { src: '/image_gallery/pontifical/img5.jpeg', alt: 'Papal audience', copyright: '© Vatican Media' },
+        { src: '/image_gallery/pontifical/img6.jpeg', alt: 'Religious celebration', copyright: '© Vatican Media' },
+         { src: '/image_gallery/pontifical/img9.jpeg', alt: 'Papal blessing ceremony', copyright: '© Vatican Media' },
+        { src: '/image_gallery/pontifical/img13.jpeg', alt: 'Papal address to crowd', copyright: '© Vatican Media' },
+        { src: '/image_gallery/pontifical/img7.jpeg', alt: 'Cameroonian welcome', copyright: '© Vatican Media' },
+      ]
+    },
+    {
+      id: 'ben16',
+      name: 'Pope Benedict XVI ',
+      copyright: '© SOPECAM',
+      images: [
+        { src: '/image_gallery/ben16/Eldick_018.jpeg', alt: 'Cardinal Eldick ceremony', copyright: '© SOPECAM' },
+        // { src: '/image_gallery/ben16/IMG_1069.JPG.jpeg', alt: 'Papal visit moment', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/PH_193.jpg', alt: 'Religious ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/PH_473.jpeg', alt: 'Papal audience', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/PH_595.jpeg', alt: 'Blessing ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Ph_080.jpeg', alt: 'Traditional ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_152.jpeg', alt: 'Papal welcome ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_168.jpeg', alt: 'Vatican proceedings', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_172.jpeg', alt: 'Religious celebration', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_229.jpeg', alt: 'Historic procession', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_300.jpeg', alt: 'Traditional welcome', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_306.jpeg', alt: 'Cultural ceremony', copyright: '© SOPECAM' },
+        // { src: '/image_gallery/jp2/Photo_170.jpeg', alt: 'Papal address' },
+        { src: '/image_gallery/ben16/Photo_312.jpeg', alt: 'Faithful gathering', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_346.jpeg', alt: 'Vatican ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_352.jpeg', alt: 'Papal address', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_355.jpeg', alt: 'Religious celebration', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_359.jpeg', alt: 'Procession ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_383.jpeg', alt: 'Blessing moment', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_387.jpeg', alt: 'Church ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_396.jpeg', alt: 'Papal audience', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/Photo_397.jpeg', alt: 'Welcome ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/accueil_par_le_cardinal_Tumi.jpeg', alt: 'Welcome by Cardinal Tumi', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/avec_les_Evêques.jpg', alt: 'With the Bishops', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/ph_365.jpeg', alt: 'Papal ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/ben16/ph_3658.jpeg', alt: 'Church celebration', copyright: '© SOPECAM' },
+      ]
+    },
+    {
+      id: 'jp2',
+      name: 'Pope St. John Paul II ',
+      copyright: '© SOPECAM',
+      images: [
+        { src: '/image_gallery/jp2/papal_gallery-60.jpg', alt: 'Papal visit moment', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-61.jpg', alt: 'Papal ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-62.jpg', alt: 'Church celebration', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-63.jpg', alt: 'Papal blessing', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-64.jpg', alt: 'Cultural ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-65.jpg', alt: 'Welcome ceremony', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-66.jpg', alt: 'Faithful gathering', copyright: '© SOPECAM' },
+        { src: '/image_gallery/jp2/papal_gallery-67.jpg', alt: 'Vatican proceedings', copyright: '© SOPECAM' },
+      ]
+    }
   ]
 
   // Get unique categories
-  const categories = ['all', ...new Set(galleryImages.map(img => img.category))]
+  const categories = ['all', ...galleryCategories.map(cat => cat.id)]
 
   // Filter images based on selected category
   const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === selectedCategory)
+    ? galleryCategories.flatMap(cat => cat.images)
+    : galleryCategories.find(cat => cat.id === selectedCategory)?.images || []
 
   return (
     <section className="relative bg-gradient-to-br from-[#eff2f8] to-[#e8eef5] min-h-screen py-24 px-6 lg:px-8 overflow-hidden">
@@ -61,11 +126,11 @@ export default function GalleryPage() {
         {/* Enhanced Page Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-bold text-primary font-crimson-text mb-6">
-            {t('viewImages')}
+            {t('viewImages')} 
           </h1>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Explore moments from the historic papal visits and encounters through the years
+            Explore Cameroon - Vatican Historic Visits.
             {/* {t('subtitle')} */}
           </p>
         </div>
@@ -78,44 +143,32 @@ export default function GalleryPage() {
               variant={selectedCategory === category ? "default" : "outline"}
               size="sm"
               onClick={() => setSelectedCategory(category)}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
+              className="px-4 py-2 hover:cursor-pointer rounded-full text-sm font-medium transition-all duration-200"
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'all' ? 'All' : galleryCategories.find(cat => cat.id === category)?.name || category}
             </Button>
           ))}
         </div>
 
         {/* Modern Gallery Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-4 gap-6 space-y-6">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 space-y-6 md:space-y-8">
           {filteredImages.map((image, index) => (
-
             <div key={index}> 
-
-            <div  className="break-inside-avoid group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-              <Image 
-                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" 
-                src={image.src} 
-                alt={image.alt}
-                width={400}
-                height={300}
-                loading="lazy"
-              />
-
-             
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-white text-sm font-medium">{image.alt}</p>
-                
+              <div  className="break-inside-avoid group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <Image 
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110" 
+                  src={image.src} 
+                  alt={image.alt}
+                  width={400}
+                  height={300}
+                  loading="lazy"
+                />
+                {/* Copyright Watermark */}
+                <div className="absolute bottom-3 right-3 text-white/30 text-xs font-medium pointer-events-none select-none">
+                  {image.copyright}
                 </div>
               </div>
             </div>
-
-             <div className="p-2">
-                <p className="text-black text-[10px] mt-1 opacity-75">Credit: Vatican Media</p>
-              </div>
-        
-            </div>
-
           ))}
         </div>
       </div>
