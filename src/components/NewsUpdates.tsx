@@ -1,26 +1,11 @@
 'use client'
 
-import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Calendar } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function NewsUpdates() {
   const t = useTranslations('newsUpdates')
-  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set())
-
-  const toggleExpanded = (id: number) => {
-    setExpandedCards(prev => {
-      const newSet = new Set(prev)
-      if (newSet.has(id)) {
-        newSet.delete(id)
-      } else {
-        newSet.add(id)
-      }
-      return newSet
-    })
-  }
 
   const newsCards = [
     {
@@ -70,7 +55,6 @@ export default function NewsUpdates() {
   return (
     <div className="min-h-screen bg-[#eff2f8] py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
             {t('title')}
@@ -81,7 +65,6 @@ export default function NewsUpdates() {
           </p>
         </div>
 
-        {/* Featured News Card */}
         <div className="mb-24">
           <div className="overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
@@ -105,7 +88,7 @@ export default function NewsUpdates() {
                   className="text-white hover:cursor-pointer hover:opacity-90 px-8 py-6 font-open-sans font-bold bg-primary"
                   onClick={() => window.open(newsCards[0].link, '_blank')}
                 >
-                  Read Article
+                 {t('readArticle')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -113,12 +96,10 @@ export default function NewsUpdates() {
           </div>
         </div>
 
-        {/* Latest News Grid */}
         <div className="mb-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {newsCards.slice(1).map((card) => (
               <div key={card.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                {/* Image */}
                 <div className="relative h-48 overflow-hidden flex-shrink-0">
                   <img
                     src={card.image}
@@ -127,8 +108,6 @@ export default function NewsUpdates() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>
-
-                {/* Content */}
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-gray-900 mb-3 font-crimson-text" title={card.title}>
                     {card.title}
@@ -141,7 +120,7 @@ export default function NewsUpdates() {
                     onClick={() => window.open(card.link, '_blank')}
                     className="w-full bg-primary hover:cursor-pointer hover:bg-primary/90 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center group mt-auto"
                   >
-                    Read Article
+                    {t('readArticle')}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </Button>
                 </div>

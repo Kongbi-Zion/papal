@@ -1,12 +1,11 @@
 'use client'
 
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { Facebook, Twitter, Instagram, Music } from 'lucide-react'
 import Link from 'next/link'
 
 export default function StayConnected() {
   const t = useTranslations('stayConnected')
-  const locale = useLocale()
 
   const socials = [
     {
@@ -39,18 +38,15 @@ export default function StayConnected() {
     <div className="bg-[#2b5894] py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
-        {/* Header */}
         <div className="text-center mb-16 text-white">
           <h2 className="text-3xl md:text-6xl font-bold font-serif mb-4">
             {t('title')}
           </h2>
-
           <p className="text-lg max-w-3xl mx-auto">
-            Follow us on social media for updates, news, and spiritual reflections on Pope Leo XIV&apos;s Apostolic Journey to Cameroon.
+            {t('subtitle')}
           </p>
         </div>
 
-        {/* Social Media Links */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center max-w-6xl mx-auto">
           {socials.map((social) => {
             const Icon = social.icon
@@ -72,7 +68,6 @@ export default function StayConnected() {
                   {t(`${social.key}.description`)}
                 </p>
 
-                {/* Handle for all platforms */}
                 <div className="font-mono text-xs bg-secondary/20 px-2 py-1 rounded cursor-pointer hover:bg-secondary/30 transition-colors mb-4" onClick={() => navigator.clipboard.writeText(social.url)}>
                   {social.handle}
                 </div>
