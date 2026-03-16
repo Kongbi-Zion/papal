@@ -13,10 +13,12 @@
     "pilgrim": "Pilgrim Info",
     "accreditations": "Accreditations",
     "contact": "Contact",
-    "donate": "Donate"
+    "donate": "Donate",
+    "watchLive": "Watch Live"
   },
   "common": {
-    "logoAlt": "Pope Leo XIV Logo"
+    "logoAlt": "Pope Leo XIV Logo",
+    "videoNotSupported": "Your browser does not support the video tag."
   },
   "hero": {
     "title": "Pope Leo XIV Visits Cameroon",
@@ -24,7 +26,7 @@
     "reference": "John 17:21",
     "firstParagraph": "Cameroon welcomes Pope Leo XIV on a historic Apostolic Visit from April 15–18, 2026. This momentous pilgrimage invites all Catholics across the country to come together in prayer, reflection, and celebration, as the Holy Father shares his message of peace, hope, and spiritual renewal.",
     "secondParagraph": "Experience the joy of faith as communities across Cameroon gather to celebrate their Catholic heritage, strengthen unity, and embrace the teachings of the universal Church. Join this extraordinary journey and be part of a historic encounter that will inspire generations.",
-    "ctaButton": "Learn About the Journey",
+    "journeyButton": "Journey to Africa with the Successor of Peter",
     "countdown": {
       "completed": "The historic moment has arrived!",
       "eventLive": "The Event is Now Live!",
@@ -74,21 +76,21 @@
     }
   },
   "messageOfHope": {
-    "title": "A Message of Peace",
+    "title": "Pope Leo XIV Greets the People of Cameroon Ahead of His Visit",
     "quote": "My dear brothers and sisters in Cameroon, it is with great joy that I look forward to visiting your beloved country from April 15 to 18, 2026. I come to you as a pilgrim of hope, to share the peace of Christ, to walk with you in faith, and to be inspired by the vibrant witness of the Cameroonian Church.",
     "quoteAuthor": "His Holiness Pope Leo XIV",
     "cards": {
       "pilgrimage": {
         "title": "A Pilgrimage of Hope",
-        "description": "Pope Leo XIV comes to Cameroon as a pilgrim of hope, bringing the peace of Christ to every community and inspiring unity, faith, and renewal across the nation. In a time when Cameroon faces challenges of conflict, division, and uncertainty, Pope Leo XIV arrives as a pilgrim of hope, bringing the peace of Christ to every community.\n\nLet us welcome Pope Leo XIV with open hearts and join him in a shared commitment to faith, hope, and peace for all of Cameroon."
+        "description": "Pope Leo XIV comes to Cameroon as a pilgrim of hope, bringing the peace of Christ to every community and inspiring unity, faith, and renewal across the nation. In a time when Cameroon faces challenges of conflict, division, and uncertainty, his visit invites the faithful to rediscover hope and trust in God's presence. Together, we welcome him with open hearts and a shared commitment to peace, reconciliation, and solidarity."
       },
       "globalCommunion": {
         "title": "Global Communion",
-        "description": "Strengthening the universal Church through pastoral presence and spiritual unity."
+        "description": "The visit of Pope Leo XIV highlights the deep communion that unites the Catholic Church across the world. As successor of Saint Peter, he strengthens the bonds between local churches and the universal Church. His presence in Cameroon reminds the faithful that they are part of a global community of believers, called to live the Gospel, support one another, and witness to Christ through unity, charity, and mission."
       },
       "pastoralEncounter": {
         "title": "Pastoral Encounter",
-        "description": "Meeting with Cameroonian Catholics and Christians of other denominations to listen, pray, and strengthen the faith."
+        "description": "During his visit, Pope Leo XIV will meet with Catholics from across Cameroon, Christians of other denominations as well as men and women from other faith groups. These encounters offer moments of prayer, dialogue, and spiritual encouragement. By listening to the people and sharing in their joys and challenges, the Holy Father seeks to strengthen faith, promote fraternity among peoples, and inspire a renewed commitment to the Gospel in daily life."
       }
     }
   },
@@ -267,7 +269,7 @@
       "content": "Misericordia et Veritas"
     }
   },
-    "spiritualResources": {
+  "spiritualResources": {
     "title": "Spiritual Resources",
     "subtitle": "Biblical foundations and spiritual reflections for Pope Leo XIV's Apostolic Journey to Cameroon",
     "unity": {
@@ -331,6 +333,24 @@
       "yaounde": {
         "title": "YAOUNDÉ - BERTOUA",
         "verse": "Justice and peace shall kiss, when love and truth meet (cf. Psalm 84:11)"
+      }
+    },
+    "prayer": {
+      "title": "PRAYER FOR THE APOSTOLIC JOURNEY OF POPE LEO XIV",
+      "opening": "Lord our God, Father of all goodness, You who sent your Son Jesus Christ into the world to save us,",
+      "thanksgiving": "We give you thanks for the Apostolic Journey of Pope Leo XIV to our land Cameroon.",
+      "petition": "Grant your servant strength and wisdom.",
+ "intercession": "May his words, carried by the power of the Holy Spirit, flood our hearts and bring us the graces of reconciliation, justice, peace, and healing. Through our Lord Jesus Christ, may his Apostolic Journey:",
+      "points": {
+        "strengthen": "Strengthen the bonds of brotherhood between our cultures;",
+        "comfort": "Comfort the afflicted and give hope to our youth;",
+        "faith": "Strengthen our faith, hope, and charity;",
+        "fruits": "Bear fruits of conversion and national harmony."
+      },
+      "closing": {
+        "mary": "Holy Mary, Queen of the Apostles and Patroness of Cameroon, intercede for us.",
+        "blessed": "Blessed is he who comes in the Name of the Lord!",
+        "amen": "Amen."
       }
     }
   },

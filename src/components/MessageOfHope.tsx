@@ -7,11 +7,11 @@ import { useParams } from 'next/navigation'
 
 export default function MessageOfHope() {
   const t = useTranslations('messageOfHope')
+  const tCommon = useTranslations('common')
   const params = useParams()
   const locale = params.locale as string
   const [activeCard, setActiveCard] = useState<number | null>(null)
-  
-  // Select video based on language
+
   const videoPath = locale === 'fr' 
     ? '/message/message_fr.mp4'
     : '/message/message_en.mp4'
@@ -20,20 +20,20 @@ export default function MessageOfHope() {
     {
       id: 1,
       icon: Heart,
-      title: 'A Pilgrimage of Hope',
-      description: 'Pope Leo XIV comes to Cameroon as a pilgrim of hope, bringing the peace of Christ to every community and inspiring unity, faith, and renewal across the nation. In a time when Cameroon faces challenges of conflict, division, and uncertainty, his visit invites the faithful to rediscover hope and trust in God\'s presence. Together, we welcome him with open hearts and a shared commitment to peace, reconciliation, and solidarity.'
+      title: t('cards.pilgrimage.title'),
+      description: t('cards.pilgrimage.description')
     },
     {
       id: 2,
       icon: Globe,
-      title: 'Global Communion',
-      description: 'The visit of Pope Leo XIV highlights the deep communion that unites the Catholic Church across the world. As successor of Saint Peter, he strengthens the bonds between local churches and the universal Church. His presence in Cameroon reminds the faithful that they are part of a global community of believers, called to live the Gospel, support one another, and witness to Christ through unity, charity, and mission.'
+      title: t('cards.globalCommunion.title'),
+      description: t('cards.globalCommunion.description')
     },
     {
       id: 3,
       icon: Users,
-      title: 'Pastoral Encounter',
-      description: 'During his visit, Pope Leo XIV will meet with Catholics from across Cameroon, Christians of other denominations as well as men and women from other faith groups. These encounters offer moments of prayer, dialogue, and spiritual encouragement. By listening to the people and sharing in their joys and challenges, the Holy Father seeks to strengthen faith, promote fraternity among peoples, and inspire a renewed commitment to the Gospel in daily life.'
+      title: t('cards.pastoralEncounter.title'),
+      description: t('cards.pastoralEncounter.description')
     }
   ]
 
@@ -42,21 +42,18 @@ export default function MessageOfHope() {
 
       <div className="max-w-7xl mx-auto">
 
-        {/* Header */}
         <div className="text-center mb-16">
-          <div className='flex justify-center'>
+          <div className="flex justify-center">
             <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text max-w-3xl mb-6">
-            {/* {t('title')} */}
-            <p className='text-center'>Pope Leo XIV Greets the People of Cameroon Ahead of His Visit</p>
-          </h2>
+              {t('title')}
+            </h2>
           </div>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
         </div>
 
 
-        {/* Video Message */}
         <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-white p-4 rounded-2xl shadow ">
+          <div className="bg-white p-4 rounded-2xl shadow">
             <div className="aspect-video">
               <video
                 src={videoPath}
@@ -65,16 +62,14 @@ export default function MessageOfHope() {
                 className="w-full h-full rounded-lg"
                 title={locale === 'fr' ? 'Message du Pape' : "Pope's Message"}
               >
-                Your browser does not support the video tag.
+                {tCommon('videoNotSupported')}
               </video>
             </div>
           </div>
         </div>
 
 
-        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
           {cards.map((card) => {
             const Icon = card.icon
 
@@ -101,7 +96,6 @@ export default function MessageOfHope() {
               </div>
             )
           })}
-
         </div>
 
       </div>

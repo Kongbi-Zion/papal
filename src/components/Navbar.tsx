@@ -18,7 +18,6 @@ export default function Navbar() {
 
   const logoSrc = locale === 'fr' ? '/logo_fr.jpeg' : '/logo_en.jpeg'
 
-  // Function to check if a link is active
   const isActive = (path: string) => {
     if (path === `/${locale}`) {
       return pathname === `/${locale}` || pathname === `/${locale}/`
@@ -26,7 +25,6 @@ export default function Navbar() {
     return pathname.startsWith(path)
   }
 
-  // Get active link classes
   const getActiveClasses = (path: string, isMobile = false) => {
     const baseClasses = isMobile 
       ? "block px-3 py-2 text-base font-medium transition-colors"
@@ -40,7 +38,7 @@ export default function Navbar() {
     return `${baseClasses} ${isActive(path) ? activeClasses : inactiveClasses}`
   }
 
-  function handleMobileLinkClick() {
+  const handleMobileLinkClick = () => {
     openLiveStream()
   }
 
@@ -63,14 +61,12 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center">
             <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`)}>
               {t('home')} 
             </Link>
             <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`)}>
-              A Word from the President of the NECC
-              {/* {t('presidentSpeech')} */}
+              {t('presidentSpeech')}
             </Link>
             <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`)}>
               {t('holyFather')}
@@ -93,11 +89,11 @@ export default function Navbar() {
             </Link>
           </div>
 
-         <div className='flex items-center gap-2'>
-          <button onClick={handleMobileLinkClick} className="bg-red-600 hover:bg-red-700 hover:cursor-pointer text-white px-2 lg:px-4 py-3 rounded-lg font-semibold text-sm transition-colors duration-300 flex items-center space-x-2">
-            <div className=" w-2 h-2  bg-white rounded-full animate-pulse"></div>
-            <span>Watch Live</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button onClick={handleMobileLinkClick} className="bg-red-600 hover:bg-red-700 hover:cursor-pointer text-white px-2 lg:px-4 py-3 rounded-lg font-semibold text-sm transition-colors duration-300 flex items-center space-x-2">
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              <span>{t('watchLive')}</span>
+            </button>
            <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -132,11 +128,10 @@ export default function Navbar() {
             <LanguageSwitcher />
           </div>
 
-         </div>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t transform transition-all duration-300 ease-in-out"
@@ -155,9 +150,6 @@ export default function Navbar() {
             <Link href={`/${locale}/services`} className={getActiveClasses(`/${locale}/services`, true)}>
               {t('popeSchedule')}
             </Link>
-            <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`, true)}>
-              {t('contact')}
-            </Link>
             <Link href={`/${locale}/news`} className={getActiveClasses(`/${locale}/news`, true)}>
               {t('news')}
             </Link>
@@ -166,6 +158,9 @@ export default function Navbar() {
             </Link>
             <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`, true)}>
               {t('accreditations')}
+            </Link>
+            <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`, true)}>
+              {t('contact')}
             </Link>
             <div className="px-3 py-2">
               <LanguageSwitcher />

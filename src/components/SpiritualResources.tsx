@@ -85,10 +85,6 @@ export default function SpiritualResources() {
         </div>
         <div className="bg-white hover:bg-blue-200 rounded-2xl shadow-lg md:py-16 p-8 mb-16">
           <div className="max-w-4xl mx-auto">
-          
-
-
-            {/* Logo and Title */}
             <div className="text-center mb-8">
               <Image 
                 src="/spiritual_reference_logo2.png" 
@@ -98,33 +94,33 @@ export default function SpiritualResources() {
                 className="mx-auto mb-8"
               />
               <h2 className="text-3xl font-bold font-crimson-text mb-4 text-black underline">
-                PRAYER FOR THE APOSTOLIC JOURNEY OF POPE LEO XIV
+                {t('prayer.title')}
               </h2>
             </div>
 
             {/* Prayer Content */}
             <div className="text-start space-y-4 mb-8">
               <p className="text-lg leading-relaxed text-gray-800">
-                Lord our God, Father of all goodness, You who sent your Son Jesus Christ into the world to save us,
+                {t('prayer.opening')}
               </p>
               <p className="text-lg leading-relaxed text-gray-800">
-                We give you thanks for the Apostolic Journey of Pope Leo XIV to our land Cameroon.
+                {t('prayer.thanksgiving')}
               </p>
               <p className="text-lg leading-relaxed text-gray-800">
-                Grant your servant strength and wisdom. 
+                {t('prayer.petition')}
               </p>
 
               <p className="text-lg leading-relaxed text-gray-800">
-               May his words, carried by the power of the Holy Spirit, flood our hearts and bring us the graces of reconciliation, justice, peace, and healing. Through our Lord Jesus Christ, may his Apostolic Journey:
+               {t('prayer.intercession')}
               </p>
               
               {/* Prayer Points */}
               <div className="max-w-2xl mx-auto text-left">
                 <ul className="space-y-3">
-                  <li className="text-gray-700">• <span className="font-bold">Strengthen</span> the bonds of brotherhood between our cultures;</li>
-                  <li className="text-gray-700">• <span className="font-bold">Comfort</span> the afflicted and give hope to our youth;</li>
-                  <li className="text-gray-700">• <span className="font-bold">Strengthen</span> our faith, hope, and charity;</li>
-                  <li className="text-gray-700">• <span className="font-bold">Bear</span> fruits of conversion and national harmony.</li>
+                  <li className="text-gray-700">• <span className="font-bold">{t('prayer.points.strengthen')}</span></li>
+                  <li className="text-gray-700">• <span className="font-bold">{t('prayer.points.comfort')}</span></li>
+                  <li className="text-gray-700">• <span className="font-bold">{t('prayer.points.faith')}</span></li>
+                  <li className="text-gray-700">• <span className="font-bold">{t('prayer.points.fruits')}</span></li>
                 </ul>
               </div>
             </div>
@@ -132,13 +128,13 @@ export default function SpiritualResources() {
             {/* Closing Prayer */}
             <div className="text-start space-y-4">
               <p className="text-lg leading-relaxed text-gray-800">
-                Holy Mary, Queen of the Apostles and Patroness of Cameroon, intercede for us.
+                {t('prayer.closing.mary')}
               </p>
               <p className="text-lg text-gray-800">
-                Blessed is he who comes in the Name of the Lord!
+                {t('prayer.closing.blessed')}
               </p>
               <p className="text-lg text-gray-800">
-                Amen.
+                {t('prayer.closing.amen')}
               </p>
             </div>
           </div>

@@ -13,10 +13,12 @@
     "pilgrim": "Info Pèlerins",
     "accreditations": "Accréditations",
     "contact": "Contact",
-    "donate": "Faire un don"
+    "donate": "Faire un don",
+    "watchLive": "Regarder en Direct"
   },
   "common": {
-    "logoAlt": "Logo du Pape Léon XIV"
+    "logoAlt": "Logo du Pape Léon XIV",
+    "videoNotSupported": "Votre navigateur ne prend pas en charge la balise vidéo."
   },
   "hero": {
     "title": "La Visite du Pape Léon XIV au Cameroun",
@@ -24,7 +26,7 @@
     "reference": "Jean 17:21",
     "firstParagraph": "Le Cameroun accueille le Pape Léon XIV pour une visite apostolique historique du 15 au 18 avril 2026. Ce pèlerinage exceptionnel invite tous les catholiques du pays à se rassembler dans la prière, la réflexion et la célébration, alors que le Saint Père partage son message de paix, d'espérance et de renouveau spirituel.",
     "secondParagraph": "Expérimentez la joie de la foi alors que les communautés du Cameroun se rassemblent pour célébrer leur héritage catholique, renforcer l'unité et embrasser les enseignements de l'Église universelle. Rejoignez ce voyage extraordinaire et soyez partie d'une rencontre historique qui inspirera les générations.",
-    "ctaButton": "Découvrir le Voyage",
+    "journeyButton": "Voyagez en Afrique avec le Successeur de Pierre",
     "countdown": {
       "completed": "Le moment historique est arrivé!",
       "eventLive": "L'Événement est en Direct!",
@@ -74,21 +76,21 @@
     }
   },
   "messageOfHope": {
-    "title": "Un Message de Paix",
+    "title": "Le Pape Léon XIV Salue le Peuple du Cameroun Avant Sa Visite",
     "quote": "Mes chers frères et sœurs du Cameroun, c'est avec une grande joie que j'attends avec impatience de visiter votre cher pays du 15 au 18 avril 2026. Je viens à vous en pèlerin d'espérance, pour partager la paix du Christ, pour marcher avec vous dans la foi, et pour être inspiré par le vibrant témoignage de l'Église camerounaise.",
     "quoteAuthor": "Sa Sainteté le Pape Léon XIV",
     "cards": {
       "pilgrimage": {
         "title": "Un Pèlerinage d'Espérance",
-        "description": "Le Pape Léon XIV vient au Cameroun comme un pèlerin d'espérance, apportant la paix du Christ à chaque communauté et inspirant l'unité, la foi et le renouveau à travers la nation. À une époque où le Cameroun fait face à des défis de conflit, de division et d'incertitude, le Pape Léon XIV arrive comme un pèlerin d'espérance, apportant la paix du Christ à chaque communauté.\n\nAccueillons le Pape Léon XIV avec des cœurs ouverts et joignons-nous à lui dans un engagement partagé pour la foi, l'espérance et la paix pour tout le Cameroun."
+        "description": "Le Pape Léon XIV vient au Cameroun comme un pèlerin d'espérance, apportant la paix du Christ à chaque communauté et inspirant l'unité, la foi et le renouveau à travers la nation. À une époque où le Cameroun fait face à des défis de conflit, de division et d'incertitude, sa visite invite les fidèles à redécouvrir l'espérance et la confiance dans la présence de Dieu. Ensemble, nous l'accueillons avec des cœurs ouverts et un engagement partagé pour la paix, la réconciliation et la solidarité."
       },
       "globalCommunion": {
         "title": "Communion Mondiale",
-        "description": "Renforcer l'Église universelle à travers la présence pastorale et l'unité spirituelle."
+        "description": "La visite du Pape Léon XIV met en évidence la profonde communion qui unit l'Église catholique à travers le monde. Comme successeur de Saint Pierre, il renforce les liens entre les églises locales et l'Église universelle. Sa présence au Cameroun rappelle aux fidèles qu'ils font partie d'une communauté mondiale de croyants, appelés à vivre l'Évangile, se soutenir mutuellement et témoigner pour le Christ à travers l'unité, la charité et la mission."
       },
       "pastoralEncounter": {
         "title": "Rencontre Pastorale",
-        "description": "Rencontrer les catholiques camerounais et les chrétiens d'autres dénominations pour écouter, prier et renforcer la foi."
+        "description": "Pendant sa visite, le Pape Léon XIV rencontrera les catholiques de tout le Cameroun, les chrétiens d'autres dénominations ainsi que des hommes et femmes d'autres groupes religieux. Ces rencontres offrent des moments de prière, de dialogue et d'encouragement spirituel. En écoutant le peuple et en partageant ses joies et ses défis, le Saint-Père cherche à renforcer la foi, promouvoir la fraternité entre les peuples et inspirer un engagement renouvelé dans l'Évangile au quotidien."
       }
     }
   },
@@ -268,33 +270,7 @@
       "reference": "Éphésiens 4:3–6",
       "description": "Inspirée par la vision de l'Église comme Famille de Dieu en Afrique, ce message appelle les Camerounais à vivre la fraternité, la solidarité et le respect mutuel."
     },
-    "mainTheme": {
-      "title": "THÈME GÉNÉRAL",
-      "description": "Le thème général proposé est tiré de l'Évangile selon Saint Jean :",
-      "verse": "« Que tous soient un » (Jean 17, 21)",
-      "english": "« Que tous soient un »",
-      "latin": "« Ut omnes unum sint »"
-    },
-    "subThemes": {
-      "title": "SOUS-THÈMES / SUB-THEMES",
-      "description": "Thèmes pastoraux de chaque Province ecclésiastique :",
-      "bamenda": {
-        "title": "BAMENDA",
-        "verse": "\"My peace I leave you, my peace I give you\" (John 14:27)"
-      },
-      "douala": {
-        "title": "DOUALA",
-        "verse": "« Donnez-leur vous-mêmes à manger » (Luc 9, 13)"
-      },
-      "garoua": {
-        "title": "GAROUA",
-        "verse": "« Qui est mon prochain ? » (Luc 10, 29)"
-      },
-      "yaounde": {
-        "title": "YAOUNDÉ - BERTOUA",
-        "verse": "Justice et paix s'embrassent lorsqu'amour et vérité se rencontrent (cf. Psaume 84, 11)"
-      }
-    },
+
     "mainTheme": {
       "title": "THÈME GÉNÉRAL",
       "description": "Le thème général proposé est tiré de l'Évangile selon Saint Jean :",
@@ -320,6 +296,24 @@
       "yaounde": {
         "title": "YAOUNDÉ - BERTOUA",
         "verse": "Justice et paix s'embrassent lorsqu'amour et vérité se rencontrent (cf. Psaume 84:11)"
+      }
+    },
+        "prayer": {
+      "title": "PRIÈRE POUR LE VOYAGE APOSTOLIQUE DU PAPE LÉON XIV",
+      "opening": "Seigneur notre Dieu, Père de toute bonté, Toi qui as envoyé ton Fils Jésus-Christ dans le monde pour nous sauver,",
+      "thanksgiving": "Nous te rendons grâce pour le Voyage Apostolique du Pape Léon XIV dans notre terre du Cameroun.",
+      "petition": "Accorde à ton serviteur force et sagesse.",
+      "intercession": "Que ses paroles, portées par la puissance du Saint-Esprit, inondent nos cœurs et nous apportent les grâces de réconciliation, justice, paix et guérison. Par notre Seigneur Jésus-Christ, que son Voyage Apostolique :",
+      "points": {
+        "strengthen": "Renforce les liens de fraternité entre nos cultures;",
+        "comfort": "Réconforte les affligés et donne l'espoir à notre jeunesse;",
+        "faith": "Renforce notre foi, espérance et charité;",
+        "fruits": "Porte des fruits de conversion et d'harmonie nationale."
+      },
+      "closing": {
+        "mary": "Sainte Marie, Reine des Apôtres et Patronne du Cameroun, intercède pour nous.",
+        "blessed": "Béni soit celui qui vient au Nom du Seigneur !",
+        "amen": "Amen."
       }
     }
   },

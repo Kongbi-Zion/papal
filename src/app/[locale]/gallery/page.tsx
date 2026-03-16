@@ -92,7 +92,7 @@ export default function GalleryPage() {
     : galleryCategories.find(cat => cat.id === selectedCategory)?.images || []
 
   return (
-    <section className="relative bg-gradient-to-br from-[#eff2f8] to-[#e8eef5] min-h-screen py-24 px-6 lg:px-8 overflow-hidden">
+    <section className="relative bg-linear-to-br from-[#eff2f8] to-[#e8eef5] min-h-screen py-24 px-6 lg:px-8 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
