@@ -20,14 +20,11 @@ export default function GalleryPage() {
       images: [
         { src: '/image_gallery/cameroon/PH_059.jpeg', alt: 'Church celebration', copyright: '© SOPECAM'},
         { src: '/image_gallery/cameroon/img1.jpeg', alt: 'Papal visit preparation', copyright: '© Vatican Media' },
-        // { src: '/image_gallery/cameroon/img12.jpeg', alt: 'Sacred celebration', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img15.jpeg', alt: 'Papal benediction', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img2.jpeg', alt: 'Pope with faithful', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img3.jpeg', alt: 'Church ceremony', copyright: '© Vatican Media' },
-        { src: '/image_gallery/cameroon/img6.jpeg', alt: 'Religious celebration', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img8.jpeg', alt: 'Traditional ceremony', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/le_couple_Présidentiel_avec_le_pape.jpeg', alt: 'Presidential couple with Pope', copyright: '© SOPECAM' },
-        // { src: '/image_gallery/jp2/Photo_165.jpeg', alt: 'Church gathering' },
       ]
     },
     {
@@ -35,8 +32,6 @@ export default function GalleryPage() {
       name: 'Pontifical Moments ',
       copyright: '© Vatican Media',
       images: [
-        // { src: '/image_gallery/pontifical/img11.jpeg', alt: 'Faithful gathering' },     
-        // { src: '/image_gallery/pontifical/img14.jpeg', alt: 'Traditional Cameroonian ceremony' },
         { src: '/image_gallery/pontifical/img4.jpeg', alt: 'Vatican proceedings', copyright: '© Vatican Media' },
         { src: '/image_gallery/pontifical/img5.jpeg', alt: 'Papal audience', copyright: '© Vatican Media' },
         { src: '/image_gallery/pontifical/img6.jpeg', alt: 'Religious celebration', copyright: '© Vatican Media' },
@@ -51,8 +46,6 @@ export default function GalleryPage() {
       copyright: '© SOPECAM',
       images: [
         { src: '/image_gallery/ben16/Eldick_018.jpeg', alt: 'Cardinal Eldick ceremony', copyright: '© SOPECAM' },
-        // { src: '/image_gallery/ben16/IMG_1069.JPG.jpeg', alt: 'Papal visit moment', copyright: '© SOPECAM' },
-        { src: '/image_gallery/ben16/PH_193.jpg', alt: 'Religious ceremony', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/PH_473.jpeg', alt: 'Papal audience', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/PH_595.jpeg', alt: 'Blessing ceremony', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Ph_080.jpeg', alt: 'Traditional ceremony', copyright: '© SOPECAM' },
@@ -62,20 +55,15 @@ export default function GalleryPage() {
         { src: '/image_gallery/ben16/Photo_229.jpeg', alt: 'Historic procession', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_300.jpeg', alt: 'Traditional welcome', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_306.jpeg', alt: 'Cultural ceremony', copyright: '© SOPECAM' },
-        // { src: '/image_gallery/jp2/Photo_170.jpeg', alt: 'Papal address' },
         { src: '/image_gallery/ben16/Photo_312.jpeg', alt: 'Faithful gathering', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_346.jpeg', alt: 'Vatican ceremony', copyright: '© SOPECAM' },
-        { src: '/image_gallery/ben16/Photo_352.jpeg', alt: 'Papal address', copyright: '© SOPECAM' },
-        { src: '/image_gallery/ben16/Photo_355.jpeg', alt: 'Religious celebration', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_359.jpeg', alt: 'Procession ceremony', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_383.jpeg', alt: 'Blessing moment', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_387.jpeg', alt: 'Church ceremony', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/Photo_396.jpeg', alt: 'Papal audience', copyright: '© SOPECAM' },
-        { src: '/image_gallery/ben16/Photo_397.jpeg', alt: 'Welcome ceremony', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/accueil_par_le_cardinal_Tumi.jpeg', alt: 'Welcome by Cardinal Tumi', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/avec_les_Evêques.jpg', alt: 'With the Bishops', copyright: '© SOPECAM' },
         { src: '/image_gallery/ben16/ph_365.jpeg', alt: 'Papal ceremony', copyright: '© SOPECAM' },
-        { src: '/image_gallery/ben16/ph_3658.jpeg', alt: 'Church celebration', copyright: '© SOPECAM' },
       ]
     },
     {
