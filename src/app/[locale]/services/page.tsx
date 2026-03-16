@@ -245,7 +245,7 @@ export default function Services() {
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="overflow-x-auto lg:overflow-visible">
-            <table className="w-full min-w-[600px] lg:min-w-0">
+            <table className="w-full min-w-150 lg:min-w-0">
               <thead className="bg-primary text-white">
                 <tr>
                   <th className="px-4 py-3 text-left lg:w-1/6 w-1/4">{t('tableHeaders.dateTime')}</th>
@@ -275,7 +275,6 @@ export default function Services() {
                     )
                   }
                   
-                  // Check if this event is part of Cameroon section
                   const isCameroonEvent = item.section === 'cameroon' || item.section === 'cameroon-end';
                   
                   return (
