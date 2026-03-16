@@ -42,6 +42,10 @@ export default function Navbar() {
     openLiveStream()
   }
 
+  const handleNavClick = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <nav className="relative top-0 left-0 right-0 z-50 transition-all duration-300">
       <div className="lg:max-w-[1550] mx-auto  sm:px-6 lg:px-8">
@@ -138,28 +142,28 @@ export default function Navbar() {
                style={{
                  transform: isMenuOpen ? 'translateX(0%)' : 'translateX(-100%)'
                }}>
-            <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`, true)}>
+            <Link href={`/${locale}`} className={getActiveClasses(`/${locale}`, true)} onClick={handleNavClick}>
               {t('home')}
             </Link>
-            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)}>
+            <Link href={`/${locale}/president-speech`} className={getActiveClasses(`/${locale}/president-speech`, true)} onClick={handleNavClick}>
               {t('presidentSpeech')}
             </Link>
-            <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)}>
+            <Link href={`/${locale}/about`} className={getActiveClasses(`/${locale}/about`, true)} onClick={handleNavClick}>
               {t('holyFather')}
             </Link>
-            <Link href={`/${locale}/services`} className={getActiveClasses(`/${locale}/services`, true)}>
+            <Link href={`/${locale}/services`} className={getActiveClasses(`/${locale}/services`, true)} onClick={handleNavClick}>
               {t('popeSchedule')}
             </Link>
-            <Link href={`/${locale}/news`} className={getActiveClasses(`/${locale}/news`, true)}>
+            <Link href={`/${locale}/news`} className={getActiveClasses(`/${locale}/news`, true)} onClick={handleNavClick}>
               {t('news')}
             </Link>
-            <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`, true)}>
+            <Link href={`/${locale}/resources`} className={getActiveClasses(`/${locale}/resources`, true)} onClick={handleNavClick}>
               {t('resources')}
             </Link>
-            <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`, true)}>
+            <Link href={`/${locale}/accreditations`} className={getActiveClasses(`/${locale}/accreditations`, true)} onClick={handleNavClick}>
               {t('accreditations')}
             </Link>
-            <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`, true)}>
+            <Link href={`/${locale}/contact`} className={getActiveClasses(`/${locale}/contact`, true)} onClick={handleNavClick}>
               {t('contact')}
             </Link>
             <div className="px-3 py-2">

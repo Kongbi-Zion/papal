@@ -23,8 +23,14 @@
     "subtitle": "Restez informé avec les dernières nouvelles, annonces et réflexions spirituelles du voyage apostolique du Pape Léon XIV",
     "readArticle": "Lire l'Article"
   },
-  "presidentSpeech": {
-    "title": "Un Mot du Président de la Conférence Épiscopale Nationale du Cameroun"
+  "services": {
+    "title": "VOYAGE APOSTOLIQUE DE SA SAINTETÉ LE PAPE LÉON XIV EN ALGÉRIE, CAMEROUN, ANGOLA & GUINÉE ÉQUATORIALE",
+    "dateRange": "13 - 23 AVRIL 2026",
+    "tableHeaders": {
+      "dateTime": "Date & Heure",
+      "location": "Lieu", 
+      "event": "Événement"
+    }
   },
   "footer": {
     "quickLinks": "Liens Rapides",

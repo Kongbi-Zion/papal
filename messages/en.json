@@ -18,8 +18,14 @@
     "donate": "Donate",
     "watchLive": "Watch Live"
   },
-  "presidentSpeech": {
-    "title": "A Word from the President of National Episcopal Conference of Cameroon"
+  "services": {
+    "title": "APOSTOLIC JOURNEY OF HIS HOLINESS POPE LEO XIV TO ALGERIA, CAMEROON, ANGOLA & EQUATORIAL GUINEA",
+    "dateRange": "13 - 23 APRIL 2026",
+    "tableHeaders": {
+      "dateTime": "Date & Time",
+      "location": "Location", 
+      "event": "Event"
+    }
   },
   "footer": {
     "quickLinks": "Quick Links",
