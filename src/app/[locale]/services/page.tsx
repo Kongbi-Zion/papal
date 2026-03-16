@@ -243,6 +243,10 @@ export default function Services() {
           </p>
         </div>
 
+        <div className='flex justify-center pb-10'>
+          <img src="/image.jpeg" className='h-67 md:h-96' alt="Service image" />
+        </div>
+
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="overflow-x-auto lg:overflow-visible">
             <table className="w-full min-w-150 lg:min-w-0">
