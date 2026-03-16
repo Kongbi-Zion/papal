@@ -10,10 +10,7 @@ export default function LiveStreamModal() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       
-      {/* Background */}
       <div className="absolute inset-0 bg-black/5 backdrop-blur-md"></div>
-
-      {/* Modal */}
       <div className="relative w-full max-w-6xl rounded-3xl overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-white">
 
         {/* Header */}
