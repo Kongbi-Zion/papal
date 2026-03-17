@@ -11,11 +11,11 @@ const videos = [
     title: 'EWTN Interviews Bettencourt',
     videoPath: '/video_gallery/vid1.mp4',
   },
-  // {
-  //   id: 2,
-  //   title: "Pope Leo XIV's Message",
-  //   youtubeId: 'P3nXdDK5qb0',
-  // },
+  {
+    id: 2,
+    title: "Pope Leo XIV's Message",
+    youtubeId: '9XvPM6Ygeqg',
+  }, 
   {
     id: 3,
     title: 'Papal Visit Africa 2026',
