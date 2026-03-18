@@ -25,6 +25,7 @@ export default function GalleryPage() {
         { src: '/image_gallery/cameroon/img3.jpeg', alt: 'Church ceremony', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img8.jpeg', alt: 'Traditional ceremony', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/le_couple_Présidentiel_avec_le_pape.jpeg', alt: 'Presidential couple with Pope', copyright: '© SOPECAM' },
+        { src: '/image_gallery/cameroon/images.jpeg', alt: 'Cameroon Vatican visit', copyright: '© Vatican Media' },
       ]
     },
     {
@@ -114,7 +115,7 @@ export default function GalleryPage() {
         {/* Enhanced Page Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-bold text-primary font-crimson-text mb-6">
-            {t('viewImages')} 
+            {t('photoGallery')} 
           </h1>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">

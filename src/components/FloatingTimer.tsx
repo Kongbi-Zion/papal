@@ -43,7 +43,7 @@ export default function FloatingTimer() {
   const getTargetDate = () => {
     const targetDate = new Date()
     targetDate.setMonth(3, 15) // April is month 3 (0-indexed)
-    targetDate.setHours(14, 30, 0, 0) // 2:30 PM is 14:30 in 24-hour format
+    targetDate.setHours(15, 0, 0, 0) // 3:00 PM is 15:00 in 24-hour format
     
     // If April 15th has already passed this year, set it for next year
     const now = new Date()

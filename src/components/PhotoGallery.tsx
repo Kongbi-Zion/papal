@@ -14,7 +14,7 @@ export default function PhotoGallery() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-primary font-crimson-text mb-6">
-            {t('title')}
+            {t('videoAndPhotoGallery')}
           </h2>
           <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full mb-8"></div>
         </div>
