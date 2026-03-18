@@ -176,7 +176,9 @@
     "downloadButton": "Download Form"
   },
   "photoGallery": {
+    "photoGallery": "Photo Gallery",
     "title": "Photo and Video Gallery",
+    "videoAndPhotoGallery": "Video and Photo Gallery",
     "videoTitle": "Papal Visit Preparations",
     "videoDescription": "Behind the scenes of the upcoming historic journey",
     "imageTitle": "Recent Activities",

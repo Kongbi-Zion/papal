@@ -172,7 +172,9 @@
     "viewAllNews": "Voir Toutes les Nouvelles"
   },
   "photoGallery": {
+    "photoGallery": "Galerie Photo",
     "title": "Galerie Photo et Vidéo",
+    "videoAndPhotoGallery": "Galerie Vidéo et Photo",
     "videoTitle": "Préparatifs de la Visite Papale",
     "videoDescription": "Coulisses du prochain voyage historique",
     "imageTitle": "Activités Récentes",

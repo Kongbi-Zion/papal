@@ -18,6 +18,7 @@ export default function GalleryPage() {
       name: 'Cameroon and the Vatican ',
       copyright: '© Vatican Media',
       images: [
+        { src: '/image_gallery/cameroon/images.jpeg', alt: 'Cameroon Vatican visit', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/PH_059.jpeg', alt: 'Church celebration', copyright: '© SOPECAM'},
         { src: '/image_gallery/cameroon/img1.jpeg', alt: 'Papal visit preparation', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img15.jpeg', alt: 'Papal benediction', copyright: '© Vatican Media' },
@@ -25,7 +26,6 @@ export default function GalleryPage() {
         { src: '/image_gallery/cameroon/img3.jpeg', alt: 'Church ceremony', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/img8.jpeg', alt: 'Traditional ceremony', copyright: '© Vatican Media' },
         { src: '/image_gallery/cameroon/le_couple_Présidentiel_avec_le_pape.jpeg', alt: 'Presidential couple with Pope', copyright: '© SOPECAM' },
-        { src: '/image_gallery/cameroon/images.jpeg', alt: 'Cameroon Vatican visit', copyright: '© Vatican Media' },
       ]
     },
     {
