@@ -28,10 +28,11 @@ export default function PhotoGallery() {
                 {/* YouTube Video */}
                 <iframe
                   className="w-full h-full"
-                  src="https://youtu.be/9XvPM6Ygeqg?si=WGYBz7bASVe3CWdR"
+                  src="https://www.youtube.com/embed/9XvPM6Ygeqg"
                   title={t('videoTitle')}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
                 ></iframe>
                 
                 {/* Overlay Button */}
