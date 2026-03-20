@@ -16,11 +16,11 @@ const videos = [
     title: "Pope Leo XIV's Message",
     youtubeId: '9XvPM6Ygeqg',
   }, 
-  {
-    id: 3,
-    title: 'Papal Visit Africa 2026',
-    youtubeId: 'Loqi2xzbsdw',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Papal Visit Africa 2026',
+  //   youtubeId: 'Loqi2xzbsdw',
+  // },
 ]
 
 export default function VideosPage() {
