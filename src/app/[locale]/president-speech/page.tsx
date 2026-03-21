@@ -2,11 +2,48 @@
 
 import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+
+const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { ssr: false })
+const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false })
+
+import 'react-pdf/dist/Page/AnnotationLayer.css'
+import 'react-pdf/dist/Page/TextLayer.css'
 
 export default function PresidentSpeechPage() {
   const params = useParams()
   const locale = params.locale as string
   const t = useTranslations('presidentSpeech')
+  const [isClient, setIsClient] = useState(false)
+  const [pdfWidth, setPdfWidth] = useState(800)
+  
+  useEffect(() => {
+    setIsClient(true)
+    import('react-pdf').then((pdfjs) => {
+      pdfjs.pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+        'pdfjs-dist/build/pdf.worker.min.mjs',
+        import.meta.url,
+      ).toString()
+    })
+    
+    const updateWidth = () => {
+      const screenWidth = window.innerWidth
+      if (screenWidth < 640) {
+        setPdfWidth(screenWidth - 32) // Small screens
+      } else if (screenWidth < 768) {
+        setPdfWidth(screenWidth - 48) // Medium screens
+      } else if (screenWidth < 1024) {
+        setPdfWidth(Math.min(800, screenWidth - 64)) // Large screens
+      } else {
+        setPdfWidth(800) // Extra large screens
+      }
+    }
+    
+    updateWidth()
+    window.addEventListener('resize', updateWidth)
+    return () => window.removeEventListener('resize', updateWidth)
+  }, [])
   
   const documentPath = locale === 'fr' 
     ? '/docs/MOT_DU_PDT_DE_LA_CENC_SIGNE_FR.pdf'
@@ -34,21 +71,29 @@ export default function PresidentSpeechPage() {
          
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="p-6 md:p-8">
-         
-
-            
-            <div className="flex justify-center">
-              <iframe
-                src={`${documentPath}#toolbar=0&navpanes=0&scrollbar=0&view=Fit`}
-                className="w-full max-w-4xl border border-gray-200 rounded-lg"
-                title={documentTitle}
-                style={{ height: '974px', width:'90%' }}
-              />
+           <div className="flex justify-center">
+              {isClient && (
+                <div className="w-full max-w-4xl">
+                  <Document
+                    file={documentPath}
+                    className="flex justify-center"
+                  >
+                    <Page 
+                      pageNumber={1} 
+                      className="border border-gray-300 mx-auto p-3 rounded-lg"
+                      renderTextLayer={true}
+                      renderAnnotationLayer={true}
+                      width={pdfWidth}
+                    />
+                  </Document>
+                </div>
+              )}
+              {!isClient && (
+                <div className="p-8 bg-gray-50 rounded-lg border border-gray-200 w-full max-w-4xl">
+                  <div className="text-center text-gray-600">Loading PDF...</div>
+                </div>
+              )}
             </div>
-          </div>
-        </div>
       </div>
     </section>
   )
