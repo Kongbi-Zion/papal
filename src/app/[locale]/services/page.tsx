@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 
 const Document = dynamic(() => import('react-pdf').then(mod => mod.Document), { ssr: false })
 const Page = dynamic(() => import('react-pdf').then(mod => mod.Page), { ssr: false })
@@ -13,6 +14,13 @@ import 'react-pdf/dist/Page/TextLayer.css'
 export default function Services() {
   const t = useTranslations('services');
   const locale = useLocale();
+
+  // Schedule images array
+  const scheduleImages = [
+    '1.jpeg', '2.jpeg', '3.jpeg', '5.jpeg', '63.jpeg',
+    '7.jpeg', '8.jpeg', '9.jpeg', '10.jpeg', '11.jpeg', '12.jpeg',
+    '13.jpeg', '14.jpeg', '15.jpeg', '16.jpeg', '17.jpeg', '18.jpeg'
+  ];
   const [isClient, setIsClient] = useState(false);
   const [pdfWidth, setPdfWidth] = useState(800);
   const [numPages, setNumPages] = useState<number>();
@@ -76,9 +84,11 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="text-center mb-8">
-        <img 
+        <Image 
           src="/codeofarms.png" 
           alt="Code of Arms" 
+          width={160}
+          height={160}
           className="mx-auto h-32 md:h-40 object-contain"
         />
       </div>
@@ -93,13 +103,35 @@ export default function Services() {
           </p>
         </div>
 
-        <div className='flex justify-center pb-10'>
-          <img src="/image.jpeg" className='h-67 md:h-96' alt="Service image" />
+        {/* Image Gallery Section */}
+        <div className="mb-16">
+ 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+             <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image 
+                  src="/image.jpeg" 
+                  alt="Service image" 
+                  className="w-full transition-transform duration-300"
+                  width={800}
+                  height={600}
+                />
+              </div>
+            {scheduleImages.map((imageName, index) => (
+              <div key={index} className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image 
+                  src={`/schedule_img/${imageName}`} 
+                  alt={`Gallery Image ${index + 1}`} 
+                  className="w-full transition-transform duration-300"
+                  width={800}
+                  height={600}
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Document Viewer Section */}
-        <div className="mt-12">
-       
+        <div className="mt-24">
           <div className="flex justify-center">
             {isClient && (
               <div className="w-full max-w-4xl">
