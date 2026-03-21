@@ -103,6 +103,15 @@ export default function Services() {
           </p>
         </div>
 
+        <div className='flex justify-center items-center'>
+          <div className='max-w-xl max-auto'>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary font-crimson-text text-center mb-6">
+            {t('subtitle')}
+          </h2>
+          <div className="w-24 h-1 bg-secondary mx-auto rounded-full mb-12"></div>
+        </div>
+        </div>
+
         {/* Image Gallery Section */}
         <div className="mb-16">
  
