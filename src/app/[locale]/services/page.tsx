@@ -131,7 +131,7 @@ export default function Services() {
         </div>
 
         {/* Document Viewer Section */}
-        <div className="mt-24">
+        <div className="mt-5 md:mt-24">
           <div className="flex justify-center">
             {isClient && (
               <div className="w-full max-w-4xl">
